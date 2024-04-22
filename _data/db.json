@@ -1,0 +1,58 @@
+{
+    "salaries": [
+      {
+        "specialty": "Acute Rehabilitation",
+        "experience": 2,
+        "city": "Los Angeles",
+        "pay": 44.68
+      },
+      {
+        "specialty": "Pediatric",
+        "experience": 6,
+        "city": "Orange",
+        "pay": 52
+      },
+      {
+        "specialty": "Pediatric",
+        "experience": 2,
+        "city": "El Monte",
+        "pay": 38
+      },
+      {
+        "specialty": "Medical Surgical",
+        "experience": 1.8,
+        "city": "Ontario",
+        "pay": 34.17
+      },
+      {
+        "specialty": "Telemetry",
+        "experience": 5,
+        "city": "Chico",
+        "pay": 50
+      },
+      {
+        "specialty": "Radiology",
+        "experience": 4,
+        "city": "Fullerton",
+        "pay": 50
+      },
+      {
+        "specialty": "Radiology",
+        "experience": 4,
+        "city": "Fullerton",
+        "pay": 55
+      },
+      {
+        "specialty": "Hospice",
+        "experience": 8,
+        "city": "San Diego",
+        "pay": 65
+      },
+      {
+        "specialty": "Home Health",
+        "experience": 2,
+        "city": "Orange",
+        "pay": 38
+      }
+    ]
+  }
