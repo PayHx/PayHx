@@ -7,7 +7,7 @@ import {
   TableHead,
   TableHeader,
   TableRow
-} from '@/src/components/ui/table'
+} from '@/components/ui/table'
 import { strict } from 'assert';
 import salaries from '@/resources/CaliforniaData.json';
 
