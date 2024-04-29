@@ -12,12 +12,12 @@ import { strict } from 'assert';
 import salaries from '@/resources/CaliforniaData.json';
 
 interface Salary {
-  Timestamp: string,
-  "City ": string,
-  "Hospital Name/Campus": string,
-  "Years of Experience ": number,
-  "Specialty (Cardiac, ER, GI, L&D, etc)": string,
-  "Hourly Base Pay (Diff not included)": number
+  Timestamp?: string,
+  "City "?: string,
+  "Hospital Name/Campus"?: string,
+  "Years of Experience "?: number,
+  "Specialty (Cardiac, ER, GI, L&D, etc)"?: string,
+  "Hourly Base Pay (Diff not included)"?: number
 }
 
 async function getSalaries(): Promise<Salary[]> {
