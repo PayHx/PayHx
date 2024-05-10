@@ -22,7 +22,7 @@ interface Salary {
   "Specialty (Cardiac, ER, GI, L&D, etc)"?: string,
   "Hourly Base Pay (Diff not included)"?: number,
   "Shift Diff Amount (if any) "?: number,
-  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) "?: string
+  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) "?: string | number
 }
 
 async function getSalaries(): Promise<Salary[]> {
