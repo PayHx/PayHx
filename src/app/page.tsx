@@ -45,7 +45,6 @@ export default async function Home() {
             <TableHead className="text-left">Month/Year</TableHead>
             <TableHead className="text-left">State</TableHead>
             <TableHead className="text-left w-[100px]">City</TableHead>
-            <TableHead className="text-left">Hospital/Campus Name</TableHead>
             <TableHead className="text-left">Experience</TableHead>
             <TableHead className="text-left">Speciality</TableHead>
             <TableHead className="text-left">Pay</TableHead>
@@ -60,7 +59,6 @@ export default async function Home() {
               <TableCell className="text-left">{salary["Month/Year"]}</TableCell>
               <TableCell className="text-left">{salary.State}</TableCell>
               <TableCell className="text-left">{salary["City "]}</TableCell>
-              <TableCell className="text-left">{salary["Hospital Name/ Campus (Optional)"]}</TableCell>
               <TableCell className="text-left">{salary["Years of Experience "]}</TableCell>
               <TableCell className="text-left">{salary["Specialty (Cardiac, ER, GI, L&D, etc)"]}</TableCell>
               <TableCell className="text-left">${salary["Hourly Base Pay (Diff not included)"]}/hr</TableCell>
