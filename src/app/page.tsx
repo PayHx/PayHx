@@ -20,7 +20,7 @@ interface Salary {
   "Years of Experience "?: number,
   "Specialty (Cardiac, ER, GI, L&D, etc)"?: string,
   "Hourly Base Pay (Diff not included)"?: number,
-  "Shift Diff Amount (if any) "?: number,
+  "Shift Diff Amount (if any) "?: string | number,
   "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) "?: string | number
 }
 
