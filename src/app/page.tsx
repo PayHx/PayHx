@@ -13,13 +13,13 @@ import { strict } from 'assert';
 import salaries from '@/resources/MasterData.json';
 
 interface Salary {
-  Timestamp?: string,
-  "Month/Year"?: string,
-  State?: string,
-  "City "?: string,
-  "Years of Experience "?: number,
+  Timestamp?: string | number,
+  "Month/Year"?: string | number,
+  State?: string | number,
+  "City "?: string | number,
+  "Years of Experience "?: string | number,
   "Specialty (Cardiac, ER, GI, L&D, etc)"?: string | number,
-  "Hourly Base Pay (Diff not included)"?: number,
+  "Hourly Base Pay (Diff not included)"?: string | number,
   "Shift Diff Amount (if any) "?: string | number,
   "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) "?: string | number
 }
