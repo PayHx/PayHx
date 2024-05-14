@@ -17,7 +17,6 @@ interface Salary {
   "Month/Year"?: string,
   State?: string,
   "City "?: string,
-  "Hospital Name/ Campus (Optional)"?: string,
   "Years of Experience "?: number,
   "Specialty (Cardiac, ER, GI, L&D, etc)"?: string,
   "Hourly Base Pay (Diff not included)"?: number,
