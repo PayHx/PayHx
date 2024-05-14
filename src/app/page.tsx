@@ -18,7 +18,7 @@ interface Salary {
   State?: string,
   "City "?: string,
   "Years of Experience "?: number,
-  "Specialty (Cardiac, ER, GI, L&D, etc)"?: string,
+  "Specialty (Cardiac, ER, GI, L&D, etc)"?: string | number,
   "Hourly Base Pay (Diff not included)"?: number,
   "Shift Diff Amount (if any) "?: string | number,
   "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) "?: string | number
