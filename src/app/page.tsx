@@ -51,8 +51,8 @@ export default async function Home() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {salaries.map((salary) => (
-            <TableRow>
+          {salaries.map((salary, index) => (
+            <TableRow key={index}>
               <TableCell className="text-left">{salary["Month/Year"]}</TableCell>
               <TableCell className="text-left">{salary.State}</TableCell>
               <TableCell className="text-left">{salary["City "]}</TableCell>
