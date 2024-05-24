@@ -66,6 +66,40 @@
   }
 }
 
+.text-nowrap {
+  white-space: nowrap;
+  max-width: 210px;
+}
+
+.table-container {
+  max-height: 500px;
+  max-width: 1100px;
+  margin-left: 150px;
+  overflow-y: auto;
+}
+
+.table-cell {
+  padding: 23px;
+}
+
+.table-header-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  z-index: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.table-row-even {
+  background-color: white; /* Adjust color as needed */
+}
+
+/* Apply background color to odd rows */
+.table-row-odd {
+  background-color: whitesmoke; /* Adjust color as needed */
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -73,4 +107,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: 
 }

@@ -14,8 +14,8 @@ import salaries from '@/resources/MasterData.json';
 
 interface Salary {
   "Month/Year"?: string | number,
-  State?: string | number,
-  "City "?: string | number,
+  State?: string,
+  "City "?: string,
   "Years of Experience "?: string | number,
   "Specialty (Cardiac, ER, GI, L&D, etc)"?: string | number,
   "Hourly Base Pay (Diff not included)"?: string | number,
@@ -35,36 +35,34 @@ export default async function Home() {
 
   return (
     <main className="p-4">
-      <div style={{maxHeight: 478, maxWidth:1100, margin: '33px 0px 0px 150px',  overflowY: 'auto', border: '1px solid black'}}>
-      <Table>
-        <TableCaption>Powered </TableCaption>
-        <TableHeader>
-          <TableRow>
-            <TableHead className="text-left">Month/Year</TableHead>
-            <TableHead className="text-left">State</TableHead>
-            <TableHead className="text-left w-[100px]">City</TableHead>
-            <TableHead className="text-left">Experience</TableHead>
-            <TableHead className="text-left">Speciality</TableHead>
-            <TableHead className="text-left">Pay</TableHead>
-            <TableHead className="text-left">Shift Diff Amount (if any)</TableHead>
-            <TableHead className="text-left">Type of Shift Diff (nights, Baylor, Critical Care, etc)</TableHead>
-          </TableRow>
-        </TableHeader>
-        <TableBody>
+      <div className="table-container">
+        <Table>
+          <TableCaption>Powered </TableCaption>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="text-left table-cell table-header-sticky">Date</TableHead>
+              <TableHead className="text-left table-cell table-header-sticky">Location</TableHead>
+              <TableHead className="text-left table-cell table-header-sticky">Experience</TableHead>
+              <TableHead className="text-left table-cell table-header-sticky">Speciality</TableHead>
+              <TableHead className="text-left table-cell table-header-sticky">Pay</TableHead>
+              <TableHead className="text-left table-cell table-header-sticky">Shift Diff Amount (if any)</TableHead>
+              <TableHead className="text-left table-cell table-header-sticky">Type of Shift Diff (nights, Baylor, Critical Care, etc)</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
           {salaries.map((salary, index) => (
-            <TableRow key={index}>
-              <TableCell className="text-left">{salary["Month/Year"]}</TableCell>
-              <TableCell className="text-left">{salary.State}</TableCell>
-              <TableCell className="text-left">{salary["City "]}</TableCell>
-              <TableCell className="text-left">{salary["Years of Experience "]}</TableCell>
-              <TableCell className="text-left">{salary["Specialty (Cardiac, ER, GI, L&D, etc)"]}</TableCell>
-              <TableCell className="text-left">${salary["Hourly Base Pay (Diff not included)"]}/hr</TableCell>
-              <TableCell className="text-left">{salary["Shift Diff Amount (if any) "]}</TableCell>
-              <TableCell className="text-left">{salary["Type Of Shift Diff (nights, Baylor, Critical Care, Etc) "]}</TableCell>
+            <TableRow key={index} className={index % 2 === 0 ? 'table-row-even' : 'table-row-odd'}>
+              <TableCell className="text-left table-cell">{salary["Month/Year"]}</TableCell>
+              <TableCell className="text-left table-cell text-nowrap">{`${String(salary["City "] || "").trim()}, ${salary.State}`}</TableCell>
+              <TableCell className="text-left table-cell">{salary["Years of Experience "]}</TableCell>
+              <TableCell className="text-left table-cell">{salary["Specialty (Cardiac, ER, GI, L&D, etc)"]}</TableCell>
+              <TableCell className="text-left table-cell">${salary["Hourly Base Pay (Diff not included)"]}/hr</TableCell>
+              <TableCell className="text-left table-cell">{salary["Shift Diff Amount (if any) "]}</TableCell>
+             <TableCell className="text-left table-cell">{salary["Type Of Shift Diff (nights, Baylor, Critical Care, Etc) "]}</TableCell>
             </TableRow>
           ))}
-        </TableBody>
-      </Table>
+          </TableBody>
+        </Table>
       </div>
     </main>
   )
