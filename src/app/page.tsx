@@ -13,7 +13,6 @@ import { strict } from 'assert';
 import salaries from '@/resources/MasterData.json';
 
 interface Salary {
-  Timestamp?: string | number,
   "Month/Year"?: string | number,
   State?: string | number,
   "City "?: string | number,
@@ -41,7 +40,6 @@ export default async function Home() {
         <TableCaption>Powered </TableCaption>
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[100px]">Timestamp</TableHead>
             <TableHead className="text-left">Month/Year</TableHead>
             <TableHead className="text-left">State</TableHead>
             <TableHead className="text-left w-[100px]">City</TableHead>
@@ -54,8 +52,7 @@ export default async function Home() {
         </TableHeader>
         <TableBody>
           {salaries.map((salary) => (
-            <TableRow key={salary.Timestamp}>
-              <TableCell className="text-left">{salary.Timestamp}</TableCell>
+            <TableRow>
               <TableCell className="text-left">{salary["Month/Year"]}</TableCell>
               <TableCell className="text-left">{salary.State}</TableCell>
               <TableCell className="text-left">{salary["City "]}</TableCell>
