@@ -20,10 +20,12 @@ export default function RootLayout({
       <body className={inter.className}>
       <nav>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img src="/logo.png" alt="Logo" style={{ width: '188px', margin: '55px 0px 33px 158px'}}></img>
+        <Link href="/">
+          <img src="/logo.png" alt="Logo" style={{ width: '188px', margin: '55px 0px 33px 75px'}}/>
+        </Link>
         <div>
           <Link legacyBehavior href="/about-us">
-            <a style={{ marginLeft: '700px'}}>About Us</a>
+            <a style={{ marginLeft: '888px'}}>About Us</a>
           </Link>
           <Link legacyBehavior href="/submit-salary">
             <a style={{ marginLeft: '33px'}}>Submit Salary</a>

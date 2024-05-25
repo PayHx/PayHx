@@ -73,8 +73,8 @@
 
 .table-container {
   max-height: 500px;
-  max-width: 1100px;
-  margin-left: 150px;
+  max-width: 1300px;
+  margin-left: 53px;
   overflow-y: auto;
 }
 
@@ -85,7 +85,7 @@
 .table-header-sticky {
   position: sticky;
   top: 0;
-  background-color: whitesmoke;
+  background-color: #D9DBF1;
   z-index: 1;
   border-bottom: 1px solid #ccc;
 }
