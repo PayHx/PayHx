@@ -15,7 +15,7 @@ import salaries from '@/resources/MasterData.json';
 interface Salary {
   "Month/Year"?: string | number,
   State?: string,
-  "City "?: string,
+  "City "?: string | number,
   "Years of Experience "?: string | number,
   "Specialty (Cardiac, ER, GI, L&D, etc)"?: string | number,
   "Hourly Base Pay (Diff not included)"?: string | number,
