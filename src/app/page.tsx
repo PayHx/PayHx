@@ -3,17 +3,16 @@ import {
   TableBody,
   TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow
 } from '@/components/ui/table'
 import { strict } from 'assert';
-//import salaries from '@/resources/CaliforniaData.json';
+//import salaries from '@/resources/TestData.json';
 import salaries from '@/resources/MasterData.json';
 
 interface Salary {
-  "Month/Year"?: string | number,
+  "Month Year"?: string | number,
   State?: string,
   "City "?: string | number,
   "Years of Experience "?: string | number,
@@ -52,7 +51,7 @@ export default async function Home() {
           <TableBody>
           {salaries.map((salary, index) => (
             <TableRow key={index} className={index % 2 === 0 ? 'table-row-even' : 'table-row-odd'}>
-              <TableCell className="text-left table-cell">{salary["Month/Year"]}</TableCell>
+              <TableCell className="text-left table-cell">{salary["Month Year"]}</TableCell>
               <TableCell className="text-left table-cell text-nowrap">{`${String(salary["City "] || "").trim()}, ${salary.State}`}</TableCell>
               <TableCell className="text-left table-cell">{salary["Years of Experience "]}</TableCell>
               <TableCell className="text-left table-cell">{salary["Specialty (Cardiac, ER, GI, L&D, etc)"]}</TableCell>
