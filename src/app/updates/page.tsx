@@ -3,7 +3,7 @@ export default function SubmitSalaryPage() {
 
     return (
         <div>
-            <p>Today's date: {currentDate}</p>
+            <p>Today&apos;s date: {currentDate}</p>
             <p>We will provide website updates here.</p>
         </div>
     );
