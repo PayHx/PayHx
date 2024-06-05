@@ -66,6 +66,59 @@
   }
 }
 
+@font-face {
+  font-family: 'American Typewriter';
+  src: url('/fonts/AmericanTypewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-american-typewriter {
+  font-family: 'American Typewriter', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin-right: 55px;
+  margin-top: 33px; /* Adjust spacing between links */
+}
+.nav-links a {
+  text-decoration: none;
+  color: black; /* or any color you prefer */
+}
+
+.logo {
+  width: 188px;
+  margin-left: 55px;
+  margin-top: 33px;
+  margin-bottom: 22px;
+}
+
+/* Ensure the layout is responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+  }
+}
+
 .text-nowrap {
   white-space: nowrap;
   max-width: 210px;

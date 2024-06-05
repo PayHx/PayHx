@@ -18,22 +18,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <nav>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <Link href="/">
-          <img src="/logo.png" alt="Logo" style={{ width: '188px', margin: '55px 0px 33px 75px'}}/>
-        </Link>
-        <div>
-          <Link legacyBehavior href="/about-us">
-            <a style={{ marginLeft: '888px'}}>About Us</a>
-          </Link>
-          <Link legacyBehavior href="/submit-salary">
-            <a style={{ marginLeft: '33px'}}>Submit Salary</a>
-          </Link>
-        </div>
-        </div>
-        {children}
-      </nav>
+        <nav>
+          <div className="navbar">
+            <Link href="/">
+              <img src="/logo.png" alt="Logo" className="logo"/>
+            </Link>
+            <div className="nav-links">
+              <Link legacyBehavior href="/updates">
+                <a className="font-american-typewriter">Updates</a>
+              </Link>
+              <Link legacyBehavior href="/about-us">
+                <a className="font-american-typewriter">About Us</a>
+              </Link>
+              <Link legacyBehavior href="/submit-salary">
+                <a className="font-american-typewriter">Submit Salary</a>
+              </Link>
+            </div>
+          </div>
+          {children}
+        </nav>
       </body>
     </html>
   );
