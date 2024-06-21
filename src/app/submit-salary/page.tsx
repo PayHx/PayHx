@@ -41,8 +41,8 @@ export default function SubmitSalaryPage() {
       emailAddress: "",
       date: new Date(),
       specialty: "",
-      yearsExperience: "",
-      pay: "",  
+      yearsExperience: 0,
+      pay: 0,  
     }
   });
 
