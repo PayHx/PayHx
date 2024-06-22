@@ -27,6 +27,7 @@ import { FormDescription } from "../../components/ui/form";
 
 const formSchema = z.object({
   emailAddress: z.string().email(),
+  location: z.string(),
   date: z.date(),
   specialty: z.string(),
   yearsExperience: z.number(),
@@ -39,6 +40,7 @@ export default function SubmitSalaryPage() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       emailAddress: "",
+      location: "",
       date: new Date(),
       specialty: "",
       yearsExperience: 0,
@@ -72,6 +74,26 @@ export default function SubmitSalaryPage() {
                     <Input 
                       placeholder="Email address"
                       type="email"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              );
+            }}
+          />
+
+          <FormField 
+            control={form.control} 
+            name="location" 
+            render={({ field }) => {
+              return (
+                <FormItem className="flex items-baseline">
+                  <FormLabel className="w-1/4">Location</FormLabel>
+                  <FormControl>
+                    <Input 
+                      placeholder="City, State"
+                      type="location"
                       {...field}
                     />
                   </FormControl>
