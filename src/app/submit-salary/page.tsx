@@ -49,9 +49,18 @@ export default function SubmitSalaryPage() {
   const handleSubmit = () => {}
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-start p-24">
+      <article className="w-2/4 mb-2 mx-auto bg-outline">
+          <h1 className="header-title mb-5 font-american-typewriter">Real salaries from real nurses. </h1>
+          <div className="header-content mb-5 font-american-typewriter">
+            <p>Your submission may lead to better wages across the board! Help out now!</p>
+            <p>Please submit your current offer or upcoming offers that you have.</p>
+            <p>Contact US! We need ideas of how to sort salaries and the most important factors that go into salaries.</p>
+          </div>
+          <h1 className="header-title font-american-typewriter">Real Salaries, Real People</h1>
+        </article>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(handleSubmit)} className="max-w-md w-full">
+        <form onSubmit={form.handleSubmit(handleSubmit)} className="max-w-md w-full mt-8">
           <FormField 
             control={form.control} 
             name="emailAddress" 
@@ -81,7 +90,7 @@ export default function SubmitSalaryPage() {
                   <FormLabel className="w-1/4">Date</FormLabel>
                   <Popover>
                     <PopoverTrigger asChild>
-                      <FormControl className="flex w-31/4">
+                      <FormControl className="date-input">
                         <Button
                           variant={"outline"}
                           className={cn("w-[240px] pl-3 text-left font-normal", !field.value && "text-muted-foreground")}>
@@ -157,7 +166,7 @@ export default function SubmitSalaryPage() {
             render={({ field }) => {
               return (
                 <FormItem className="flex items-baseline">
-                  <FormLabel className="w-1/4">Pay (per hr)</FormLabel>
+                  <FormLabel className="w-1/4">Pay (hourly)</FormLabel>
                   <FormControl>
                     <Input 
                       placeholder="Pay"

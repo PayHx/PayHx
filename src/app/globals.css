@@ -164,3 +164,15 @@
 @font-face {
   font-family: 
 }
+
+/* Submit salary page*/
+.date-input {
+  width: 100%;
+}
+
+.bg-outline {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

@@ -1,32 +1,152 @@
 [
     {
-        "Month Year": "Jan2023",
-        "State": "Alabama",
-        "City ": "Mobile",
-        "Years of Experience ": 2,
-        "Specialty (Cardiac, ER, GI, L&D, etc)": "ICU",
-        "Hourly Base Pay (Diff not included)": 60,
-        "Shift Diff Amount (if any) ": 4.5,
-        "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "Nights"
-       },
-       {
-        "Month Year": "Jan/2023",
-        "State": "Alabama",
-        "City ": "Tuscaloosa",
-        "Years of Experience ": 2.5,
-        "Specialty (Cardiac, ER, GI, L&D, etc)": "Urgent Care",
-        "Hourly Base Pay (Diff not included)": 27,
-        "Shift Diff Amount (if any) ": "NA",
-        "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "NA"
-       },
-       {
-        "Month Year": "Jan 2023",
-        "State": "Alabama",
-        "City ": "Gadsden ",
-        "Years of Experience ": 2,
-        "Specialty (Cardiac, ER, GI, L&D, etc)": "ICU ",
-        "Hourly Base Pay (Diff not included)": 26,
-        "Shift Diff Amount (if any) ": "NA",
-        "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "Days "
-       }
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Mobile",
+     "Years of Experience ": 2,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "ICU",
+     "Hourly Base Pay (Diff not included)": 60,
+     "Shift Diff Amount (if any) ": 4.5,
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "Nights"
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Tuscaloosa",
+     "Years of Experience ": 2.5,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "Urgent Care",
+     "Hourly Base Pay (Diff not included)": 27,
+     "Shift Diff Amount (if any) ": "NA",
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "NA"
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Gadsden ",
+     "Years of Experience ": 2,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "ICU ",
+     "Hourly Base Pay (Diff not included)": 26,
+     "Shift Diff Amount (if any) ": "NA",
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "Days "
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Birmingham",
+     "Years of Experience ": 5,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "Leadership",
+     "Hourly Base Pay (Diff not included)": 57,
+     "Shift Diff Amount (if any) ": "NA",
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "NA"
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Selma",
+     "Years of Experience ": 1,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "Med Surg",
+     "Hourly Base Pay (Diff not included)": 23.15,
+     "Shift Diff Amount (if any) ": "NA",
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "Day "
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Montgomery ",
+     "Years of Experience ": 1,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "Newborns",
+     "Hourly Base Pay (Diff not included)": 28,
+     "Shift Diff Amount (if any) ": 3,
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "nights"
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Montgomery ",
+     "Years of Experience ": 1,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "Newborns",
+     "Hourly Base Pay (Diff not included)": 28,
+     "Shift Diff Amount (if any) ": 3,
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "nights"
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Gadsden",
+     "Years of Experience ": 1.5,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "ER",
+     "Hourly Base Pay (Diff not included)": 30.5,
+     "Shift Diff Amount (if any) ": 4,
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "4.00 weekend & nights"
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Birmingham ",
+     "Years of Experience ": 1,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "critical care step down ",
+     "Hourly Base Pay (Diff not included)": 27,
+     "Shift Diff Amount (if any) ": 5,
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "Nights "
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Tuscaloosa",
+     "Years of Experience ": 4,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "Hospice",
+     "Hourly Base Pay (Diff not included)": 35,
+     "Shift Diff Amount (if any) ": "NA",
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "Days"
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Birmingham ",
+     "Years of Experience ": 1,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "Hem\/Onc\/BMT",
+     "Hourly Base Pay (Diff not included)": 26,
+     "Shift Diff Amount (if any) ": 5,
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "Evening\/Night"
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Mobile",
+     "Years of Experience ": 1.5,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "ER",
+     "Hourly Base Pay (Diff not included)": 45,
+     "Shift Diff Amount (if any) ": "NA",
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "PRN"
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Haleyville ",
+     "Years of Experience ": 9,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "Psych",
+     "Hourly Base Pay (Diff not included)": 26,
+     "Shift Diff Amount (if any) ": 10,
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "Nights, unit diff"
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Tuscaloosa ",
+     "Years of Experience ": 10,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "ED, Float Pool ",
+     "Hourly Base Pay (Diff not included)": 50,
+     "Shift Diff Amount (if any) ": 4.75,
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "Nights"
+    },
+    {
+     "Month Year": "Jan 2023",
+     "State": "Alabama",
+     "City ": "Sylacauga ",
+     "Years of Experience ": 6,
+     "Specialty (Cardiac, ER, GI, L&D, etc)": "Icu",
+     "Hourly Base Pay (Diff not included)": 26.49,
+     "Shift Diff Amount (if any) ": 29.49,
+     "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) ": "Days"
+    }
 ]
