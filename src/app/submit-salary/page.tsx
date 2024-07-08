@@ -159,12 +159,12 @@ export default function SubmitSalaryPage() {
                   <FormMessage />
                 </FormItem>
               );
-            }}
+            }}ß
           />
 
           <FormField 
             control={form.control} 
-            name="specialty" 
+            name="yearsExperience" 
             render={({ field }) => {
               return (
                 <FormItem className="flex items-baseline">
@@ -172,8 +172,9 @@ export default function SubmitSalaryPage() {
                   <FormControl>
                     <Input 
                       placeholder="Years of Experience"
-                      type="experience"
+                      type="number"
                       {...field}
+                      onChange={(e) => field.onChange(Number(e.target.value))} // Ensure the value is parsed as a number
                     />
                   </FormControl>
                   <FormMessage />
@@ -192,8 +193,9 @@ export default function SubmitSalaryPage() {
                   <FormControl>
                     <Input 
                       placeholder="Pay"
-                      type="pay"
+                      type="number"
                       {...field}
+                      onChange={(e) => field.onChange(Number(e.target.value))} // Ensure the value is parsed as a number
                     />
                   </FormControl>
                   <FormMessage />

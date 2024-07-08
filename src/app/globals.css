@@ -81,7 +81,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 50px;
 }
 
 .nav-links {
@@ -127,7 +127,7 @@
 .table-container {
   max-height: 500px;
   max-width: 1300px;
-  margin-left: 53px;
+  margin-left: 81px;
   overflow-y: auto;
 }
 
