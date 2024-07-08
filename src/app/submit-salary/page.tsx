@@ -159,7 +159,7 @@ export default function SubmitSalaryPage() {
                   <FormMessage />
                 </FormItem>
               );
-            }}ß
+            }}
           />
 
           <FormField 
