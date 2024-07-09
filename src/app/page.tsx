@@ -11,12 +11,7 @@ import {
 import { strict } from 'assert';
 //import salaries from '@/resources/TestData.json';
 import salaries from '@/resources/MasterData.json';
-import { getDefaultAutoSelectFamily } from 'net';
 // import from firebase
-import { collection, getDocs } from "firebase/firestore";
-import { db } from '@/resources/firebase.js';
-import { fetchSalaries } from '@/resources/firebaseUtils.js';
-import { useSWR } from 'swr';
 
 /* interface Salary {
   emailAddress?: string,
