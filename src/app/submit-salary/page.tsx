@@ -23,7 +23,8 @@ import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { CalendarIcon } from "lucide-react"
 import { cn } from "../../lib/utils";
-import { FormDescription } from "../../components/ui/form";
+// Import necessary Firebase functions
+import { addSalaryData } from "@/resources/firebaseUtil";
 
 const formSchema = z.object({
   emailAddress: z.string().email(),
@@ -35,7 +36,6 @@ const formSchema = z.object({
 });
 
 export default function SubmitSalaryPage() {
-  const [date, setDate] = useState<Date | undefined>(new Date())
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -48,7 +48,20 @@ export default function SubmitSalaryPage() {
     }
   });
 
-  const handleSubmit = () => {}
+  const handleSubmit = async (data: z.infer<typeof formSchema>) => {
+    // Format date if necessary
+    const formattedData = {
+      ...data,
+      date: data.date.toISOString(), // Ensure date is in ISO format
+    };
+
+    try {
+      const docId = await addSalaryData(formattedData);
+      console.log("Document written with ID: ", docId);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  };
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-start p-24">

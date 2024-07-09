@@ -1,3 +1,4 @@
+import React from 'react';
 import { 
   Table,
   TableBody,
@@ -10,6 +11,21 @@ import {
 import { strict } from 'assert';
 //import salaries from '@/resources/TestData.json';
 import salaries from '@/resources/MasterData.json';
+import { getDefaultAutoSelectFamily } from 'net';
+// import from firebase
+import { collection, getDocs } from "firebase/firestore";
+import { db } from '@/resources/firebase.js';
+import { fetchSalaries } from '@/resources/firebaseUtils.js';
+import { useSWR } from 'swr';
+
+/* interface Salary {
+  emailAddress?: string,
+  location?: string,
+  date?: string | number | Date,
+  specialty?: string,
+  experience?: number,
+  pay?: number
+} */
 
 interface Salary {
   "Month Year"?: string | number,
@@ -24,19 +40,30 @@ interface Salary {
 
 async function getSalaries(): Promise<Salary[]> {
   //const result = await fetch('http://localhost:4000/salaries')
-  const result = salaries;
+  const results = salaries;
 
-  return result
+  return results;
 }
 
+/* const fetchSalaries = async (): Promise<Salary[]> => {
+  const querySnapshot = await getDocs(collection(db, 'salaries'));
+  const salaries = querySnapshot.docs.map(doc => doc.data() as Salary);
+
+  return salaries;
+} */
+// location, data, specialty, experience, pay
 export default async function Home() {
   const salaries = await getSalaries()
+
+  if (!salaries) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <main className="p-4">
       <div className="table-container">
         <Table>
-          <TableCaption>Powered </TableCaption>
+          <TableCaption>Powered by you</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="text-left table-cell table-header-sticky">Date</TableHead>
@@ -57,8 +84,8 @@ export default async function Home() {
               <TableCell className="text-left table-cell">{salary["Specialty (Cardiac, ER, GI, L&D, etc)"]}</TableCell>
               <TableCell className="text-left table-cell">${salary["Hourly Base Pay (Diff not included)"]}/hr</TableCell>
               <TableCell className="text-left table-cell">{salary["Shift Diff Amount (if any) "]}</TableCell>
-             <TableCell className="text-left table-cell">{salary["Type Of Shift Diff (nights, Baylor, Critical Care, Etc) "]}</TableCell>
-            </TableRow>
+           <  TableCell className="text-left table-cell">{salary["Type Of Shift Diff (nights, Baylor, Critical Care, Etc) "]}</TableCell>
+          </TableRow>
           ))}
           </TableBody>
         </Table>
