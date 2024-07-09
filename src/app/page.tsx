@@ -15,12 +15,11 @@ import { strict } from 'assert';
 // import from firebase
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from "@/resources/firebase";
-import { firebase} from 'firebase/app';
 
 interface Salary {
   emailAddress: string,
   location: string,
-  date: firebase.firestore.Timestamp,
+  date: any,
   specialty: string,
   experience: number,
   pay: number
