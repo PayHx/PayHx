@@ -25,6 +25,7 @@ import { CalendarIcon } from "lucide-react"
 import { cn } from "../../lib/utils";
 // Import necessary Firebase functions
 import { addSalaryData } from "@/resources/firebaseUtil";
+import { useToast } from "@/components/ui/use-toast";
 
 const formSchema = z.object({
   emailAddress: z.string().email(),
@@ -58,10 +59,20 @@ export default function SubmitSalaryPage() {
     try {
       const docId = await addSalaryData(formattedData);
       console.log("Document written with ID: ", docId);
+      toast({ 
+        description: "Your data has been submitted!",
+      });
     } catch (e) {
       console.error("Error adding document: ", e);
+      toast({
+        title: "Error",
+        description: "Failed to submit data.",
+        variant: "destructive",
+      });
     }
   };
+
+  const { toast } = useToast();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-start p-24">

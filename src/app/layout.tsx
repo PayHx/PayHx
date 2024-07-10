@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from 'next/link';
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,8 +36,9 @@ export default function RootLayout({
               </Link>
             </div>
           </div>
-          {children}
         </nav>
+        {children}
+        <Toaster/>
       </body>
     </html>
   );
