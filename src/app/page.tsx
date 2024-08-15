@@ -127,7 +127,7 @@ export default async function Home() {
           {salaries.map((salary, index) => (
             <TableRow key={index} className={index % 2 === 0 ? 'table-row-even' : 'table-row-odd'}>
               <TableCell className="text-left table-cell">{salary["Month Year"]}</TableCell>
-              <TableCell className="text-left table-cell text-nowrap">{`${String(salary["City "] || "").trim()}, ${salary.State}`}</TableCell>
+              <TableCell className="text-left table-cell text-nowrap">{`${String(salary.City || "").trim()}, ${salary.State}`}</TableCell>
               <TableCell className="text-left table-cell">{salary["Years of Experience "]}</TableCell>
               <TableCell className="text-left table-cell">{salary["Specialty (Cardiac, ER, GI, L&D, etc)"]}</TableCell>
               <TableCell className="text-left table-cell">${salary["Hourly Base Pay (Diff not included)"]}/hr</TableCell>
