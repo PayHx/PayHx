@@ -5,6 +5,12 @@
         "experience": 2,
         "city": "Los Angeles",
         "pay": 44.68
+      }
+      {
+        "specialty": "Acute Rehabilitation",
+        "experience": 2,
+        "city": "Los Angeles",
+        "pay": 44.68
       },
       {
         "specialty": "Pediatric",
