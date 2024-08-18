@@ -8,9 +8,11 @@ On the home page, there is a searchable list of all the nursing positions that w
 
 You can submit your own information about your current job or current job offer to freely share with others. The more the merrier! This helps us ensure that we have an accurate representation of salaries across the country and so negotiations work out better for your fellow nurses at the end of the day.  Please be as honest as possible!
 
-This is a LIVE list that gets updated every 24 - 48 hours. If you have any ideas on how to improve the site, the salaries, or connect to more nurses let us know below!
+This is a LIVE list that gets updated every few times a month. If you have any ideas on how to improve the site, the salaries, or connect to more nurses let us know below!
 
-Currently, we are focused on getting the most important factors that go into a nurses salary (unit type, years of experience, location, etc.)</p>
+Currently, we are focused on getting the most important factors that go into a nurses salary (unit type, years of experience, location, etc.)
+
+Email us at payhx.live@gmail.com </p>
           </div>
           <h1 className="header-title font-american-typewriter">Real Salaries, Real People</h1>
       </article>
