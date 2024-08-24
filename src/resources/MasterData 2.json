@@ -1,6 +1,46 @@
 [
  {
   "Month Year": "Aug 2024",
+  "State": "California",
+  "City": "Oakland",
+  "Years of Experience": 6.5,
+  "Specialty (Cardiac, ER, GI, L&D, etc)": "OR",
+  "Hourly Base Pay (Diff not included)": 92.50,
+  "Shift Diff Amount (if any)": "NA",
+  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "Day shift"
+},
+ {
+  "Month Year": "Aug 2024",
+  "State": "California",
+  "City": "Roseville",
+  "Years of Experience": 7,
+  "Specialty (Cardiac, ER, GI, L&D, etc)": "ICU",
+  "Hourly Base Pay (Diff not included)": 75.00,
+  "Shift Diff Amount (if any)": 5,
+  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "Nights"
+},
+ {
+  "Month Year": "Aug 2024",
+  "State": "Arizona",
+  "City": "Phoenix",
+  "Years of Experience": 3,
+  "Specialty (Cardiac, ER, GI, L&D, etc)": "Pediatrics",
+  "Hourly Base Pay (Diff not included)": 35.60,
+  "Shift Diff Amount (if any)": 5.34,
+  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "Nights"
+},
+ {
+  "Month Year": "Aug 2024",
+  "State": "Arizona",
+  "City": "Phoenix",
+  "Years of Experience": 3,
+  "Specialty (Cardiac, ER, GI, L&D, etc)": "Cardiac",
+  "Hourly Base Pay (Diff not included)": 55.00,
+  "Shift Diff Amount (if any)": "NA",
+  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "Nights"
+},
+ {
+  "Month Year": "Aug 2024",
   "State": "Arizona",
   "City": "Tempe",
   "Years of Experience": 8,
@@ -8,8 +48,7 @@
   "Hourly Base Pay (Diff not included)": 55.00,
   "Shift Diff Amount (if any)": 4,
   "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "Nights"
-}
-
+},
  {
   "Month Year": "May 2023",
   "State": "Arizona",
