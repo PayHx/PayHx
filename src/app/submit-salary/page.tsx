@@ -81,7 +81,8 @@ export default function SubmitSalaryPage() {
           <div className="header-content mb-5 font-american-typewriter">
             <p>Your submission may lead to better wages across the board! Help out now!</p>
             <p>Please submit your current offer or upcoming offers that you have.</p>
-            <p>Contact US! payhx.live@gmail.com We need ideas of how to sort salaries and the most important factors that go into salaries.</p>
+            <p>Contact US! We need ideas of how to sort salaries and the most important factors that go into salaries.</p>
+            <p>payhx.live@gmail.com </p>
           </div>
           <h1 className="header-title font-american-typewriter">Real Salaries, Real People</h1>
         </article>
