@@ -1,6 +1,16 @@
 [
  {
   "Month Year": "Aug 2024",
+  "State": "Kentucky",
+  "City": "Lawrence",
+  "Years of Experience": 2,
+  "Specialty (Cardiac, ER, GI, L&D, etc)": "Rehabilitation",
+  "Hourly Base Pay (Diff not included)": 32.08,
+  "Shift Diff Amount (if any)": 2,
+  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "Day"
+}
+ {
+  "Month Year": "Aug 2024",
   "State": "California",
   "City": "Oakland",
   "Years of Experience": 6.5,
