@@ -6,7 +6,7 @@ export default function SubmitSalaryPage() {
             <article className="w-3/4 mt-10 mx-auto bg-outline">
                 <div className="header-content mb-5 font-american-typewriter">
                     <p>Today&apos;s date: {currentDate}</p>
-                    <p className="mb-8">This will be updated as changes are made to the site.</p>
+                    <p> className="mb-8">This will be updated as changes are made to the site.</p>
                     <p>[8/24/24] 1 report submitted</p>
                     <p> Rehabilitation Nursing Salary. Lawrence, Kentucky (YOE: 2, $32.08/hr) </p>
                     <p>[8/17/24] 5 reports submitted</p>
