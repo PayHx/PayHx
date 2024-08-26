@@ -5,7 +5,7 @@ export default function SubmitSalaryPage() {
         <div>
             <article className="w-3/4 mt-10 mx-auto bg-outline">
                 <div className="header-content mb-5 font-american-typewriter">
-                <p>Today&apos;s date: {currentDate}</p>
+                Today&apos;s date: {currentDate}
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
