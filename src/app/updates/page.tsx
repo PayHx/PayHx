@@ -26,13 +26,13 @@ export default function SubmitSalaryPage() {
                 - OR nursing salary Oakland. California (YOE: 6.5, $92.00/hr)
                 <br /><br />
                 [8/12/24] 5 reports submitted (California x3, Arizona, Florida)
-                <br />
+                <br /><br />
                 [8/7/24] 3 reports submitted (Washington, Oregon, California)
-                <br />
+                <br /><br />
                 [8/4/24] 4 reports submitted (Colorado, Nevada, California x2)
-                <br />
+                <br /><br />
                 [7/28/24] 5 reports submitted (Alabama, California x4, New York). First update 🎉
-                <br />
+                <br /><br />
                 [7/8/24] PayHx is now under the domain name payhx.live!
                 </div>
             </article>
