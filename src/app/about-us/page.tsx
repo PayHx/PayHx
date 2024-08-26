@@ -2,9 +2,9 @@ export default function AboutUsPage() {
     return (
       <article className="w-3/4 mt-10 mx-auto bg-outline">
           <div className="header-content mb-5 font-american-typewriter">
-            <p>Thank you for visiting this site. We are a two-man team (a student and a coder)! I’m dating a nurse, and I thought working on salary information would be useful for her because she will soon be negotiating salary offers.
+            <p>Thank you for visiting this site. We are a two-man team (a student and a coder)! I&apos;m dating a nurse, and I thought working on salary information would be useful for her because she will soon be negotiating salary offers.
 
-On the home page, there is a searchable list of all the nursing positions that were submitted by real nurses. We're working on sorting out the list by state, position, experience, and more. (If you think there are other important factors let us know!)
+On the home page, there is a searchable list of all the nursing positions that were submitted by real nurses. We&apos;re working on sorting out the list by state, position, experience, and more. (If you think there are other important factors let us know!)
 
 You can submit your own information about your current job or current job offer to freely share with others. The more the merrier! This helps us ensure that we have an accurate representation of salaries across the country and so negotiations work out better for your fellow nurses at the end of the day.  Please be as honest as possible!
 
