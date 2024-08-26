@@ -29,11 +29,11 @@ interface Salary {
   "Month Year"?: string | number,
   State?: string,
   City?: string | number,
-  "Years of Experience "?: string | number,
+  "Years of Experience"?: string | number,
   "Specialty (Cardiac, ER, GI, L&D, etc)"?: string | number,
   "Hourly Base Pay (Diff not included)"?: string | number,
-  "Shift Diff Amount (if any) "?: string | number,
-  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc) "?: string | number
+  "Shift Diff Amount (if any)"?: string | number,
+  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)"?: string | number
 }
 
 async function getSalaries(): Promise<Salary[]> {
@@ -126,13 +126,13 @@ export default async function Home() {
           <TableBody>
           {salaries.map((salary, index) => (
             <TableRow key={index} className={index % 2 === 0 ? 'table-row-even' : 'table-row-odd'}>
-              <TableCell className="text-left table-cell">{salary["Month Year"]}</TableCell>
+              <TableCell className="text-left table-cell text-nowrap">{salary["Month Year"]}</TableCell>
               <TableCell className="text-left table-cell text-nowrap">{`${String(salary.City || "").trim()}, ${salary.State}`}</TableCell>
-              <TableCell className="text-left table-cell">{salary["Years of Experience "]}</TableCell>
+              <TableCell className="text-left table-cell">{salary["Years of Experience"]}</TableCell>
               <TableCell className="text-left table-cell">{salary["Specialty (Cardiac, ER, GI, L&D, etc)"]}</TableCell>
               <TableCell className="text-left table-cell">${salary["Hourly Base Pay (Diff not included)"]}/hr</TableCell>
-              <TableCell className="text-left table-cell">{salary["Shift Diff Amount (if any) "]}</TableCell>
-             <TableCell className="text-left table-cell">{salary["Type Of Shift Diff (nights, Baylor, Critical Care, Etc) "]}</TableCell>
+              <TableCell className="text-left table-cell">{salary["Shift Diff Amount (if any)"]}</TableCell>
+             <TableCell className="text-left table-cell">{salary["Type Of Shift Diff (nights, Baylor, Critical Care, Etc)"]}</TableCell>
             </TableRow>
           ))}
           </TableBody>
