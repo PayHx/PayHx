@@ -3,9 +3,9 @@ export default function SubmitSalaryPage() {
 
     return (
         <div>
-            <article className="w-3/4 mt-10 mx-auto bg-outline p-6">
+            <article className="w-3/4 mt-10 mx-auto bg-outline">
                 <div className="header-content mb-5 font-american-typewriter">
-                Today&apos;s date: {currentDate}
+                <p>Today&apos;s date: {currentDate}</p>
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
