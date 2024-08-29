@@ -9,10 +9,12 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
-                3 reports submitted
+               [8/28/24] 3 reports submitted
                 <br />
                 - Wound care nursing salary. Los Angeles, California (YOE: 2, $49.00/hr)
+                <br />
                 - Cardiac nursing salary. Manhattan, New York (YOE: 3, $45.00/hr)
+                <br />
                 - Pediatric nursing salary. Valhalla, New York (YOE: 1, $55.00/hr)
                 <br /><br />
                 [8/24/24] 1 report submitted
