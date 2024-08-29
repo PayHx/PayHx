@@ -1,5 +1,35 @@
 [
     {
+      "Month Year": "August 2024",
+      "State": "New York",
+      "City": "Valhalla",
+      "Years of Experience": 1,
+      "Specialty (Cardiac, ER, GI, L&D, etc)": "Pediatric",
+      "Hourly Base Pay (Diff not included)": 55,
+      "Shift Diff Amount (if any)": 5,
+      "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "Nights"
+    },
+    {
+      "Month Year": "August 2024",
+      "State": "New York",
+      "City": "Manhattan",
+      "Years of Experience": 3,
+      "Specialty (Cardiac, ER, GI, L&D, etc)": "Cardiac",
+      "Hourly Base Pay (Diff not included)": 45,
+      "Shift Diff Amount (if any)": "NA",
+      "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "NA"
+    },
+    {
+      "Month Year": "August 2024",
+      "State": "California",
+      "City": "Los Angeles",
+      "Years of Experience": 2,
+      "Specialty (Cardiac, ER, GI, L&D, etc)": "Wound Care",
+      "Hourly Base Pay (Diff not included)": 49,
+      "Shift Diff Amount (if any)": "NA",
+      "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "Per Diem"
+    },
+    {
         "Month Year": "Aug 2024",
         "State": "Kentucky",
         "City": "Lawrence",
