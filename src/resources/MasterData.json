@@ -14227,7 +14227,7 @@
         "pay": 43,
         "experience": 1,
         "shiftType": "Hospice monday through friday 9-5",
-        "shiftDiff": "01"
+        "shiftDiff": 1
     },
     {
         "date": "Jun 2023",
@@ -14937,7 +14937,7 @@
         "pay": 46,
         "experience": 3,
         "shiftType": null,
-        "shiftDiff": "Days"
+        "shiftDiff": null
     },
     {
         "date": "Nov 2023",
