@@ -102,16 +102,7 @@ export type Payment = {
             <ArrowUpDown className="ml-2 h-4 w-4" />
           </Button>
         )
-      },
-      cell: ({ row }) => {
-        const shiftDiff = row.getValue("shiftDiff");
-    
-        return (
-          <div className="text-right" style={{ paddingRight: '100px' }}>
-            {shiftDiff != null ? shiftDiff : ""}
-          </div>
-        );
-      },
+      }
     },
     {
       accessorKey: "pay",
