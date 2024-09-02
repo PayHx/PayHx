@@ -4,7 +4,7 @@ import { ColumnDef } from "@tanstack/react-table"
 import { Button } from "@/components/ui/button"
 import { ArrowUpDown } from "lucide-react"
 
-type Payment = {
+export type Payment = {
     date: string
     state: string,
     city: string,
