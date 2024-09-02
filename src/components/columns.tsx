@@ -8,9 +8,9 @@ export type Payment = {
     date: string,
     state: string,
     city: string,
-    specialty: string,
-    experience: number,
+    specialty: string | null,
     pay: number,
+    experience: number,
     shiftType: string | null | undefined,
     shiftDiff: number | null | undefined,
   }

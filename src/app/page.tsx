@@ -25,8 +25,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
 import { strict } from 'assert';
-import salaries from '@/resources/TestData.json';
-//import salaries from '@/resources/MasterData.json';
+//import salaries from '@/resources/TestData.json';
+import salaries from '@/resources/MasterData.json';
 // import from firebase
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from "@/resources/firebase";
