@@ -74,12 +74,12 @@ async function getData(): Promise<Payment[]> {
 }
 /* TESTING */
 
-async function getSalaries(): Promise<Salary[]> {
+/* async function getSalaries(): Promise<Salary[]> {
   //const result = await fetch('http://localhost:4000/salaries')
   const results = salaries;
 
   return results;
-}
+} */
 
 /* const fetchSalaries = async (): Promise<Salary[]> => {
   const querySnapshot = await getDocs(collection(db, 'salaries'));
