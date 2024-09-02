@@ -11,7 +11,7 @@ export type Payment = {
     experience: number
     specialty: string
     pay: number
-    shiftType: string
+    shiftType: string | null | undefined
     shiftDiff: number | null | undefined
   }
   
