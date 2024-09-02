@@ -61,8 +61,15 @@ import { DataTable } from "@/components/data-table"
 
 async function getData(): Promise<Payment[]> {
   return salaries.map(salary => ({
-    ...salary,
-    location: `${salary.city}, ${salary.state}`
+    location: `${salary.city}, ${salary.state}`,
+    date: salary.date,
+    state: salary.state,
+    city: salary.city,
+    experience: salary.experience,
+    specialty: salary.specialty,
+    pay: salary.pay,
+    shiftType: String(salary.shiftType) ?? null, // Convert number to string if necessary
+    shiftDiff: salary.shiftDiff ?? null
   }));
 }
 /* TESTING */
