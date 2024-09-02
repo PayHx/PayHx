@@ -31,6 +31,8 @@ import salaries from '@/resources/TestData.json';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from "@/resources/firebase";
 import { getEnvironmentData } from 'worker_threads';
+//import { Payment, columns } from "@/components/columns"
+import { DataTable } from "@/components/data-table"
 
 // interface Salary {
 //   emailAddress: string,
@@ -53,6 +55,32 @@ import { getEnvironmentData } from 'worker_threads';
 } */
 
 /* TESTING */
+
+
+
+
+async function getData(): Promise<Payment[]> {
+  return salaries.map(salary => ({
+    ...salary,
+    location: `${salary.city}, ${salary.state}`
+  }));
+}
+/* TESTING */
+
+async function getSalaries(): Promise<Salary[]> {
+  //const result = await fetch('http://localhost:4000/salaries')
+  const results = salaries;
+
+  return results;
+}
+
+/* const fetchSalaries = async (): Promise<Salary[]> => {
+  const querySnapshot = await getDocs(collection(db, 'salaries'));
+  const salaries = querySnapshot.docs.map(doc => doc.data() as Salary);
+
+  return salaries;
+} */
+
 type Payment = {
   date: string
   state: string,
@@ -188,33 +216,6 @@ export const columns: ColumnDef<Payment>[] = [
   },
 ]
 
-interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[]
-  data: TData[]
-}
-
-async function getData(): Promise<Payment[]> {
-  return salaries.map(salary => ({
-    ...salary,
-    location: `${salary.city}, ${salary.state}`
-  }));
-}
-/* TESTING */
-
-async function getSalaries(): Promise<Salary[]> {
-  //const result = await fetch('http://localhost:4000/salaries')
-  const results = salaries;
-
-  return results;
-}
-
-/* const fetchSalaries = async (): Promise<Salary[]> => {
-  const querySnapshot = await getDocs(collection(db, 'salaries'));
-  const salaries = querySnapshot.docs.map(doc => doc.data() as Salary);
-
-  return salaries;
-} */
-
 export default async function Home() {
   const data = await getData()
   // get data from JSON FILE
@@ -309,109 +310,4 @@ export default async function Home() {
       </div>
     </main>*/
   ) 
-}
-
-export function DataTable<TData, TValue>({
-  columns,
-  data,
-}: DataTableProps<TData, TValue>) {
-  const [sorting, setSorting] = React.useState<SortingState>([])
-  const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
-    []
-  )
-
-  const table = useReactTable({
-    data,
-    columns,
-    getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
-    onSortingChange: setSorting,
-    getSortedRowModel: getSortedRowModel(),
-    onColumnFiltersChange: setColumnFilters,
-    getFilteredRowModel: getFilteredRowModel(),
-    state: {
-      sorting,
-      columnFilters,
-    },
-  })
- 
-  return (
-    <div>
-      <div className="flex items-center py-4">
-        <Input
-          placeholder="Filter specialty..."
-          value={(table.getColumn("specialty")?.getFilterValue() as string) ?? ""}
-          onChange={(event) => 
-            table.getColumn("specialty")?.setFilterValue(event.target.value)
-          }
-          className="max-w-sm"
-        />
-      </div>
-
-      <div className="rounded-md border">
-        <Table>
-          <TableHeader>
-            {table.getHeaderGroups().map((headerGroup) => (
-              <TableRow key={headerGroup.id}>
-                {headerGroup.headers.map((header) => {
-                  return (
-                    <TableHead key={header.id} className="background-color">
-                      {header.isPlaceholder
-                        ? null
-                        : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
-                    </TableHead>
-                  )
-                })}
-              </TableRow>
-            ))}
-          </TableHeader>
-          <TableBody>
-            {table.getRowModel().rows?.length ? (
-              table.getRowModel().rows.map((row, index) => (
-                <TableRow
-                  key={index}
-                  data-state={row.getIsSelected() && "selected"}
-                  className={index % 2 === 0 ? 'table-row-even' : 'table-row-odd'}
-                >
-                  {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id}>
-                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              ))
-            ) : (
-              <TableRow>
-                <TableCell colSpan={columns.length} className="h-24 text-center">
-                  No results.
-                </TableCell>
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-      </div>
-
-      <div className="flex items-center justify-end space-x-2 py-4">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.previousPage()}
-          disabled={!table.getCanPreviousPage()}
-        >
-          Previous
-        </Button>
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.nextPage()}
-          disabled={!table.getCanNextPage()}
-        >
-          Next
-        </Button>
-      </div>
-    </div>
-  )
 }
