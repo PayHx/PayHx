@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button"
 import { ArrowUpDown } from "lucide-react"
 
 export type Payment = {
-    date: string
+    date: string,
     state: string,
     city: string,
-    experience: number
-    specialty: string
-    pay: number
-    shiftType: string | null | undefined
-    shiftDiff: number | null | undefined
+    specialty: string,
+    experience: number,
+    pay: number,
+    shiftType: string | null | undefined,
+    shiftDiff: number | null | undefined,
   }
   
   export const columns: ColumnDef<Payment>[] = [
