@@ -12,7 +12,7 @@ This is a LIVE list that gets updated every few times a month. If you have any i
 
 Currently, we are focused on getting the most important factors that go into a nurses salary (unit type, years of experience, location, etc.) 
                 
-                Shoot us some ideas at payhx.live@gmail.com! Or text us to let use know how we're doing ‪323-693-0845‬ </p>
+                Shoot us some ideas at payhx.live@gmail.com! Or text us to let use know how we're doing ‪323 693 0845‬ </p>
           </div>
           <h1 className="header-title font-american-typewriter">Real Salaries, Real People</h1>
       </article>
