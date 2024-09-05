@@ -10,9 +10,9 @@ You can submit your own information about your current job or current job offer 
 
 This is a LIVE list that gets updated every few times a month. If you have any ideas on how to improve the site, the salaries, or connect to more nurses let us know below!
 
-Currently, we are focused on getting the most important factors that go into a nurses salary (unit type, years of experience, location, etc.)
-
-Email us at payhx.live@gmail.com! </p>
+Currently, we are focused on getting the most important factors that go into a nurses salary (unit type, years of experience, location, etc.) </p>
+              <p>Shoot us some ideas at payhx.live@gmail.com!  </p>
+              <p>Or send us a text to let us know how we're doing ‪(323)- 693-0845‬ </p>
           </div>
           <h1 className="header-title font-american-typewriter">Real Salaries, Real People</h1>
       </article>
