@@ -10,7 +10,7 @@ export default function AboutUsPage() {
           You can submit your own information about your current job or current job offer to freely share with others. The more the merrier! This helps us ensure that we have an accurate representation of salaries across the country and so negotiations work out better for your fellow nurses at the end of the day.  Please be as honest as possible!
           Currently, we are focused on getting the most important factors that go into a nurses salary (unit type, years of experience, location, etc.) 
           <br /><br />
-          Shoot us some ideas at payhx.live@gmail.com! Or text us to let us know how we're doing (323)-693-0845
+          Shoot us some ideas at payhx.live@gmail.com! Or text us to let us know how we&apos;re doing (323)-693-0845
           </div>
           <h1 className="header-title font-american-typewriter">Real Salaries, Real People</h1>
       </article>
