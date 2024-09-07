@@ -2935,7 +2935,7 @@
         "city": "West Hills",
         "specialty": "ER nurse extern",
         "pay": 26.2,
-        "experience": -1,
+        "experience": 1,
         "shiftType": "day",
         "shiftDiff": null
     },
@@ -13507,16 +13507,6 @@
         "pay": 27,
         "experience": 5,
         "shiftType": "Day shift",
-        "shiftDiff": null
-    },
-    {
-        "date": "May 2023",
-        "state": "Missouri",
-        "city": "Cape Girardeau",
-        "specialty": "GI",
-        "pay": 28,
-        "experience": 220,
-        "shiftType": "Monday - Friday",
         "shiftDiff": null
     },
     {

@@ -9,6 +9,8 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [9/2/24] Inputs are now sortable & you can search by specialty🎉
+                <br /><br />
                [8/28/24] 3 reports submitted
                 <br />
                 - Wound care nursing salary. Los Angeles, California (YOE: 2, $49.00/hr)
