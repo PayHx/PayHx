@@ -1,53 +1,63 @@
 [
     {
-  "Month Year": "September 2024",
-  "State": "Missouri",
-  "City": "Kansas City",
-  "Years of Experience": 6,
-  "Specialty (Cardiac, ER, GI, L&D, etc)": "Outpatient Pre-op",
-  "Hourly Base Pay (Diff not included)": 33,
-  "Shift Diff Amount (if any)": "NA",
-  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "NA"
+          "date": "September 2024",
+          "state": "Missouri",
+          "city": "Kansas City",
+          "experience": 6,
+          "specialty": "Outpatient Pre-op",
+          "pay": 33.00,
+          "shiftType": "NA",
+          "shiftDiff": "NA"
     },
     {
-  "Month Year": "September 2024",
-  "State": "Mississippi",
-  "City": "Tupelo",
-  "Years of Experience": 2.5,
-  "Specialty (Cardiac, ER, GI, L&D, etc)": "NICU",
-  "Hourly Base Pay (Diff not included)": 29.92,
-  "Shift Diff Amount (if any)": "NA",
-  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "NA"
+          "date": "September 2024",
+          "state": "Mississippi",
+          "city": "Jackson",
+          "experience": 1,
+          "specialty": "NICU",
+          "pay": 27.00,
+          "shiftType": "Nights",
+          "shiftDiff": 3.05
+    },
+     {
+          "date": "September 2024",
+          "state": "Mississippi",
+          "city": "Tupelo",
+          "experience": 2.5,
+          "specialty": "NICU",
+          "pay": 29.92,
+          "shiftType": "NA",
+          "shiftDiff": "NA"
     },
     {
-  "Month Year": "September 2024",
-  "State": "California",
-  "City": "Lincoln",
-  "Years of Experience": 2,
-  "Specialty (Cardiac, ER, GI, L&D, etc)": "NICU",
-  "Hourly Base Pay (Diff not included)": 38,
-  "Shift Diff Amount (if any)": 5,
-  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "Nights/Weekends"
+          "date": "September 2024",
+          "state": "California",
+          "city": "Lincoln",
+          "experience": 2,
+          "specialty": "NICU",
+          "pay": 38.00,
+          "shiftType": "Nights/Weekends",
+          "shiftDiff": 5.00
     },
     {
-  "Month Year": "September 2024",
-  "State": "California",
-  "City": "San Diego",
-  "Years of Experience": 13,
-  "Specialty (Cardiac, ER, GI, L&D, etc)": "Neuro Stroke",
-  "Hourly Base Pay (Diff not included)": 49,
-  "Shift Diff Amount (if any)": 4,
-  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "Nights"
+        "date": "September 2024",
+        "state": "California",
+        "city": "San Diego",
+        "experience": 13,
+        "specialty": "Neuro Stroke",
+        "pay": 49.00,
+        "shiftType": "Nights",
+        "shiftDiff": 4.00
     },
     {
-  "Month Year": "September 2024",
-  "State": "California",
-  "City": "Woodland Hills",
-  "Years of Experience": 4,
-  "Specialty (Cardiac, ER, GI, L&D, etc)": "Telemetry",
-  "Hourly Base Pay (Diff not included)": 74,
-  "Shift Diff Amount (if any)": "NA",
-  "Type Of Shift Diff (nights, Baylor, Critical Care, Etc)": "NA"
+        "date": "September 2024",
+        "state": "California",
+        "city": "Woodland Hills",
+        "experience": 4,
+        "specialty": "Telemetry",
+        "pay": 74.00,
+        "shiftType": "NA",
+        "shiftDiff": "NA"
     },
     {
         "date": "August 2024",
@@ -66,8 +76,8 @@
         "experience": 3,
         "specialty": "Cardiac",
         "pay": 45,
-        "shiftType": null,
-        "shiftDiff": null
+        "shiftType": "NA",
+        "shiftDiff": "NA"
     },
     {
         "date": "August 2024",
@@ -77,7 +87,7 @@
         "specialty": "Wound Care",
         "pay": 49,
         "shiftType": "Per Diem",
-        "shiftDiff": null
+        "shiftDiff": "NA"
     },
     {
         "date": "Aug 2024",
