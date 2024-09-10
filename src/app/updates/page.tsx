@@ -9,9 +9,23 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [9/9//24] 6 Salaries submitted
+                <br />
+                -Outpatient Pre-op nursing salary. Kansas City, Missouri (YOE: 6, $33.00/hr)
+                <br />
+                -NICU nursing salary. Jackson, Mississippi (YOE: 1, $27.00/hr, 3.05 nights)
+                <br />
+                -NICU nursing salary. Tupelo, Mississippi (YOE: 2.5, $29.92/hr)
+                <br />
+                -NICU nursing salary. Lincoln, California (YOE: 2, $38.00/hr, 5 nights/weekends)
+                <br />
+                -Neuro Stroke nursing salary. San Diego, California (YOE: 13, $49.00/hr, 4 nights)
+                <br />
+                -Telemetry nursing salary. Woodland Hills, California (YOE: 4, $74.00/hr)
+                <br /><br />
                 [9/2/24] Inputs are now sortable & you can search by specialty🎉
                 <br /><br />
-               [8/28/24] 3 reports submitted
+                [8/28/24] 3 reports submitted
                 <br />
                 - Wound care nursing salary. Los Angeles, California (YOE: 2, $49.00/hr)
                 <br />
