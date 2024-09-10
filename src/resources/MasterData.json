@@ -7,7 +7,7 @@
         "specialty": "Outpatient Pre-op",
         "pay": 33.00,
         "shiftType": "NA",
-        "shiftDiff": "NA"
+        "shiftDiff": null
     },
     {
         "date": "September 2024",
@@ -27,7 +27,7 @@
         "specialty": "NICU",
         "pay": 29.92,
         "shiftType": "NA",
-        "shiftDiff": "NA"
+        "shiftDiff": null
     },
     {
         "date": "September 2024",
@@ -57,7 +57,7 @@
         "specialty": "Telemetry",
         "pay": 74.00,
         "shiftType": "NA",
-        "shiftDiff": "NA"
+        "shiftDiff": null
     },
     {
         "date": "August 2024",
@@ -77,7 +77,7 @@
         "specialty": "Cardiac",
         "pay": 45,
         "shiftType": "NA",
-        "shiftDiff": "NA"
+        "shiftDiff": null
     },
     {
         "date": "August 2024",
@@ -87,7 +87,7 @@
         "specialty": "Wound Care",
         "pay": 49,
         "shiftType": "Per Diem",
-        "shiftDiff": "NA"
+        "shiftDiff": null
     },
     {
         "date": "Aug 2024",
