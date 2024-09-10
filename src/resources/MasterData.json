@@ -1,43 +1,43 @@
 [
     {
-          "date": "September 2024",
-          "state": "Missouri",
-          "city": "Kansas City",
-          "experience": 6,
-          "specialty": "Outpatient Pre-op",
-          "pay": 33.00,
-          "shiftType": "NA",
-          "shiftDiff": "NA"
+        "date": "September 2024",
+        "state": "Missouri",
+        "city": "Kansas City",
+        "experience": 6,
+        "specialty": "Outpatient Pre-op",
+        "pay": 33.00,
+        "shiftType": "NA",
+        "shiftDiff": "NA"
     },
     {
-          "date": "September 2024",
-          "state": "Mississippi",
-          "city": "Jackson",
-          "experience": 1,
-          "specialty": "NICU",
-          "pay": 27.00,
-          "shiftType": "Nights",
-          "shiftDiff": 3.05
+        "date": "September 2024",
+        "state": "Mississippi",
+        "city": "Jackson",
+        "experience": 1,
+        "specialty": "NICU",
+        "pay": 27.00,
+        "shiftType": "Nights",
+        "shiftDiff": 3.05
     },
      {
-          "date": "September 2024",
-          "state": "Mississippi",
-          "city": "Tupelo",
-          "experience": 2.5,
-          "specialty": "NICU",
-          "pay": 29.92,
-          "shiftType": "NA",
-          "shiftDiff": "NA"
+        "date": "September 2024",
+        "state": "Mississippi",
+        "city": "Tupelo",
+        "experience": 2.5,
+        "specialty": "NICU",
+        "pay": 29.92,
+        "shiftType": "NA",
+        "shiftDiff": "NA"
     },
     {
-          "date": "September 2024",
-          "state": "California",
-          "city": "Lincoln",
-          "experience": 2,
-          "specialty": "NICU",
-          "pay": 38.00,
-          "shiftType": "Nights/Weekends",
-          "shiftDiff": 5.00
+        "date": "September 2024",
+        "state": "California",
+        "city": "Lincoln",
+        "experience": 2,
+        "specialty": "NICU",
+        "pay": 38.00,
+        "shiftType": "Nights/Weekends",
+        "shiftDiff": 5.00
     },
     {
         "date": "September 2024",
