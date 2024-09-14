@@ -171,14 +171,17 @@ import {
           <Pagination>
               <PaginationContent>
                   <PaginationItem>
-                      <PaginationPrevious 
-                          href="#" 
-                          onClick={(e) => {
-                            e.preventDefault();  // Prevents default scrolling behavior
-                            table.previousPage();
-                          }} 
-                          disabled={!table.getCanPreviousPage()} 
-                      />
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={(e) => {
+                        e.preventDefault(); // Prevents default scrolling behavior
+                        table.previousPage();
+                      }}
+                      disabled={!table.getCanPreviousPage()}
+                    >
+                    Previous
+                    </Button>
                   </PaginationItem>
 
                   {renderPageNumbers().map((page, index) => (
@@ -201,14 +204,17 @@ import {
                   ))}
 
                   <PaginationItem>
-                      <PaginationNext 
-                          href="#" 
-                          onClick={(e) => {
-                            e.preventDefault();  // Prevents default scrolling behavior
-                            table.nextPage();
-                          }}
-                          disabled={!table.getCanNextPage()} 
-                      />
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={(e) => {
+                        e.preventDefault(); // Prevents default scrolling behavior
+                        table.nextPage();
+                      }}
+                      disabled={!table.getCanNextPage()}
+                    >
+                    Next
+                    </Button>
                   </PaginationItem>
               </PaginationContent>
           </Pagination>
