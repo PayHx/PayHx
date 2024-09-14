@@ -19,7 +19,7 @@ export default function SubmitSalaryPage() {
                 <br />
                 - PACU nursing salary. Bakersfield, California (YOE: 15, $52.00/hr)
                 <br /><br />
-                [9/9//24] 6 Salaries submitted
+                [9/9/24] 6 Salaries submitted
                 <br />
                 -Outpatient Pre-op nursing salary. Kansas City, Missouri (YOE: 6, $33.00/hr)
                 <br />

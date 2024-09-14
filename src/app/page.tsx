@@ -68,7 +68,7 @@ async function getData(): Promise<Payment[]> {
     experience: salary.experience,
     specialty: salary.specialty,
     pay: salary.pay,
-    shiftType: String(salary.shiftType) ?? null, // Convert number to string if necessary
+    shiftType: salary.shiftType === "NA" || salary.shiftType === null ? "" : String(salary.shiftType), // Convert number to string if necessary
     shiftDiff: salary.shiftDiff ?? null
   }));
 }
