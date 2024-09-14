@@ -9,6 +9,16 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [9/13/24] 6 Salaries submitted
+                <br />
+                - ER nursing salary. New York City, New York (YOE: 5, $74.24/hr)
+                <br />
+                - ER nursing salary. Oceanside, New York (YOE: 2, $58.00/hr)
+                <br />
+                - ICU nursing salary. Pomona, California (YOE: 1, $46.00/hr, 5 weekends)
+                <br />
+                - PACU nursing salary. Bakersfield, California (YOE: 15, $52.00/hr)
+                <br /><br />
                 [9/9//24] 6 Salaries submitted
                 <br />
                 -Outpatient Pre-op nursing salary. Kansas City, Missouri (YOE: 6, $33.00/hr)
