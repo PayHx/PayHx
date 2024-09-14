@@ -1,5 +1,45 @@
 [
     {
+      "date": "September 2024",
+      "state": "New York",
+      "city": "New York City",
+      "experience": 5,
+      "specialty": "ER",
+      "pay": 74.24,
+      "shiftType": "NA",
+      "shiftDiff": null
+    },
+     {
+      "date": "September 2024",
+      "state": "New York",
+      "city": "Oceanside",
+      "experience": 2,
+      "specialty": "ER",
+      "pay": 58.00,
+      "shiftType": "NA",
+      "shiftDiff": null
+    },
+    {
+      "date": "September 2024",
+      "state": "California",
+      "city": "Pomona",
+      "experience": 1,
+      "specialty": "ICU",
+      "pay": 46.00,
+      "shiftType": "Weekends",
+      "shiftDiff": 5.00
+    },
+    {
+      "date": "September 2024",
+      "state": "California",
+      "city": "Bakersfield",
+      "experience": 15,
+      "specialty": "PACU",
+      "pay": 52.00,
+      "shiftType": "NA",
+      "shiftDiff": null
+    },
+    {
         "date": "September 2024",
         "state": "Missouri",
         "city": "Kansas City",
