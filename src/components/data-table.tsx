@@ -26,6 +26,16 @@ import {
     TableRow
   } from '@/components/ui/table'
 
+  import {
+    Pagination,
+    PaginationContent,
+    PaginationEllipsis,
+    PaginationItem,
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious,
+  } from "@/components/ui/pagination"  
+
 
   interface DataTableProps<TData, TValue> {
     columns?: ColumnDef<TData, TValue>[]
@@ -70,6 +80,33 @@ import {
         columnFilters,
       },
     })
+
+    const currentPage = table.getState().pagination.pageIndex;
+    const pageCount = table.getPageCount();
+
+    const renderPageNumbers = () => {
+      const visiblePages = [];
+      const maxVisiblePages = 5;
+      
+      // Always show first and last page
+      visiblePages.push(0);
+      
+      if (currentPage > 2) {
+          visiblePages.push('ellipsis-start');
+      }
+
+      for (let i = Math.max(1, currentPage - 1); i <= Math.min(pageCount - 2, currentPage + 1); i++) {
+          visiblePages.push(i);
+      }
+
+      if (currentPage < pageCount - 3) {
+          visiblePages.push('ellipsis-end');
+      }
+      
+      visiblePages.push(pageCount - 1);
+
+      return visiblePages;
+  }
 
     return (
         <div>
@@ -129,25 +166,53 @@ import {
               </TableBody>
             </Table>
           </div>
-    
-          <div className="flex items-center justify-end space-x-2 py-4">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => table.previousPage()}
-              disabled={!table.getCanPreviousPage()}
-            >
-              Previous
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => table.nextPage()}
-              disabled={!table.getCanNextPage()}
-            >
-              Next
-            </Button>
-          </div>
+
+          <div className="flex justify-center py-4">
+          <Pagination>
+              <PaginationContent>
+                  <PaginationItem>
+                      <PaginationPrevious 
+                          href="#" 
+                          onClick={(e) => {
+                            e.preventDefault();  // Prevents default scrolling behavior
+                            table.previousPage();
+                          }} 
+                          disabled={!table.getCanPreviousPage()} 
+                      />
+                  </PaginationItem>
+
+                  {renderPageNumbers().map((page, index) => (
+                      page === 'ellipsis-start' || page === 'ellipsis-end' ? (
+                          <PaginationEllipsis key={index} />
+                      ) : (
+                          <PaginationItem key={index}>
+                              <PaginationLink
+                                  href="#"
+                                  onClick={(e) => {
+                                    e.preventDefault();  // Prevents default scrolling behavior
+                                    table.setPageIndex(page);
+                                  }}
+                                  isActive={table.getState().pagination.pageIndex === page}
+                              >
+                                  {page + 1}
+                              </PaginationLink>
+                          </PaginationItem>
+                      )
+                  ))}
+
+                  <PaginationItem>
+                      <PaginationNext 
+                          href="#" 
+                          onClick={(e) => {
+                            e.preventDefault();  // Prevents default scrolling behavior
+                            table.nextPage();
+                          }}
+                          disabled={!table.getCanNextPage()} 
+                      />
+                  </PaginationItem>
+              </PaginationContent>
+          </Pagination>
+      </div>
         </div>
       )
   }
