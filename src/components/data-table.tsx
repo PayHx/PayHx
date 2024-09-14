@@ -197,7 +197,7 @@ import {
                                   }}
                                   isActive={table.getState().pagination.pageIndex === page}
                               >
-                                  {page + 1}
+                                  {typeof page === 'number' ? page + 1 : page}
                               </PaginationLink>
                           </PaginationItem>
                       )
