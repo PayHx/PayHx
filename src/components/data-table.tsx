@@ -193,7 +193,7 @@ import {
                                   href="#"
                                   onClick={(e) => {
                                     e.preventDefault();  // Prevents default scrolling behavior
-                                    table.setPageIndex(page);
+                                    table.setPageIndex(Number(page));
                                   }}
                                   isActive={table.getState().pagination.pageIndex === page}
                               >
