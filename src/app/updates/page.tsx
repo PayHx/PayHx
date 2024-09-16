@@ -9,6 +9,10 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [9/16/2024]
+                <br />
+                - Page numbers added to the master list.
+                <br /><br />
                 [9/13/24] 6 Salaries submitted
                 <br />
                 - ER nursing salary. New York City, New York (YOE: 5, $74.24/hr)
