@@ -9,6 +9,12 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [9/19/24] 2 Salaries submitted
+                <br /><br />
+                - L&D nursing salary. Los Gatos, California (YOE: 8, $103.00/hr)
+                <br /><br />
+                - Operating Room nursing salary. Tucson, Arizona (YOE: 1, $26.00/hr)
+                <br /><br />
                 [9/16/2024]
                 <br />
                 - Page numbers added to the master list.
