@@ -79,6 +79,11 @@ import {
         sorting,
         columnFilters,
       },
+      initialState: {
+        pagination: {
+          pageSize: 50, // Hardcoded number of rows per page
+        },
+      },
     })
 
     const currentPage = table.getState().pagination.pageIndex;
@@ -122,6 +127,7 @@ import {
           </div>
     
           <div className="rounded-md border">
+          <div className="max-h-[40rem] overflow-y-auto">
             <Table>
               <TableHeader>
                 {table.getHeaderGroups().map((headerGroup) => (
@@ -165,6 +171,7 @@ import {
                 )}
               </TableBody>
             </Table>
+            </div>
           </div>
 
           <div className="flex justify-center py-4">
