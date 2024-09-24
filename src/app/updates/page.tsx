@@ -9,6 +9,16 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [9/19/24] 2 Salaries submitted
+                <br />
+                - L&D nursing salary. Los Gatos, California (YOE: 8, $103.00/hr)
+                <br />
+                - Operating Room nursing salary. Tucson, Arizona (YOE: 1, $26.00/hr)
+                <br /><br />
+                [9/16/2024]
+                <br />
+                - Page numbers added to the master list.
+                <br /><br />
                 [9/13/24] 6 Salaries submitted
                 <br />
                 - ER nursing salary. New York City, New York (YOE: 5, $74.24/hr)

@@ -1,6 +1,26 @@
 [
     {
       "date": "September 2024",
+      "state": "California",
+      "city": "Los Gatos",
+      "experience": 8,
+      "specialty": "L&D",
+      "pay": 103.00,
+      "shiftType": "NA",
+      "shiftDiff": null
+    },
+    {
+      "date": "September 2024",
+      "state": "Arizona",
+      "city": "Tucson",
+      "experience": 1,
+      "specialty": "Operating room",
+      "pay": 26.00,
+      "shiftType": "NA",
+      "shiftDiff": null
+    },
+    {
+      "date": "September 2024",
       "state": "New York",
       "city": "New York City",
       "experience": 5,
