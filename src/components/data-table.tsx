@@ -81,7 +81,7 @@ import {
       },
       initialState: {
         pagination: {
-          pageSize: 50, // Hardcoded number of rows per page
+          pageSize: 100, // Hardcoded number of rows per page
         },
       },
     })
