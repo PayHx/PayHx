@@ -9,6 +9,10 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [9/27/24] 3 Salaries submitted
+                <br /><br />
+                [9/23/24] List expanded to show 100 entries
+                <br /><br />
                 [9/19/24] 2 Salaries submitted
                 <br />
                 - L&D nursing salary. Los Gatos, California (YOE: 8, $103.00/hr)
