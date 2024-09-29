@@ -10,7 +10,13 @@ export default function SubmitSalaryPage() {
                 This will be updated as changes are made to the site.
                 <br /><br />
                 [9/27/24] 3 Salaries submitted
-                <br /><br />
+                <br />
+                - Med Surg nursing salary. Denver, Colorado (YOE: 1, $34.00/hr)
+                <br />
+                - ICU nursing salary. Denver, Colorado (YOE: 8, $53.08/hr, $6.37 nights)
+                <br />
+                - Oncology nursing salary. Duarte, California (YOE: 1, $54.86/hr)
+                <br />
                 [9/23/24] List expanded to show 100 entries
                 <br /><br />
                 [9/19/24] 2 Salaries submitted
