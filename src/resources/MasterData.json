@@ -1,5 +1,35 @@
 [
     {
+  "date": "September 2024",
+  "state": "California",
+  "city": "Duarte",
+  "experience": 1,
+  "specialty": "Oncology",
+  "pay": 54.86,
+  "shiftType": "NA",
+  "shiftDiff": null
+    },
+    {
+  "date": "September 2024",
+  "state": "Colorado",
+  "city": "Denver",
+  "experience": 8,
+  "specialty": "ICU",
+  "pay": 53.08,
+  "shiftType": "Nights",
+  "shiftDiff": 6.37
+    },
+    {
+  "date": "September 2024",
+  "state": "Colorado",
+  "city": "Denver",
+  "experience": 1,
+  "specialty": "Med Surg",
+  "pay": 34.00,
+  "shiftType": "NA",
+  "shiftDiff": null
+    },
+    {
       "date": "September 2024",
       "state": "California",
       "city": "Los Gatos",
