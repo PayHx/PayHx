@@ -1,6 +1,26 @@
 [
     {
   "date": "September 2024",
+  "state": "Arizona",
+  "city": "Phoenix",
+  "experience": 5,
+  "specialty": "ICU",
+  "pay": 45.00,
+  "shiftType": "NA",
+  "shiftDiff": null
+    },
+    {
+  "date": "September 2024",
+  "state": "California",
+  "city": "Fountain Valley",
+  "experience": 2,
+  "specialty": "Operating room",
+  "pay": 55.00,
+  "shiftType": "NA",
+  "shiftDiff": null
+    },
+    {
+  "date": "September 2024",
   "state": "California",
   "city": "Duarte",
   "experience": 1,
