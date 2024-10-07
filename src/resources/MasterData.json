@@ -1,5 +1,35 @@
 [
     {
+    "date": "September 2024",
+    "state": "Texas",
+    "city": "Houston",
+    "experience": 0,
+    "specialty": "ICU",
+    "pay": 31.50,
+    "shiftType": "Days",
+    "shiftDiff": null
+    },
+    {
+    "date": "September 2024",
+    "state": "California",
+    "city": "Oakland",
+    "experience": 9,
+    "specialty": "Clinic Nurse",
+    "pay": 95.00,
+    "shiftType": "Days",
+    "shiftDiff": null
+    },
+    {
+  "date": "September 2024",
+  "state": "California",
+  "city": "Fountain Valley",
+  "experience": 2,
+  "specialty": "Surgical",
+  "pay": 55.00,
+  "shiftType": "Nights",
+  "shiftDiff": 5.00
+    },
+    {
   "date": "September 2024",
   "state": "Arizona",
   "city": "Phoenix",
