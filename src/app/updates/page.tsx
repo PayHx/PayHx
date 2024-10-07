@@ -9,6 +9,14 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                 [10/5/24] 3 Salaries submitted
+                <br />
+                - ICU nursing salary. Houston, Texas (YOE: 0, $31.50/hr, Days)
+                <br />
+                - Clinic Nurse salary. Oakland, California (YOE: 9, $95.00/hr, Days)
+                <br />
+                - Surgical nursing salary. Fountain Valley, California (YOE: 2, $55.00/hr, $5 shift diff for Nights)
+                <br /><br />
                 [10/2/24] 2 Salaries submitted
                 <br />
                 - L&D nursing salary. Los Gatos, California (YOE: 8, $103.00/hr)
