@@ -70,7 +70,6 @@ import {
       data,
       columns,
       getCoreRowModel: getCoreRowModel(),
-      getPaginationRowModel: getPaginationRowModel(),
       onSortingChange: setSorting,
       getSortedRowModel: getSortedRowModel(),
       onColumnFiltersChange: setColumnFilters,
@@ -79,39 +78,8 @@ import {
         sorting,
         columnFilters,
       },
-      initialState: {
-        pagination: {
-          pageSize: 75, // Hardcoded number of rows per page
-        },
-      },
     })
-
-    const currentPage = table.getState().pagination.pageIndex;
-    const pageCount = table.getPageCount();
-
-    const renderPageNumbers = () => {
-      const visiblePages = [];
-      const maxVisiblePages = 5;
-      
-      // Always show first and last page
-      visiblePages.push(0);
-      
-      if (currentPage > 2) {
-          visiblePages.push('ellipsis-start');
-      }
-
-      for (let i = Math.max(1, currentPage - 1); i <= Math.min(pageCount - 2, currentPage + 1); i++) {
-          visiblePages.push(i);
-      }
-
-      if (currentPage < pageCount - 3) {
-          visiblePages.push('ellipsis-end');
-      }
-      
-      visiblePages.push(pageCount - 1);
-
-      return visiblePages;
-  }
+    
 
     return (
         <div>
@@ -135,8 +103,8 @@ import {
             />
           </div>
     
-          <div className="rounded-md border">
-          <div className="max-h-[40rem] overflow-y-auto">
+          {/*overflow-y-auto creates a scrollable area in table */}       
+          <div className="rounded-md border max-h-[40rem]">
             <Table>
               <TableHeader>
                 {table.getHeaderGroups().map((headerGroup) => (
@@ -180,61 +148,7 @@ import {
                 )}
               </TableBody>
             </Table>
-            </div>
           </div>
-
-          <div className="flex justify-center py-4">
-          <Pagination>
-              <PaginationContent>
-                  <PaginationItem>
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      onClick={(e) => {
-                        e.preventDefault(); // Prevents default scrolling behavior
-                        table.previousPage();
-                      }}
-                      disabled={!table.getCanPreviousPage()}
-                    >
-                    Previous
-                    </Button>
-                  </PaginationItem>
-
-                  {renderPageNumbers().map((page, index) => (
-                      page === 'ellipsis-start' || page === 'ellipsis-end' ? (
-                          <PaginationEllipsis key={index} />
-                      ) : (
-                          <PaginationItem key={index}>
-                              <PaginationLink
-                                  href="#"
-                                  onClick={(e) => {
-                                    e.preventDefault();  // Prevents default scrolling behavior
-                                    table.setPageIndex(Number(page));
-                                  }}
-                                  isActive={table.getState().pagination.pageIndex === page}
-                              >
-                                  {typeof page === 'number' ? page + 1 : page}
-                              </PaginationLink>
-                          </PaginationItem>
-                      )
-                  ))}
-
-                  <PaginationItem>
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      onClick={(e) => {
-                        e.preventDefault(); // Prevents default scrolling behavior
-                        table.nextPage();
-                      }}
-                      disabled={!table.getCanNextPage()}
-                    >
-                    Next
-                    </Button>
-                  </PaginationItem>
-              </PaginationContent>
-          </Pagination>
       </div>
-        </div>
-      )
+    )
   }
