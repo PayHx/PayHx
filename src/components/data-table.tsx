@@ -115,14 +115,23 @@ import {
 
     return (
         <div>
-          <div className="flex items-center py-4">
+          <div className="flex items-center space-x-2 py-4">
             <Input
               placeholder="Filter specialty..."
               value={(table.getColumn("specialty")?.getFilterValue() as string) ?? ""}
               onChange={(event) => 
                 table.getColumn("specialty")?.setFilterValue(event.target.value)
               }
-              className="max-w-sm"
+              className="w-50"
+            />
+
+            <Input
+              placeholder="Filter location..."
+              value={(table.getColumn("location")?.getFilterValue() as string) ?? ""}
+              onChange={(event) => 
+                table.getColumn("location")?.setFilterValue(event.target.value)
+              }
+              className="w-50"
             />
           </div>
     
@@ -134,7 +143,7 @@ import {
                   <TableRow key={headerGroup.id}>
                     {headerGroup.headers.map((header) => {
                       return (
-                        <TableHead key={header.id} className="background-color">
+                        <TableHead key={header.id} className="sticky top-0 bg-white shadow-md z-10">
                           {header.isPlaceholder
                             ? null
                             : flexRender(
