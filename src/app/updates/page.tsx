@@ -9,7 +9,11 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
-                 [10/5/24] 3 Salaries submitted
+                [10/10/24]
+                <br />
+                Salaries can now be sorted by State or City in addition to Specialty. Try it out!
+                <br /><br />
+                [10/5/24] 3 Salaries submitted
                 <br />
                 - ICU nursing salary. Houston, Texas (YOE: 0, $31.50/hr, Days)
                 <br />
