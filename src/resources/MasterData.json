@@ -1,5 +1,25 @@
 [
     {
+      "date": "September 2024",
+      "state": "California",
+      "city": "Los Angeles",
+      "experience": 0,
+      "specialty": "ER",
+      "pay": 58.00,
+      "shiftType": "NA",
+      "shiftDiff": null
+    },
+    {
+      "date": "September 2024",
+      "state": "Texas",
+      "city": "Houston",
+      "experience": 3,
+      "specialty": "IMU",
+      "pay": 40.40,
+      "shiftType": "NA",
+      "shiftDiff": null
+    },
+    {
     "date": "October 2024",
     "state": "Texas",
     "city": "Houston",
