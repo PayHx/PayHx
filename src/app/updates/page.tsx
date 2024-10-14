@@ -9,6 +9,12 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [10/12/24]
+                <br />
+                - ER nursing salary. Los Angeles, California (YOE: 0, $58.00/hr)
+                <br />
+                - IMU nursing salary. Houston, Texas (YOE: 3, $40.40/hr)
+                <br /><br />
                 [10/10/24]
                 <br />
                 Salaries can now be sorted by State or City in addition to Specialty. Try it out!
