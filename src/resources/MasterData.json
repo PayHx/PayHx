@@ -8582,16 +8582,6 @@
     {
         "date": "Jul 2023",
         "state": "Illionois",
-        "city": "Des Plaines",
-        "specialty": "Nursing assistant ",
-        "pay": 1,
-        "experience": 1,
-        "shiftType": "Nights",
-        "shiftDiff": 1
-    },
-    {
-        "date": "Jul 2023",
-        "state": "Illionois",
         "city": "New Lenox",
         "specialty": "New grad float",
         "pay": 33.5,
@@ -13508,16 +13498,6 @@
         "experience": 2,
         "shiftType": null,
         "shiftDiff": null
-    },
-    {
-        "date": "May 2023",
-        "state": "Misssisippi",
-        "city": "Ms",
-        "specialty": "gi",
-        "pay": 4,
-        "experience": 1,
-        "shiftType": 3,
-        "shiftDiff": 5
     },
     {
         "date": "May 2023",
