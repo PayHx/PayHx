@@ -9,6 +9,14 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [10/15/24]
+                <br />
+                - ER nursing salary. Los Angeles, California (YOE: 1, $35.00/hr, No differential)
+                <br />
+                - NICU nursing salary. Fort Worth, Texas (YOE: 22, $60.00/hr, $5.00 night differential)
+                <br />
+                - L&D nursing salary. San Diego, California (YOE: 3, $64.00/hr, $7.00 night differential)
+                <br /><br />
                 [10/12/24]
                 <br />
                 - ER nursing salary. Los Angeles, California (YOE: 0, $58.00/hr)
