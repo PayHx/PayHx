@@ -1,5 +1,35 @@
 [
     {
+      "date": "October 2024",
+      "state": "California",
+      "city": "Los Angeles",
+      "experience": 1,
+      "specialty": "ER",
+      "pay": 35.00,
+      "shiftType": "NA",
+      "shiftDiff": null
+    },
+    {
+      "date": "October 2024",
+      "state": "Texas",
+      "city": "Fort Worth",
+      "experience": 22,
+      "specialty": "NICU",
+      "pay": 60.00,
+      "shiftType": "nights",
+      "shiftDiff": 5.00
+    },
+    {
+      "date": "October 2024",
+      "state": "California",
+      "city": "San Diego",
+      "experience": 3,
+      "specialty": "L&D",
+      "pay": 64.00,
+      "shiftType": "nights",
+      "shiftDiff": 7.00
+    },
+    {
       "date": "September 2024",
       "state": "California",
       "city": "Los Angeles",
