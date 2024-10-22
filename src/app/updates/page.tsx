@@ -8,6 +8,12 @@ export default function SubmitSalaryPage() {
                 Today&apos;s date: {currentDate}
                 <br />
                 This will be updated as changes are made to the site.
+                 <br /><br />
+                [10/21/24]
+                 <br />
+                - PACU nursing salary. New York City, New York (YOE: 5, $66.00/hr, No differential)
+                 <br />
+                - Cardiac ICU nursing salary. Palo Alto, California (YOE: 4.5, $105.00/hr, Day shift, No differential)
                 <br /><br />
                 [10/17/24]
                 <br />
