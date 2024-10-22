@@ -9,13 +9,13 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                  <br /><br />
-                [10/21/24]
+                [10/21/24] 2 salaries submitted
                  <br />
                 - PACU nursing salary. New York City, New York (YOE: 5, $66.00/hr, No differential)
                  <br />
                 - Cardiac ICU nursing salary. Palo Alto, California (YOE: 4.5, $105.00/hr, Day shift, No differential)
                 <br /><br />
-                [10/17/24]
+                [10/17/24] 3 salaries submitted
                 <br />
                 - ER nursing salary. Los Angeles, California (YOE: 1, $35.00/hr, No differential)
                 <br />
@@ -23,7 +23,7 @@ export default function SubmitSalaryPage() {
                 <br />
                 - L&D nursing salary. San Diego, California (YOE: 3, $64.00/hr, $7.00/hr night differential)
                 <br /><br />
-                [10/15/24]
+                [10/15/24] 3 salaries submitted
                 <br />
                 - ER nursing salary. Los Angeles, California (YOE: 1, $35.00/hr, No differential)
                 <br />
@@ -31,7 +31,7 @@ export default function SubmitSalaryPage() {
                 <br />
                 - L&D nursing salary. San Diego, California (YOE: 3, $64.00/hr, $7.00 night differential)
                 <br /><br />
-                [10/12/24]
+                [10/12/24] 2 salaries submitted
                 <br />
                 - ER nursing salary. Los Angeles, California (YOE: 0, $58.00/hr)
                 <br />
