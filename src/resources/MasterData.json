@@ -27,7 +27,7 @@
       "specialty": "ER",
       "pay": 35.00,
       "shiftType": "NA",
-      "shiftDiff": "NA"
+      "shiftDiff": null
     },
     {
       "date": "October 2024",
