@@ -9,6 +9,14 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                  <br /><br />
+                [10/25/25]
+                 <br /><br />
+                - ICU nursing salary. Long Beach, California (YOE: 1, $51.00/hr, No differential)
+                <br />
+                - ER nursing salary. Oceanside, California (YOE: 2, $58.00/hr, No differential)
+                <br />
+                - ER nursing salary. Jacksonville, Florida (YOE: 1, $30.75/hr, No differential)
+                <br /><br />
                 [10/21/24] 2 salaries submitted
                  <br />
                 - PACU nursing salary. New York City, New York (YOE: 5, $66.00/hr, No differential)
