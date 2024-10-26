@@ -10,7 +10,7 @@ export default function SubmitSalaryPage() {
                 This will be updated as changes are made to the site.
                  <br /><br />
                 [10/25/25]
-                 <br /><br />
+                 <br />
                 - ICU nursing salary. Long Beach, California (YOE: 1, $51.00/hr, No differential)
                 <br />
                 - ER nursing salary. Oceanside, California (YOE: 2, $58.00/hr, No differential)
