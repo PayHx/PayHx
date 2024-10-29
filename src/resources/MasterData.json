@@ -1,4 +1,34 @@
 [
+                {
+          "date": "October 2024",
+          "state": "California",
+          "city": "Long Beach",
+          "experience": 1,
+          "specialty": "ICU",
+          "pay": 51.00,
+          "shiftType": "NA",
+          "shiftDiff": null
+        },
+                {
+          "date": "October 2024",
+          "state": "New York",
+          "city": "Oceanside",
+          "experience": 2,
+          "specialty": "ER",
+          "pay": 58.00,
+          "shiftType": "NA",
+          "shiftDiff": null
+        },
+                {
+          "date": "October 2024",
+          "state": "Florida",
+          "city": "Jacksonville",
+          "experience": 1,
+          "specialty": "ER",
+          "pay": 30.75,
+          "shiftType": "NA",
+          "shiftDiff": null
+        },
         {
       "date": "October 2024",
       "state": "New York",
@@ -22146,7 +22176,7 @@
         "specialty": "ER",
         "pay": 42,
         "experience": 1,
-        "shiftType": "Dah",
+        "shiftType": "Day",
         "shiftDiff": null
     },
     {
