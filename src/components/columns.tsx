@@ -9,6 +9,8 @@ export type Payment = {
     state: string,
     city: string,
     specialty: string | null,
+    hospital: string | null,
+    union: string | null,
     pay: number,
     experience: number,
     shiftType: string | null | undefined,
@@ -71,6 +73,34 @@ export type Payment = {
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
           >
             Specialty
+            <ArrowUpDown className="ml-2 h-4 w-4" />
+          </Button>
+        )
+      },
+    },
+    {
+      accessorKey: "Hospital",
+      header: ({ column }) => {
+        return (
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          >
+            Hospital
+            <ArrowUpDown className="ml-2 h-4 w-4" />
+          </Button>
+        )
+      },
+    },
+    {
+      accessorKey: "Union",
+      header: ({ column }) => {
+        return (
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          >
+            Union
             <ArrowUpDown className="ml-2 h-4 w-4" />
           </Button>
         )

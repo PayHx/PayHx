@@ -117,7 +117,7 @@ export default async function Home() {
   // }
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto py-10 max-w-screen-2xl">
       <DataTable columns={columns} data={data} />
     </div>
     // FROM DATABASE
