@@ -67,6 +67,8 @@ async function getData(): Promise<Payment[]> {
     city: salary.city,
     experience: salary.experience,
     specialty: salary.specialty,
+    hospital: salary.hospital,
+    union: salary.union,
     pay: salary.pay,
     shiftType: salary.shiftType === "NA" || salary.shiftType === null ? "" : String(salary.shiftType), // Convert number to string if necessary
     shiftDiff: salary.shiftDiff ?? null
