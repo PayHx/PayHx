@@ -9,7 +9,11 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                  <br /><br />
-                [10/25/25]
+                [11/2/24]
+                 <br />
+                - We worked hard so now you can add Hospital Affiliation and Union Status! Thank you for the support so far everyone 🎉
+                 <br /><br />
+                [10/25/24]
                  <br />
                 - ICU nursing salary. Long Beach, California (YOE: 1, $51.00/hr, No differential)
                 <br />
