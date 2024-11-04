@@ -1,4 +1,16 @@
 [
+        {
+      "date": "October 2024",
+      "state": "North Carolina",
+      "city": "Charlotte",
+      "experience": 4,
+      "specialty": "Med Surg",
+      "pay": 48.0,
+      "shiftType": "NA",
+      "shiftDiff": null,
+      "hospital": null,
+      "union": null
+    },
     {
         "date": "October 2024",
         "state": "California",
