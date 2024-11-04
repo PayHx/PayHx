@@ -25,12 +25,16 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
 import { strict } from 'assert';
+
+// salaries from json
 import salaries from '@/resources/TestData.json';
 //import salaries from '@/resources/MasterData.json';
-// import from firebase
+
+// salaries from firebase
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from "@/resources/firebase";
 import { getEnvironmentData } from 'worker_threads';
+
 import { Payment, columns } from "@/components/columns"
 import { DataTable } from "@/components/data-table"
 
