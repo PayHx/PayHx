@@ -1,4 +1,52 @@
 [
+                {
+          "date": "October 2024",
+          "state": "Texas",
+          "city": "Dallas",
+          "experience": 22,
+          "specialty": "PICU",
+          "pay": 55.25,
+          "shiftType": "NA",
+          "shiftDiff": null,
+          "hospital": null,
+          "union": null
+        },
+                {
+          "date": "October 2024",
+          "state": "Hawaii",
+          "city": "Honolulu",
+          "experience": 26,
+          "specialty": "CVICU",
+          "pay": 68.0,
+          "shiftType": "NA",
+          "shiftDiff": null,
+          "hospital": null,
+          "union": null
+        },
+                {
+          "date": "October 2024",
+          "state": "New York",
+          "city": "New York City",
+          "experience": 2,
+          "specialty": "ER",
+          "pay": 66.0,
+          "shiftType": "NA",
+          "shiftDiff": null,
+          "hospital": null,
+          "union": null
+        },
+        {
+          "date": "October 2024",
+          "state": "Illinois",
+          "city": "Chicago",
+          "experience": 1,
+          "specialty": "Float Pool",
+          "pay": 43.0,
+          "shiftType": "Nights",
+          "shiftDiff": null,
+          "hospital": null,
+          "union": null
+        },
         {
       "date": "October 2024",
       "state": "North Carolina",
