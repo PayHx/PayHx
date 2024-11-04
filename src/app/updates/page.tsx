@@ -10,8 +10,20 @@ export default function SubmitSalaryPage() {
                 This will be updated as changes are made to the site.
                  <br /><br />
                 [11/2/24]
-                 <br />
+                <br />
                 - We worked hard so now you can add Hospital Affiliation and Union Status! Thank you for the support so far everyone 🎉
+                 <br /><br />
+                [10//30/24]
+                <br />
+               - Med Surg nursing salary. Charlotte, North Carolina (YOE: 4, $48.00/hr, No differential) Hospital: NA.
+                 <br />
+               - Float Pool nursing salary. Chicago, Illinois (YOE: 1, $43.00/hr, Nights) Hospital: NA.
+                <br />
+               - ER nursing salary. New York City, New York (YOE: 2, $66.00/hr, No differential) Hospital: NA.
+                <br />
+               - CVICU nursing salary. Honolulu, Hawaii (YOE: 26, $68.00/hr, No differential) Hospital: NA.
+                <br />
+               - PICU nursing salary. Dallas, Texas (YOE: 22, $55.25/hr, No differential) Hospital: NA.
                  <br /><br />
                 [10/25/24]
                  <br />
