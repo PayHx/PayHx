@@ -1,4 +1,16 @@
 [
+               {
+          "date": "November 2024",
+          "state": "Texas",
+          "city": "Dallas",
+          "experience": 15,
+          "specialty": "ER",
+          "pay": 50.0,
+          "shiftType": "Nights",
+          "shiftDiff": 5.0,
+          "hospital": null,
+          "union": null
+        },
                 {
           "date": "October 2024",
           "state": "Texas",
