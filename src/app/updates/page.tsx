@@ -9,11 +9,23 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                  <br /><br />
+                [11/10/24]
+                <br />
+                - ER nursing salary. Dallas, Texas (YOE: 15, $50.00/hr, $5.00/hr night differential) Hospital: NA.
+                <br />
+                - IR/Cath nursing salary. Phoenix, Arizona (YOE: 3.5, $48.00/hr, No differential) Hospital: NA.
+                <br />
+                - OR nursing salary. Philadelphia, Pennsylvania (YOE: 4, $53.00/hr, No differential) Hospital: NA.
+                <br />
+                - Cardiothoracic Surgical nursing salary. Charlotte, North Carolina (YOE: 7, $43.00/hr, No differential) Hospital: NA.
+                <br />
+                - OR nursing salary. New Orleans, Louisiana (YOE: 23, $51.10/hr, No differential) Hospital: NA.
+                 <br /><br />
                 [11/2/24]
                 <br />
                 - We worked hard so now you can add Hospital Affiliation and Union Status! Thank you for the support so far everyone 🎉
                  <br /><br />
-                [10//30/24]
+                [10/30/24]
                 <br />
                - Med Surg nursing salary. Charlotte, North Carolina (YOE: 4, $48.00/hr, No differential) Hospital: NA.
                  <br />
