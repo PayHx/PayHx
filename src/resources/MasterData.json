@@ -1,5 +1,53 @@
 [
-               {
+        {
+        "date": "November 2024",
+        "state": "Louisiana",
+        "city": "New Orleans",
+        "experience": 23,
+        "specialty": "OR",
+        "pay": 51.10,
+        "shiftType": "NA",
+        "shiftDiff": null,
+        "hospital": null,
+        "union": null
+      },
+        {
+        "date": "November 2024",
+        "state": "North Carolina",
+        "city": "Charlotte",
+        "experience": 7,
+        "specialty": "Cardiothoracic Surgical",
+        "pay": 43.0,
+        "shiftType": "NA",
+        "shiftDiff": null,
+        "hospital": null,
+        "union": null
+      },
+              {
+        "date": "November 2024",
+        "state": "Pennsylvania",
+        "city": "Philadelphia",
+        "experience": 4,
+        "specialty": "OR",
+        "pay": 53.0,
+        "shiftType": "NA",
+        "shiftDiff": null,
+        "hospital": null,
+        "union": null
+      },
+              {
+          "date": "November 2024",
+          "state": "Arizona",
+          "city": "Phoenix",
+          "experience": 3.5,
+          "specialty": "IR/Cath",
+          "pay": 48.0,
+          "shiftType": "NA",
+          "shiftDiff": null,
+          "hospital": null,
+          "union": null
+        },
+              {
           "date": "November 2024",
           "state": "Texas",
           "city": "Dallas",
