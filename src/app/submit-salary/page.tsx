@@ -32,6 +32,8 @@ const formSchema = z.object({
   location: z.string(),
   date: z.date(),
   specialty: z.string(),
+  hospital: z.string(),
+  union: z.string(),
   yearsExperience: z.number(),
   pay: z.number(),
 });
@@ -44,6 +46,8 @@ export default function SubmitSalaryPage() {
       location: "",
       date: new Date(),
       specialty: "",
+      hospital: "",
+      union: "",
       yearsExperience: 0,
       pay: 0,  
     }
@@ -178,6 +182,46 @@ export default function SubmitSalaryPage() {
                     <Input 
                       placeholder="Specialty"
                       type="specialty"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              );
+            }}
+          />
+
+          <FormField 
+            control={form.control} 
+            name="hospital" 
+            render={({ field }) => {
+              return (
+                <FormItem className="flex items-baseline">
+                  <FormLabel className="w-1/4">Hospital</FormLabel>
+                  <FormControl>
+                    <Input 
+                      placeholder="Hospital"
+                      type="hospital"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              );
+            }}
+          />
+
+          <FormField 
+            control={form.control} 
+            name="union" 
+            render={({ field }) => {
+              return (
+                <FormItem className="flex items-baseline">
+                  <FormLabel className="w-1/4">Union</FormLabel>
+                  <FormControl>
+                    <Input 
+                      placeholder="Union"
+                      type="union"
                       {...field}
                     />
                   </FormControl>
