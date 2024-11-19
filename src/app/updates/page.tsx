@@ -9,6 +9,26 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                  <br /><br />
+                [11/19/24]
+                <br />
+                - Observation Unit nursing salary. Chicago, Illinois (YOE: 1, $36.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Med Surg nursing salary. Chicago, Illinois (YOE: 1, $36.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Rehabilitation nursing salary. Hampton Roads, Virginia (YOE: 1, $39.38/hr, No differential) Hospital: NA.  
+                <br />
+                - Critical Care nursing salary. Houston, Texas (YOE: 2, $42.00/hr, $4.00/hr night differential) Hospital: NA.  
+                <br />
+                - Med Surg nursing salary. Sarasota, Florida (YOE: 2, $29.44/hr, No differential) Hospital: NA.  
+                <br />
+                - ICU nursing salary. Sacramento, California (YOE: 1, $81.50/hr, No differential) Hospital: NA. 
+                <br />
+                - ER nursing salary. Philadelphia, Pennsylvania (YOE: 2, $47.10/hr, No differential) Hospital: NA.  
+                <br />
+                - Wound Care nursing salary. Atlanta, Georgia (YOE: 6, $43.00/hr, No differential) Hospital: NA.
+                <br />
+                - Med Surg nursing salary. Philadelphia, Pennsylvania (YOE: 6, $53.00/hr, No differential) Hospital: NA.  
+                <br /><br />
                 [11/10/24]
                 <br />
                 - ER nursing salary. Dallas, Texas (YOE: 15, $50.00/hr, $5.00/hr night differential) Hospital: NA.
