@@ -1,4 +1,40 @@
 [
+                {
+          "date": "November 2024",
+          "state": "Georgia",
+          "city": "Stockbridge",
+          "experience": 1,
+          "specialty": "ED",
+          "pay": 33.0,
+          "shiftType": "Night",
+          "shiftDiff": 5.0,
+          "hospital": null,
+          "union": null
+        },        
+                {
+          "date": "November 2024",
+          "state": "New York",
+          "city": "New York City",
+          "experience": 1,
+          "specialty": "Med Surg",
+          "pay": 57.0,
+          "shiftType": "NA",
+          "shiftDiff": null,
+          "hospital": null,
+          "union": null
+        },        
+                {
+          "date": "November 2024",
+          "state": "Maryland",
+          "city": "Baltimore",
+          "experience": 3,
+          "specialty": "Telemetry",
+          "pay": 38.0,
+          "shiftType": "NA",
+          "shiftDiff": null,
+          "hospital": null,
+          "union": null
+        },
         {
           "date": "November 2024",
           "state": "Pennsylvania",
