@@ -9,6 +9,14 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                  <br /><br />
+                [11/25/24]
+                <br />
+                - ED nursing salary. Stockbridge, Georgia (YOE: 1, $33.00/hr, $5.00/hr night differential) Hospital: NA.  
+                <br />
+                - Med Surg nursing salary. New York City, New York (YOE: 1, $57.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Telemetry nursing salary. Baltimore, Maryland (YOE: 3, $38.00/hr, No differential) Hospital: NA.  
+                <br /><br />
                 [11/19/24]
                 <br />
                 - Observation Unit nursing salary. Chicago, Illinois (YOE: 1, $36.00/hr, No differential) Hospital: NA.  
