@@ -8,8 +8,18 @@ export default function SubmitSalaryPage() {
                 Today&apos;s date: {currentDate}
                 <br />
                 This will be updated as changes are made to the site.
-                 <br /><br />
-                [11/25/24]
+                <br /><br />
+                [12/2/25] 2 Reports submitted
+                <br />
+                - Cardiology nursing salary. Cleveland, Ohio (YOE: 5, $36.50/hr, $4.00/hr night differential) Hospital: NA.  
+                <br />
+                - ER nursing salary. Houston, Texas (YOE: 20, $60.00/hr, No differential) Hospital: NA.  
+                <br /><br />
+                [11/28/25] Update
+                <br />
+                Happy Thanksgiving! We are thankful for all the submissions so far! 🦃
+                <br /><br />
+                [11/25/24] 3 Reports submitted
                 <br />
                 - ED nursing salary. Stockbridge, Georgia (YOE: 1, $33.00/hr, $5.00/hr night differential) Hospital: NA.  
                 <br />
@@ -17,7 +27,7 @@ export default function SubmitSalaryPage() {
                 <br />
                 - Telemetry nursing salary. Baltimore, Maryland (YOE: 3, $38.00/hr, No differential) Hospital: NA.  
                 <br /><br />
-                [11/19/24]
+                [11/19/24] 9 Reports Submitted!
                 <br />
                 - Observation Unit nursing salary. Chicago, Illinois (YOE: 1, $36.00/hr, No differential) Hospital: NA.  
                 <br />
@@ -49,11 +59,11 @@ export default function SubmitSalaryPage() {
                 <br />
                 - OR nursing salary. New Orleans, Louisiana (YOE: 23, $51.10/hr, No differential) Hospital: NA.
                  <br /><br />
-                [11/2/24]
+                [11/2/24] Update
                 <br />
                 - We worked hard so now you can add Hospital Affiliation and Union Status! Thank you for the support so far everyone 🎉
                  <br /><br />
-                [10/30/24]
+                [10/30/24] 5 Reports submitted
                 <br />
                - Med Surg nursing salary. Charlotte, North Carolina (YOE: 4, $48.00/hr, No differential) Hospital: NA.
                  <br />
@@ -65,7 +75,7 @@ export default function SubmitSalaryPage() {
                 <br />
                - PICU nursing salary. Dallas, Texas (YOE: 22, $55.25/hr, No differential) Hospital: NA.
                  <br /><br />
-                [10/25/24]
+                [10/25/24] 3 Reports submitted
                  <br />
                 - ICU nursing salary. Long Beach, California (YOE: 1, $51.00/hr, No differential)
                 <br />
