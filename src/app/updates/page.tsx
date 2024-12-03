@@ -47,7 +47,7 @@ export default function SubmitSalaryPage() {
                 <br />
                 - Med Surg nursing salary. Philadelphia, Pennsylvania (YOE: 6, $53.00/hr, No differential) Hospital: NA.  
                 <br /><br />
-                [11/10/24]
+                [11/10/24] 5 Reports submitted
                 <br />
                 - ER nursing salary. Dallas, Texas (YOE: 15, $50.00/hr, $5.00/hr night differential) Hospital: NA.
                 <br />
