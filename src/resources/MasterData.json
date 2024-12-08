@@ -1,4 +1,16 @@
 [
+          {
+          "date": "December 2024",
+          "state": "Massachusetts",
+          "city": "Boston",
+          "experience": 1,
+          "specialty": "Inpatient Psych",
+          "pay": 34.0,
+          "shiftType": "NA",
+          "shiftDiff": null,
+          "hospital": null,
+          "union": null
+        },
                 {
           "date": "December 2024",
           "state": "New York",
@@ -24,18 +36,6 @@
           "union": null
         },
                 {
-          "date": "December 2024",
-          "state": "New York",
-          "city": "Albany",
-          "experience": 0,
-          "specialty": "CVICU",
-          "pay": 33.0,
-          "shiftType": "Nights/weekends",
-          "shiftDiff": 5.0,
-          "hospital": null,
-          "union": null
-        },
-        {
           "date": "December 2024",
           "state": "New York",
           "city": "Albany",
