@@ -9,6 +9,17 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                <br /><br />
+                [12/7/25] 4 Reports Submitted
+                <br />
+                - Med Surg nursing salary. Albany, New York (YOE: 10, $46.00/hr, $3.00/hr Per Diem differential) Hospital: NA.
+                <br />
+                - Peds nursing salary. Albany, New York (YOE: 1, $34.60/hr, $11.00/hr night differential) Hospital: NA.  
+                <br />
+                - CVICU nursing salary. Albany, New York (YOE: 0, $33.00/hr, $5.00/hr night/weekend differential) Hospital: NA. 
+                <br />
+                - Inpatient Psych nursing salary. Boston, Massachusetts (YOE: 1, $34.00/hr, No differential) Hospital: NA.  
+                <br /><br />
                 [12/2/25] 2 Reports submitted
                 <br />
                 - Cardiology nursing salary. Cleveland, Ohio (YOE: 5, $36.50/hr, $4.00/hr night differential) Hospital: NA.  
