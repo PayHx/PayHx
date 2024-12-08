@@ -1,4 +1,52 @@
 [
+                {
+          "date": "December 2024",
+          "state": "New York",
+          "city": "Albany",
+          "experience": 10,
+          "specialty": "Med Surg",
+          "pay": 46.0,
+          "shiftType": "Per diem",
+          "shiftDiff": 3.0,
+          "hospital": null,
+          "union": null
+        },
+                {
+          "date": "December 2024",
+          "state": "New York",
+          "city": "Albany",
+          "experience": 1,
+          "specialty": "Peds",
+          "pay": 34.6,
+          "shiftType": "Nights",
+          "shiftDiff": 11.0,
+          "hospital": null,
+          "union": null
+        },
+                {
+          "date": "December 2024",
+          "state": "New York",
+          "city": "Albany",
+          "experience": 0,
+          "specialty": "CVICU",
+          "pay": 33.0,
+          "shiftType": "Nights/weekends",
+          "shiftDiff": 5.0,
+          "hospital": null,
+          "union": null
+        },
+        {
+          "date": "December 2024",
+          "state": "New York",
+          "city": "Albany",
+          "experience": 0,
+          "specialty": "CVICU",
+          "pay": 33.0,
+          "shiftType": "Nights/weekends",
+          "shiftDiff": 5.0,
+          "hospital": null,
+          "union": null
+        },
         {
           "date": "December 2024",
           "state": "Texas",
