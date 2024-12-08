@@ -9,7 +9,6 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
-                <br /><br />
                 [12/7/25] 4 Reports Submitted
                 <br />
                 - Med Surg nursing salary. Albany, New York (YOE: 10, $46.00/hr, $3.00/hr Per Diem differential) Hospital: NA.
