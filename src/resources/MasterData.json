@@ -1,4 +1,52 @@
 [
+                    {
+            "date": "December 2024",
+            "state": "Massachusetts",
+            "city": "Boston",
+            "experience": 0,
+            "specialty": "Intermediate care",
+            "pay": 36.0,
+            "shiftType": "nights",
+            "shiftDiff": 7.0,
+            "hospital": null,
+            "union": null
+          },
+                    {
+            "date": "December 2024",
+            "state": "Massachusetts",
+            "city": "Boston",
+            "experience": 0,
+            "specialty": "MICU",
+            "pay": 38.05,
+            "shiftType": "NA",
+            "shiftDiff": null,
+            "hospital": null,
+            "union": null
+          },
+                    {
+            "date": "December 2024",
+            "state": "Massachusetts",
+            "city": "Boston",
+            "experience": 0,
+            "specialty": "ICU",
+            "pay": 38.0,
+            "shiftType": "Nights",
+            "shiftDiff": 6.5,
+            "hospital": null,
+            "union": null
+          },
+           {
+            "date": "December 2024",
+            "state": "Massachusetts",
+            "city": "Boston",
+            "experience": 0,
+            "specialty": "Med Surg",
+            "pay": 38.0,
+            "shiftType": "NA",
+            "shiftDiff": 2.5,
+            "hospital": "Boston Medical Center",
+            "union": null
+          },
           {
           "date": "December 2024",
           "state": "Massachusetts",
@@ -191,6 +239,42 @@
           "hospital": null,
           "union": null
         },
+                    {
+            "date": "November 2024",
+            "state": "Massachusetts",
+            "city": "Boston",
+            "experience": 2,
+            "specialty": "Med Surg",
+            "pay": 41.0,
+            "shiftType": "NA",
+            "shiftDiff": null,
+            "hospital": null,
+            "union": null
+          },
+                    {
+            "date": "November 2024",
+            "state": "Massachusetts",
+            "city": "Boston",
+            "experience": 1,
+            "specialty": "ICU",
+            "pay": 45.0,
+            "shiftType": "Critical care",
+            "shiftDiff": 11.0,
+            "hospital": null,
+            "union": null
+          },
+          {
+            "date": "November 2024",
+            "state": "Massachusetts",
+            "city": "Boston",
+            "experience": 0,
+            "specialty": "Float",
+            "pay": 34.17,
+            "shiftType": "NA",
+            "shiftDiff": null,
+            "hospital": "Faulkner",
+            "union": null
+          },
         {
           "date": "November 2024",
           "state": "Illinois",
