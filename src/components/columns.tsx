@@ -79,7 +79,7 @@ export type Payment = {
       },
     },
     {
-      accessorKey: "Hospital",
+      accessorKey: "hospital",
       header: ({ column }) => {
         return (
           <Button
@@ -93,7 +93,7 @@ export type Payment = {
       },
     },
     {
-      accessorKey: "Union",
+      accessorKey: "union",
       header: ({ column }) => {
         return (
           <Button
