@@ -9,7 +9,11 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
-                [12/7/25] 4 Reports Submitted
+                [12/16/24]
+                <br />
+                Bug Fixed: Hospital affiliation will no show on the table if available. 
+                <br /><br />
+                [12/7/24] 4 Reports Submitted
                 <br />
                 - Med Surg nursing salary. Albany, New York (YOE: 10, $46.00/hr, $3.00/hr Per Diem differential) Hospital: NA.
                 <br />
@@ -19,13 +23,13 @@ export default function SubmitSalaryPage() {
                 <br />
                 - Inpatient Psych nursing salary. Boston, Massachusetts (YOE: 1, $34.00/hr, No differential) Hospital: NA.  
                 <br /><br />
-                [12/2/25] 2 Reports submitted
+                [12/2/24] 2 Reports submitted
                 <br />
                 - Cardiology nursing salary. Cleveland, Ohio (YOE: 5, $36.50/hr, $4.00/hr night differential) Hospital: NA.  
                 <br />
                 - ER nursing salary. Houston, Texas (YOE: 20, $60.00/hr, No differential) Hospital: NA.  
                 <br /><br />
-                [11/28/25] Update
+                [11/28/24] Update
                 <br />
                 Happy Thanksgiving! We are thankful for all the submissions so far! 🦃
                 <br /><br />
