@@ -11,7 +11,7 @@ export default function SubmitSalaryPage() {
                 <br /><br />
                 [12/16/24]
                 <br />
-                Bug Fixed: Hospital affiliation will no show on the table if available. 
+                Bug Fixed: Hospital affiliation will now show on the table if available. 
                 <br /><br />
                 [12/7/24] 4 Reports Submitted
                 <br />
