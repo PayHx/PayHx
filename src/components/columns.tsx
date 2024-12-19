@@ -1,6 +1,8 @@
 "use client"
 
 import { ColumnDef } from "@tanstack/react-table"
+import { SortingFn } from "@tanstack/react-table";
+import { parse } from "date-fns"
 import { Button } from "@/components/ui/button"
 import { ArrowUpDown } from "lucide-react"
 
@@ -16,6 +18,40 @@ export type Payment = {
     shiftType: string | null | undefined,
     shiftDiff: number | null | undefined,
   }
+
+  const normalizeDate = (dateString: string): string => {
+    // Map of full months to abbreviated months
+    const monthMap: Record<string, string> = {
+      January: "Jan",
+      February: "Feb",
+      March: "Mar",
+      April: "Apr",
+      May: "May",
+      June: "Jun",
+      July: "Jul",
+      August: "Aug",
+      September: "Sep",
+      October: "Oct",
+      November: "Nov",
+      December: "Dec",
+    };
+  
+    // Split the date string into month and year
+    const [month, year] = dateString.split(" ");
+  
+    // Replace the full month name with the abbreviated month
+    const shortMonth = monthMap[month] || month; // Fallback to the original value if not found
+  
+    return `${shortMonth} ${year}`;
+  };
+  
+  const dateSortingFn: SortingFn<any> = (rowA, rowB, columnId) => {
+    const format = "MMM yyyy"; // Adjust format for short months
+    const dateA = parse(normalizeDate(rowA.getValue<string>(columnId)), format, new Date());
+    const dateB = parse(normalizeDate(rowB.getValue<string>(columnId)), format, new Date());
+  
+    return dateA.getTime() - dateB.getTime(); // Ascending order
+  };
   
   export const columns: ColumnDef<Payment>[] = [
     {
@@ -30,7 +66,13 @@ export type Payment = {
             <ArrowUpDown className="ml-2 h-4 w-4" />
           </Button>
         )
-      }
+      },
+      cell: ({ row }) => {
+        const rawDate = row.getValue<string>("date");
+        const normalizedDate = normalizeDate(rawDate); // Normalize for display
+        return <span>{normalizedDate}</span>;
+      },
+      sortingFn: dateSortingFn,
     },
     {
       accessorKey: "location",
