@@ -9,6 +9,10 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [12/19/24]
+                <br />
+                Bug Fixed: Date column now sorts by actual date instead of alphabetically.
+                <br /><br />
                 [12/16/24]
                 <br />
                 Bug Fixed: Hospital affiliation will now show on the table if available. 
