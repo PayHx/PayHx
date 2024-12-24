@@ -9,7 +9,7 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
-                [12/23/24]
+                [12/23/24] 5 Reports Submitted
                 <br />
                 - Med Surg-Transplant nursing salary. New York City, New York (YOE: 1, $60.00/hr, No differential) Hospital: NA.  
                 <br />
@@ -21,11 +21,11 @@ export default function SubmitSalaryPage() {
                 <br />
                 - ER nursing salary. Charleston, South Carolina (YOE: 5, $36.51/hr, No differential) Hospital: NA.  
                 <br /><br />
-                [12/19/24]
+                [12/19/24] Site Update
                 <br />
                 Bug Fixed: Date column now sorts by actual date instead of alphabetically.
                 <br /><br />
-                [12/16/24]
+                [12/16/24] Site Update
                 <br />
                 Bug Fixed: Hospital affiliation will now show on the table if available. 
                 <br /><br />
