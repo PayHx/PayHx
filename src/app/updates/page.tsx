@@ -9,6 +9,8 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [12/23/24]
+                <br />
                 - Med Surg-Transplant nursing salary. New York City, New York (YOE: 1, $60.00/hr, No differential) Hospital: NA.  
                 <br />
                 - Long Term Acute Care nursing salary. Denver, Colorado (YOE: 1, $38.76/hr, $8.00/hr Extra Shift differential) Hospital: NA.  
