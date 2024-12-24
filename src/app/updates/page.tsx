@@ -9,6 +9,16 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                - Med Surg-Transplant nursing salary. New York City, New York (YOE: 1, $60.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Long Term Acute Care nursing salary. Denver, Colorado (YOE: 1, $38.76/hr, $8.00/hr Extra Shift differential) Hospital: NA.  
+                <br />
+                - ICU nursing salary. New York City, New York (YOE: 2, $67.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Primary Care nursing salary. Boston, Massachusetts (YOE: 2.5, $32.80/hr, No differential) Hospital: NA.  
+                <br />
+                - ER nursing salary. Charleston, South Carolina (YOE: 5, $36.51/hr, No differential) Hospital: NA.  
+                <br /><br />
                 [12/19/24]
                 <br />
                 Bug Fixed: Date column now sorts by actual date instead of alphabetically.
