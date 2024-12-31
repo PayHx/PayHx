@@ -10,7 +10,7 @@ export default function SubmitSalaryPage() {
                 This will be updated as changes are made to the site.
                 <br /><br />
                 [12/31/2024]
-                Hey all! Since we launched we've had over 100 submissions, and I just wanted to say thank you all so much for your support in this project and mission! Wishing you all a Happy New Years. We have a lot in store for Payhx in the year to some :)
+                Hey all! Since we launched we've had over 100 submissions, and I just wanted to say thank you all so much for your support in this project and mission! Wishing you all a Happy New Years. We have a lot in store for Payhx in the year to come :) - Matt and Oscar!
                 <br /><br />
                 [12/31/24] 5 Salaries Submitted
                 <br />
