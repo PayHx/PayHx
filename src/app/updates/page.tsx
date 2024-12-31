@@ -9,6 +9,21 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [12/31/2024]
+                Hey all! Since we launched we've had over 100 submissions, and I just wanted to say thank you all so much for your support in this project and mission! Wishing you all a Happy New Years. We have a lot in store for Payhx in the year to some :)
+                <br /><br />
+                [12/31/24] 5 Salaries Submitted
+                <br />
+                - Med Surg nursing salary. Salem, Oregon (YOE: 1, $48.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Med Surg-Transplant nursing salary. New York City, New York (YOE: 1, $60.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Long Term Acute Care nursing salary. Denver, Colorado (YOE: 1, $38.76/hr, $8.00/hr Extra Shift differential) Hospital: NA.  
+                <br />
+                - ICU nursing salary. New York City, New York (YOE: 2, $67.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Primary Care nursing salary. Boston, Massachusetts (YOE: 2.5, $32.80/hr, No differential) Hospital: NA.  
+                <br /><br />
                 [12/23/24] 5 Reports Submitted
                 <br />
                 - Med Surg-Transplant nursing salary. New York City, New York (YOE: 1, $60.00/hr, No differential) Hospital: NA.  
