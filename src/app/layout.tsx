@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from 'next/link';
 import { Toaster } from "@/components/ui/toaster";
+import { MainSeparator } from "@/components/separator";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,24 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav>
-          <div className="navbar">
-            <Link href="/">
-              <img src="/logo.png" alt="Logo" className="logo"/>
-            </Link>
-            <div className="nav-links">
-              <Link legacyBehavior href="/updates">
-                <a className="font-american-typewriter">Updates</a>
+        <div className="container mx-auto py-10">
+          <div className="flex items-center justify-between mb-6">
+              <Link href="/">
+                <img src="/logo.png" alt="Logo" className="logo"/>
               </Link>
-              <Link legacyBehavior href="/about-us">
-                <a className="font-american-typewriter">About Us</a>
-              </Link>
-              <Link legacyBehavior href="/submit-salary">
-                <a className="font-american-typewriter">Submit Salary</a>
-              </Link>
-            </div>
+              <MainSeparator />
+           </div>
           </div>
-        </nav>
         {children}
         <Toaster/>
       </body>
