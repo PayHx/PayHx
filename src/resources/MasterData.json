@@ -1,4 +1,76 @@
 [
+                {
+                  "date": "January 2025",
+                  "state": "Florida",
+                  "city": "Tampa",
+                  "experience": 9,
+                  "specialty": "Labor and Delivery",
+                  "pay": 44.0,
+                  "shiftType": "NA",
+                  "shiftDiff": null,
+                  "hospital": null,
+                  "union": null
+                },
+                  {
+                  "date": "January 2025",
+                  "state": "Florida",
+                  "city": "Jacksonville",
+                  "experience": 6,
+                  "specialty": "Pre/post-operative",
+                  "pay": 41.0,
+                  "shiftType": "NA",
+                  "shiftDiff": null,
+                  "hospital": null,
+                  "union": null
+                },
+                  {
+                  "date": "January 2025",
+                  "state": "Massachusetts",
+                  "city": "Boston",
+                  "experience": 3,
+                  "specialty": "Perioperative",
+                  "pay": 45.0,
+                  "shiftType": "NA",
+                  "shiftDiff": null,
+                  "hospital": null,
+                  "union": null
+                },
+                    {
+                    "date": "January 2025",
+                    "state": "Nevada",
+                    "city": "Las Vegas",
+                    "experience": 9,
+                    "specialty": "Intensive Care Unit",
+                    "pay": 49.63,
+                    "shiftType": "Nights",
+                    "shiftDiff": 2.1,
+                    "hospital": null,
+                    "union": null
+                  },
+                              {
+                  "date": "January 2025",
+                  "state": "Colorado",
+                  "city": "Denver",
+                  "experience": 7,
+                  "specialty": "Intensive Care Unit",
+                  "pay": 44.0,
+                  "shiftType": "NA",
+                  "shiftDiff": null,
+                  "hospital": null,
+                  "union": null
+                },
+                {
+                "date": "January 2025",
+                "state": "Texas",
+                "city": "Houston",
+                "experience": 1,
+                "specialty": "Progressive Care Unit",
+                "pay": 37.0,
+                "shiftType": "NA",
+                "shiftDiff": null,
+                "hospital": null,
+                "union": null
+              },
                         {
               "date": "December 2024",
               "state": "Oregon",
