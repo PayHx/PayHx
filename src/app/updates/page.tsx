@@ -9,6 +9,20 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [1/6/2025] 6 New Salaries Submitted. Happy New Years 🥳!
+                <br />
+                - Labor and Delivery nursing salary. Tampa, Florida (YOE: 9, $44.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Pre/Post-Operative nursing salary. Jacksonville, Florida (YOE: 6, $41.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Perioperative nursing salary. Boston, Massachusetts (YOE: 3, $45.00/hr, No differential) Hospital: NA. 
+                <br />
+                - Intensive Care Unit nursing salary. Las Vegas, Nevada (YOE: 9, $49.63/hr, $2.10/hr night differential) Hospital: NA.
+                <br />
+                - Intensive Care Unit nursing salary. Denver, Colorado (YOE: 7, $44.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Progressive Care Unit nursing salary. Houston, Texas (YOE: 1, $37.00/hr, No differential) Hospital: NA.  
+                <br /><br />
                 [12/31/2024]
                 Hey all! Since we launched we&apos;ve had over 100 submissions, and I just wanted to say thank you all so much for your support in this project and mission! Wishing you all a Happy New Years. We have a lot in store for Payhx in the year to come :) - Matt and Oscar!
                 <br /><br />
