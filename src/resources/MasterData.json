@@ -1,4 +1,77 @@
 [
+          {
+            "date": "January 2025",
+            "state": "California",
+            "city": "San Diego",
+            "experience": 5,
+            "specialty": "Perioperative",
+            "pay": 60.1,
+            "shiftType": "NA",
+            "shiftDiff": null,
+            "hospital": null,
+            "union": null
+          },
+            {
+            "date": "January 2025",
+            "state": "Nevada",
+            "city": "Reno",
+            "experience": 13,
+            "specialty": "Cardiac Catheterization Lab",
+            "pay": 52.0,
+            "shiftType": "On Call",
+            "shiftDiff": 7.0,
+            "hospital": null,
+            "union": null
+          },
+          {
+            "date": "January 2025",
+            "state": "Ohio",
+            "city": "Cincinnati",
+            "experience": 5,
+            "specialty": "Neonatal Intensive Care Unit",
+            "pay": 40.0,
+            "shiftType": "NA",
+            "shiftDiff": null,
+            "hospital": null,
+            "union": null
+          },
+            {
+            "date": "January 2025",
+            "state": "New York",
+            "city": "Albany",
+            "experience": 10,
+            "specialty": "Pre/post-operative",
+            "pay": 44.65,
+            "shiftType": "NA",
+            "shiftDiff": null,
+            "hospital": null,
+            "union": null
+          },
+            {
+            "date": "January 2025",
+            "state": "New York",
+            "city": "Brooklyn (Long Island)",
+            "experience": 1,
+            "specialty": "Psychiatric",
+            "pay": 52.0,
+            "shiftType": "NA",
+            "shiftDiff": null,
+            "hospital": null,
+            "union": null
+          },
+            {
+            "date": "January 2025",
+            "state": "New York",
+            "city": "Brooklyn (Long Island)",
+            "experience": 1,
+            "specialty": "Telemetry/Cardiac",
+            "pay": 52.0,
+            "shiftType": "NA",
+            "shiftDiff": null,
+            "hospital": null,
+            "union": null
+          },
+
                 {
                   "date": "January 2025",
                   "state": "Florida",
