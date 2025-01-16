@@ -11,6 +11,7 @@ export default function SubmitSalaryPage() {
                 <br /><br />
                 [1/14/25] Announcement! Looking ER Nursing salaries in the Southern California Area. Help contribute now on the submit Tab :)
                 <br />6 New Salaries Submitted! 
+                <br />
                 - Perioperative nursing salary. San Diego, California (YOE: 5, $60.10/hr, No differential) Hospital: NA.  
                 <br />
                 - Cardiac Catheterization Lab nursing salary. Reno, Nevada (YOE: 13, $52.00/hr, $7.00/hr On Call differential) Hospital: NA.
