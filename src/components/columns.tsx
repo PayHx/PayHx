@@ -10,6 +10,7 @@ export type Payment = {
     date: string,
     state: string,
     city: string,
+    county: string,
     specialty: string | null,
     hospital: string | null | undefined,
     union: string | null | undefined,

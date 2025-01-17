@@ -66,6 +66,7 @@ import { DataTable } from "@/components/data-table"
 async function getData(): Promise<Payment[]> {
   return salaries.map(salary => ({
     location: `${salary.city}, ${salary.state}`,
+    county: salary.county,
     date: salary.date,
     state: salary.state,
     city: salary.city,
