@@ -9,6 +9,21 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [1/14/25] Announcement! Looking ER Nursing salaries in the Southern California Area. Help contribute now on the submit Tab :)
+                <br />6 New Salaries Submitted! 
+                <br />
+                - Perioperative nursing salary. San Diego, California (YOE: 5, $60.10/hr, No differential) Hospital: NA.  
+                <br />
+                - Cardiac Catheterization Lab nursing salary. Reno, Nevada (YOE: 13, $52.00/hr, $7.00/hr On Call differential) Hospital: NA.
+                <br />
+                - Neonatal Intensive Care Unit nursing salary. Cincinnati, Ohio (YOE: 5, $40.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Pre/Post-Operative nursing salary. Albany, New York (YOE: 10, $44.65/hr, No differential) Hospital: NA.  
+                <br />
+                - Psychiatric nursing salary. Long Island, New York (YOE: 1, $52.00/hr, No differential) Hospital: NA.  
+                <br />
+                - Telemetry/Cardiac nursing salary. Long Island, New York (YOE: 1, $52.00/hr, No differential) Hospital: NA.  	
+                <br /><br />
                 [1/6/2025] 6 New Salaries Submitted. Happy New Years 🥳!
                 <br />
                 - Labor and Delivery nursing salary. Tampa, Florida (YOE: 9, $44.00/hr, No differential) Hospital: NA.  
