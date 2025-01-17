@@ -78,7 +78,6 @@ const specialties = [
   { label: "Surgical Intensive Care Unit", value: "surgical_intensive_care_unit" },
   { label: "Telemetry/Cardiac", value: "telemetry_cardiac" },
   { label: "Wound Care", value: "wound_care" },
-  { label: "Other", value: "other" },
 ];
 
 const unions = [
@@ -91,7 +90,6 @@ const shiftDiff = [
   { label: "Nights", value: "nights" },
   { label: "Day", value: "day" },
   { label: "Weekend", value: "weekend" },
-  { label: "Other", value: "other" },
 ]
 
 // **Form schema with specialty as a string**
@@ -265,7 +263,7 @@ export default function SubmitSalaryPage() {
                         )}
                       >
                         {field.value
-                          ? specialties.find((s) => s.value === field.value)?.label
+                          ? specialties.find((s) => s.value === field.value)?.label || field.value
                           : "Select specialty"}
                         <ChevronsUpDown className="opacity-50" />
                       </Button>
@@ -273,9 +271,19 @@ export default function SubmitSalaryPage() {
                   </PopoverTrigger>
                   <PopoverContent className="w-full p-0">
                     <Command>
-                      <CommandInput placeholder="Search specialty..." />
+                      <CommandInput
+                        placeholder="Search or enter specialty..."
+                        onInput={(e) => field.onChange(e.currentTarget.value)} // Update the field on input
+                      />
                       <CommandList>
-                        <CommandEmpty>No specialty found.</CommandEmpty>
+                        <CommandEmpty>
+                          <Button
+                            variant="link"
+                            onClick={() => field.onChange(field.value)} // Allow adding the entered text
+                          >
+                            Add "{field.value}"
+                          </Button>
+                        </CommandEmpty>
                         <CommandGroup>
                           {specialties.map((specialty) => (
                             <CommandItem
@@ -285,7 +293,10 @@ export default function SubmitSalaryPage() {
                             >
                               {specialty.label}
                               <Check
-                                className={cn("ml-auto", specialty.value === field.value ? "opacity-100" : "opacity-0")}
+                                className={cn(
+                                  "ml-auto",
+                                  specialty.value === field.value ? "opacity-100" : "opacity-0"
+                                )}
                               />
                             </CommandItem>
                           ))}
@@ -298,7 +309,6 @@ export default function SubmitSalaryPage() {
               </FormItem>
             )}
           />
-
           <FormField
             control={form.control}
             name="hospital"
@@ -429,7 +439,7 @@ export default function SubmitSalaryPage() {
               {/* Second FormControl for shiftDiffType */}
               <FormField
                 control={form.control}
-                name="shiftDiffType" // This links to shiftDiffType in the form state
+                name="shiftDiffType"
                 render={({ field }) => (
                   <FormControl className="w-1/2">
                     <Popover>
@@ -443,16 +453,30 @@ export default function SubmitSalaryPage() {
                           )}
                         >
                           {field.value
-                            ? shiftDiff.find((s) => s.value === field.value)?.label
-                            : "Select shift type"}
+                            ? shiftDiff.find((s) => s.value === field.value)?.label || field.value
+                            : "Select or enter shift type"}
                           <ChevronsUpDown className="opacity-50" />
                         </Button>
                       </PopoverTrigger>
                       <PopoverContent className="w-full p-0">
                         <Command>
-                          <CommandInput placeholder="Search shift type..." />
+                          <CommandInput
+                            placeholder="Search or enter shift type..."
+                            onInput={(e) => field.onChange(e.currentTarget.value)}
+                          />
                           <CommandList>
-                            <CommandEmpty>No shift type found.</CommandEmpty>
+                            <CommandEmpty>
+                              <Button
+                                variant="link"
+                                onClick={() => {
+                                  if (field.value) {
+                                    field.onChange(field.value); // Allow manually entered text
+                                  }
+                                }}
+                              >
+                                Add "{field.value}"
+                              </Button>
+                            </CommandEmpty>
                             <CommandGroup>
                               {shiftDiff.map((shift) => (
                                 <CommandItem
@@ -477,6 +501,7 @@ export default function SubmitSalaryPage() {
                   </FormControl>
                 )}
               />
+
             </div>
             <FormMessage />
           </FormItem>
