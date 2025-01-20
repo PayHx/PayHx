@@ -35,6 +35,59 @@ import {
 import { addSalaryData } from "@/resources/firebaseUtil";
 import { useToast } from "@/components/ui/use-toast";
 
+const states = [
+  { label: "AL", value: "alabama" },
+  { label: "AK", value: "alaska" },
+  { label: "AZ", value: "arizona" },
+  { label: "AR", value: "arkansas" },
+  { label: "CA", value: "california" },
+  { label: "CO", value: "colorado" },
+  { label: "CT", value: "connecticut" },
+  { label: "DE", value: "delaware" },
+  { label: "FL", value: "florida" },
+  { label: "GA", value: "georgia" },
+  { label: "HI", value: "hawaii" },
+  { label: "ID", value: "idaho" },
+  { label: "IL", value: "illinois" },
+  { label: "IN", value: "indiana" },
+  { label: "IA", value: "iowa" },
+  { label: "KS", value: "kansas" },
+  { label: "KY", value: "kentucky" },
+  { label: "LA", value: "louisiana" },
+  { label: "ME", value: "maine" },
+  { label: "MD", value: "maryland" },
+  { label: "MA", value: "massachusetts" },
+  { label: "MI", value: "michigan" },
+  { label: "MN", value: "minnesota" },
+  { label: "MS", value: "mississippi" },
+  { label: "MO", value: "missouri" },
+  { label: "MT", value: "montana" },
+  { label: "NE", value: "nebraska" },
+  { label: "NV", value: "nevada" },
+  { label: "NH", value: "new_hampshire" },
+  { label: "NJ", value: "new_jersey" },
+  { label: "NM", value: "new_mexico" },
+  { label: "NY", value: "new_york" },
+  { label: "NC", value: "north_carolina" },
+  { label: "ND", value: "north_dakota" },
+  { label: "OH", value: "ohio" },
+  { label: "OK", value: "oklahoma" },
+  { label: "OR", value: "oregon" },
+  { label: "PA", value: "pennsylvania" },
+  { label: "RI", value: "rhode_island" },
+  { label: "SC", value: "south_carolina" },
+  { label: "SD", value: "south_dakota" },
+  { label: "TN", value: "tennessee" },
+  { label: "TX", value: "texas" },
+  { label: "UT", value: "utah" },
+  { label: "VT", value: "vermont" },
+  { label: "VA", value: "virginia" },
+  { label: "WA", value: "washington" },
+  { label: "WV", value: "west_virginia" },
+  { label: "WI", value: "wisconsin" },
+  { label: "WY", value: "wyoming" },
+];
+
 // **Specialty options for the combobox**
 const specialties = [
   { label: "Emergency Medicine", value: "emergency_medicine" },
@@ -197,10 +250,65 @@ export default function SubmitSalaryPage() {
               {/* Second FormField for state */}
               <FormField
                 control={form.control}
-                name="state" // This links to the state variable in the form state
+                name="state"
                 render={({ field }) => (
                   <FormControl className="w-1/4">
-                    <Input placeholder="State" {...field} />
+                    <Popover>
+                      <PopoverTrigger asChild>
+                        <Button
+                          variant="outline"
+                          role="combobox"
+                          className={cn(
+                            "w-1/4 justify-between",
+                            !field.value && "text-muted-foreground"
+                          )}
+                        >
+                          {field.value
+                            ? states.find((s) => s.value === field.value)?.label || field.value
+                            : "State"}
+                          <ChevronsUpDown className="opacity-50" />
+                        </Button>
+                      </PopoverTrigger>
+                      <PopoverContent className="w-full p-0">
+                        <Command>
+                          <CommandInput
+                            placeholder="State"
+                            onInput={(e) => field.onChange(e.currentTarget.value)}
+                          />
+                          <CommandList>
+                            <CommandEmpty>
+                              <Button
+                                variant="link"
+                                onClick={() => {
+                                  if (field.value) {
+                                    field.onChange(field.value); // Allow manually entered text
+                                  }
+                                }}
+                              >
+                                Add &quot;{field.value}&quot;
+                              </Button>
+                            </CommandEmpty>
+                            <CommandGroup>
+                              {states.map((state) => (
+                                <CommandItem
+                                  key={state.value}
+                                  value={state.label}
+                                  onSelect={() => field.onChange(state.value)}
+                                >
+                                  {state.label}
+                                  <Check
+                                    className={cn(
+                                      "ml-auto",
+                                      state.value === field.value ? "opacity-100" : "opacity-0"
+                                    )}
+                                  />
+                                </CommandItem>
+                              ))}
+                            </CommandGroup>
+                          </CommandList>
+                        </Command>
+                      </PopoverContent>
+                    </Popover>
                   </FormControl>
                 )}
               />
