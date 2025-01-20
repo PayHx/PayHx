@@ -173,7 +173,7 @@ export default function SubmitSalaryPage() {
               <FormItem className="flex items-baseline">
                 <FormLabel className="w-[20%] text-left">Email</FormLabel>
                 <FormControl className="w-[80%]">
-                  <Input placeholder="Email address" type="email" {...field} />
+                  <Input placeholder="i.e Payhx.live@gmail.com" type="email" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -189,7 +189,7 @@ export default function SubmitSalaryPage() {
                 name="city" // This links to the city variable in the form state
                 render={({ field }) => (
                   <FormControl className="w-3/4">
-                    <Input placeholder="City" {...field} />
+                    <Input placeholder="City (i.e Los Angeles)" {...field} />
                   </FormControl>
                 )}
               />
@@ -330,7 +330,7 @@ export default function SubmitSalaryPage() {
               <FormItem className="flex items-baseline">
                 <FormLabel className="w-[20%] text-left">Zipcode</FormLabel>
                 <FormControl className="w-[80%]">
-                  <Input placeholder="Hospital Zipcode" {...field} />
+                  <Input placeholder="Zip code (i.e 90027)" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -353,7 +353,7 @@ export default function SubmitSalaryPage() {
                         )}>
                         {field.value
                           ? unions.find((u) => u.value === field.value)?.label
-                          : "Select union status"}
+                          : "Yes or No or No but I wish it was"}
                         <ChevronsUpDown className="opacity-50" />
                       </Button>
                     </FormControl>
@@ -392,7 +392,7 @@ export default function SubmitSalaryPage() {
                 <FormLabel className="w-[25%] text-left">Experience</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Years of Experience"
+                    placeholder="Years of Experience (i.e 5)"
                     type="number"
                     {...field}
                     onChange={(e) => field.onChange(Number(e.target.value))}
@@ -411,7 +411,7 @@ export default function SubmitSalaryPage() {
                 <FormLabel className="w-1/4">Pay (hourly)</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Pay"
+                    placeholder="i.e 50"
                     type="number"
                     {...field}
                     onChange={(e) => field.onChange(Number(e.target.value))}
@@ -431,7 +431,7 @@ export default function SubmitSalaryPage() {
                 name="shiftDiffPay" // This links to shiftDiffPay in the form state
                 render={({ field }) => (
                   <FormControl className="w-1/2">
-                    <Input placeholder="Pay ($)" type="number" {...field} />
+                    <Input placeholder="$ Amount More (i.e 5)" type="number" {...field} />
                   </FormControl>
                 )}
               />
@@ -454,7 +454,7 @@ export default function SubmitSalaryPage() {
                         >
                           {field.value
                             ? shiftDiff.find((s) => s.value === field.value)?.label || field.value
-                            : "Select or enter shift type"}
+                            : "Shift Type (i.e Nights)"}
                           <ChevronsUpDown className="opacity-50" />
                         </Button>
                       </PopoverTrigger>
