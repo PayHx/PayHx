@@ -120,9 +120,9 @@ export default function SubmitSalaryPage() {
       specialty: "",
       hospital: "",
       union: "",
-      yearsExperience: 0,
-      pay: 0,
-      shiftDiffPay: 0,
+      yearsExperience: undefined,
+      pay: undefined,
+      shiftDiffPay: undefined,
       shiftDiffType: "",
     },
   });
@@ -431,7 +431,7 @@ export default function SubmitSalaryPage() {
                 name="shiftDiffPay" // This links to shiftDiffPay in the form state
                 render={({ field }) => (
                   <FormControl className="w-1/2">
-                    <Input placeholder="$ Amount More (i.e 5)" type="number" {...field} />
+                    <Input placeholder="$ More" type="number" {...field} />
                   </FormControl>
                 )}
               />
