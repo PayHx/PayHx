@@ -281,7 +281,7 @@ export default function SubmitSalaryPage() {
                             variant="link"
                             onClick={() => field.onChange(field.value)} // Allow adding the entered text
                           >
-                            Add "{field.value}"
+                            Add &quot;{field.value}&quot;
                           </Button>
                         </CommandEmpty>
                         <CommandGroup>
@@ -474,7 +474,7 @@ export default function SubmitSalaryPage() {
                                   }
                                 }}
                               >
-                                Add "{field.value}"
+                                Add &quot;{field.value}&quot;
                               </Button>
                             </CommandEmpty>
                             <CommandGroup>
