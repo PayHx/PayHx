@@ -211,7 +211,7 @@ export default function SubmitSalaryPage() {
         <h1 className="header-title mb-5 font-american-typewriter">Real salaries from real nurses.</h1>
         <div className="header-content mb-5 font-american-typewriter">
           <p>Your submission may lead to better wages across the board!</p>
-          <p>ALL INFORMATION WILL REMAIN ANONYMOUS. Thank you for your help and support as we continue to grow!<p>
+          <p>ALL INFORMATION WILL REMAIN ANONYMOUS. Thank you for your help and support as we continue to grow!</p>
           <p>Please submit your current offer or upcoming offers that you have.</p>
           <p>Contact us at payhx.live@gmail.com</p>
         </div>
