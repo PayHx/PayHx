@@ -211,7 +211,8 @@ export default function SubmitSalaryPage() {
         <h1 className="header-title mb-5 font-american-typewriter">Real salaries from real nurses.</h1>
         <div className="header-content mb-5 font-american-typewriter">
           <p>Your submission may lead to better wages across the board!</p>
-          <p>ALL INFORMATION WILL REMAIN ANONYMOUS. Thank you for your help and support as we continue to grow!</p>
+          <p>ALL INFORMATION WILL REMAIN ANONYMOUS.</p>
+          <p>Thank you for your help and support as we continue to grow!</p>
           <p>Please submit your current offer or upcoming offers that you have.</p>
           <p>Contact us at payhx.live@gmail.com</p>
         </div>
@@ -425,7 +426,7 @@ export default function SubmitSalaryPage() {
               <FormItem className="flex items-baseline">
                 <FormLabel className="w-[20%] text-left">Hospital</FormLabel>
                 <FormControl className="w-[80%]">
-                  <Input placeholder="Hospital" {...field} />
+                  <Input placeholder="Don’t worry its anonymous! (i.e Kaiser Permanente)" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
