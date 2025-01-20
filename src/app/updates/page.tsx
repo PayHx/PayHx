@@ -11,9 +11,9 @@ export default function SubmitSalaryPage() {
                 <br /><br />
                 [1/20/25] Site Update: Submit Salary page now includes appropriate number of fields.
                 <br />
-                - 'Specialty' consolidated to represent top 41 salaries submitted
+                - Specialty section consolidated to represent top 41 salaries submitted
                 <br />
-                - Added 'zipcode' for added location accuracy
+                - Added Zipcode section for added location accuracy
                 <br /><br />
                 [1/14/25] Announcement! Looking ER Nursing salaries in the Southern California Area. Help contribute now on the submit Tab :)
                 <br />6 New Salaries Submitted! 
