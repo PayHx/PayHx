@@ -252,42 +252,27 @@ export default function SubmitSalaryPage() {
                 control={form.control}
                 name="state"
                 render={({ field }) => (
-                  <FormControl className="w-1/4">
+                  <FormItem className="flex items-baseline">
                     <Popover>
                       <PopoverTrigger asChild>
-                        <Button
-                          variant="outline"
-                          role="combobox"
-                          className={cn(
-                            "w-1/4 justify-between",
-                            !field.value && "text-muted-foreground"
-                          )}
-                        >
-                          {field.value
-                            ? states.find((s) => s.value === field.value)?.label || field.value
-                            : "State"}
-                          <ChevronsUpDown className="opacity-50" />
-                        </Button>
+                        <FormControl className="w-1/4">
+                          <Button
+                            variant="outline"
+                            role="combobox"
+                            className={cn("w-full justify-between", !field.value && "text-muted-foreground"
+                            )}>
+                            {field.value
+                              ? states.find((s) => s.value === field.value)?.label
+                              : "State"}
+                            <ChevronsUpDown className="opacity-50" />
+                          </Button>
+                        </FormControl>
                       </PopoverTrigger>
                       <PopoverContent className="w-full p-0">
                         <Command>
-                          <CommandInput
-                            placeholder="State"
-                            onInput={(e) => field.onChange(e.currentTarget.value)}
-                          />
+                          <CommandInput placeholder="State" />
                           <CommandList>
-                            <CommandEmpty>
-                              <Button
-                                variant="link"
-                                onClick={() => {
-                                  if (field.value) {
-                                    field.onChange(field.value); // Allow manually entered text
-                                  }
-                                }}
-                              >
-                                Add &quot;{field.value}&quot;
-                              </Button>
-                            </CommandEmpty>
+                            <CommandEmpty>No states found.</CommandEmpty>
                             <CommandGroup>
                               {states.map((state) => (
                                 <CommandItem
@@ -296,12 +281,7 @@ export default function SubmitSalaryPage() {
                                   onSelect={() => field.onChange(state.value)}
                                 >
                                   {state.label}
-                                  <Check
-                                    className={cn(
-                                      "ml-auto",
-                                      state.value === field.value ? "opacity-100" : "opacity-0"
-                                    )}
-                                  />
+                                  <Check className={cn("ml-auto", state.value === field.value ? "opacity-100" : "opacity-0")} />
                                 </CommandItem>
                               ))}
                             </CommandGroup>
@@ -309,7 +289,8 @@ export default function SubmitSalaryPage() {
                         </Command>
                       </PopoverContent>
                     </Popover>
-                  </FormControl>
+                    <FormMessage />
+                  </FormItem>
                 )}
               />
             </div>
