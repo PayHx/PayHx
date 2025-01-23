@@ -173,9 +173,9 @@ export default function SubmitSalaryPage() {
       specialty: "",
       hospital: "",
       union: "",
-      yearsExperience: undefined,
-      pay: undefined,
-      shiftDiffPay: undefined,
+      yearsExperience: 0,
+      pay: 0,
+      shiftDiffPay: 0,
       shiftDiffType: "",
     },
   });
@@ -185,7 +185,6 @@ export default function SubmitSalaryPage() {
   const handleSubmit = async (data: z.infer<typeof formSchema>) => {
     const formattedData = {
       ...data,
-      location: `${data.city}, ${data.state}`,
       date: data.date.toISOString(),
     };
 
