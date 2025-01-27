@@ -9,6 +9,18 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [1/20/25]
+                <br /><br />
+                - NICU nursing salary. Orange, California (YOE: 1, $41.00/hr, Nights, No differential) Hospital: NA.  
+                <br />
+                - Operating Room nursing salary. Los Angeles, California (YOE: 3, $65.57/hr, No differential) Hospital: NA.  
+                <br />
+                - NICU nursing salary. San Diego, California (YOE: 6.5, $74.00/hr, $4.50/hr night differential) Hospital: NA.  
+                <br />
+                - Float nursing salary. Fremont, California (YOE: 6, $85.00/hr, $6.00/hr float differential) Hospital: NA.  
+                <br />
+                - Surgical PCU nursing salary. Los Angeles, California (YOE: 1, $46.00/hr, $7.00/hr night differential) Hospital: NA. 
+                <br /><br />
                 [1/20/25] Site Update: Submit Salary page now includes appropriate number of fields.
                 <br />
                 - Specialty section consolidated to represent top 41 salaries submitted
