@@ -1,4 +1,64 @@
 [
+                    {
+            "date": "January 2025",
+            "state": "California",
+            "city": "Los Angeles",
+            "experience": 1,
+            "specialty": "Surgical PCU",
+            "pay": 46.0,
+            "shiftType": "Nights",
+            "shiftDiff": 7.0,
+            "hospital": null,
+            "union": null
+          },
+                    {
+            "date": "January 2025",
+            "state": "California",
+            "city": "Fremont",
+            "experience": 6,
+            "specialty": "Float",
+            "pay": 85.0,
+            "shiftType": "Float",
+            "shiftDiff": 6.0,
+            "hospital": null,
+            "union": null
+          },
+          {
+            "date": "January 2025",
+            "state": "California",
+            "city": "San Diego",
+            "experience": 6.5,
+            "specialty": "NICU",
+            "pay": 74.0,
+            "shiftType": "Nights",
+            "shiftDiff": 4.5,
+            "hospital": null,
+            "union": null
+          },
+                    {
+            "date": "January 2025",
+            "state": "California",
+            "city": "Los Angeles",
+            "experience": 3,
+            "specialty": "Operating Room",
+            "pay": 65.57,
+            "shiftType": "NA",
+            "shiftDiff": null,
+            "hospital": null,
+            "union": null
+          },
+                    {
+            "date": "January 2025",
+            "state": "California",
+            "city": "Orange",
+            "experience": 1,
+            "specialty": "NICU",
+            "pay": 41.0,
+            "shiftType": "Nights",
+            "shiftDiff": null,
+            "hospital": null,
+            "union": null
+          },
           {
             "date": "January 2025",
             "state": "California",
