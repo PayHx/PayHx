@@ -9,8 +9,8 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
-                [1/20/25]
-                <br /><br />
+                [1/27/25] 5 New Salaries Submitted 
+                <br />
                 - NICU nursing salary. Orange, California (YOE: 1, $41.00/hr, Nights, No differential) Hospital: NA.  
                 <br />
                 - Operating Room nursing salary. Los Angeles, California (YOE: 3, $65.57/hr, No differential) Hospital: NA.  
