@@ -140,7 +140,6 @@ const unions = [
 ]
 
 const shiftDiff = [
-  { label: "NA", value: "NA" },
   { label: "Nights", value: "nights" },
   { label: "Day", value: "day" },
   { label: "Weekend", value: "weekend" },
