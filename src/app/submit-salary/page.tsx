@@ -44,6 +44,7 @@ const states = [
   { label: "CO", value: "colorado" },
   { label: "CT", value: "connecticut" },
   { label: "DE", value: "delaware" },
+  { label: "DC", value: "district_columbia" },
   { label: "FL", value: "florida" },
   { label: "GA", value: "georgia" },
   { label: "HI", value: "hawaii" },
