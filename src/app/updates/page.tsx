@@ -9,6 +9,8 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [1/30/25] Bug Fix on the 'Submit Salary' page. Submission was not allowed if user entered a 'Shift Diff'. All better now :)
+                <br /><br />
                 [1/27/25] 5 New Salaries Submitted 
                 <br />
                 - NICU nursing salary. Orange, California (YOE: 1, $41.00/hr, Nights, No differential) Hospital: NA.  
