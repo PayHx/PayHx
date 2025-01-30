@@ -91,8 +91,6 @@ const states = [
 
 // **Specialty options for the combobox**
 const specialties = [
-  { label: "Emergency Medicine", value: "emergency_medicine" },
-  { label: "Internal Medicine", value: "internal_medicine" },
   { label: "Ambulatory/Outpatient", value: "ambulatory_outpatient" },
   { label: "Acute Care", value: "acute_care" },
   { label: "Acute Rehabilitation", value: "acute_rehabilitation" },
