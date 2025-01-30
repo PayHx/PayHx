@@ -607,7 +607,7 @@ export default function SubmitSalaryPage() {
             <FormMessage />
           </FormItem>
 
-          <Button type="submit" className="w-full mt-4">
+          <Button type="submit" className="w-full mt-4" tabIndex={0}>
             Submit
           </Button>
         </form>
