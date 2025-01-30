@@ -425,7 +425,7 @@ export default function SubmitSalaryPage() {
               <FormItem className="flex items-baseline">
                 <FormLabel className="w-[20%] text-left">Zipcode</FormLabel>
                 <FormControl className="w-[80%]">
-                  <Input placeholder="Zip code (i.e 90027)" {...field} />
+                  <Input placeholder="Hospital Zip code (i.e 90027)" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
