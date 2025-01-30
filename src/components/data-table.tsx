@@ -1,3 +1,5 @@
+// How the data-table is organized. How many rows per page. How many pages to display at the bottom.
+// Textboxes to filter by specialty and location
 "use client"
 
 import * as React from "react"

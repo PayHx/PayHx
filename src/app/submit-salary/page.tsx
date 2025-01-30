@@ -143,6 +143,7 @@ const shiftDiff = [
   { label: "Nights", value: "nights" },
   { label: "Day", value: "day" },
   { label: "Weekend", value: "weekend" },
+  { label: "NA", value: "" },
 ]
 
 // **Form schema with specialty as a string**
@@ -260,6 +261,7 @@ export default function SubmitSalaryPage() {
                           <Button
                             variant="outline"
                             role="combobox"
+                            tabIndex={0}
                             className={cn("w-full justify-between", !field.value && "text-muted-foreground"
                             )}>
                             {field.value
@@ -309,6 +311,7 @@ export default function SubmitSalaryPage() {
                     <FormControl className="w-[80%]">
                       <Button
                         variant={"outline"}
+                        tabIndex={0}
                         className={cn(
                           "w-[80%] pl-3 text-left font-normal",
                           !field.value && "text-muted-foreground"
@@ -347,6 +350,7 @@ export default function SubmitSalaryPage() {
                       <Button
                         variant="outline"
                         role="combobox"
+                        tabIndex={0}
                         className={cn(
                           "w-[80%] justify-between",
                           !field.value && "text-muted-foreground"
@@ -439,6 +443,7 @@ export default function SubmitSalaryPage() {
                       <Button
                         variant="outline"
                         role="combobox"
+                        tabIndex={0}
                         className={cn("w-[80%] justify-between", !field.value && "text-muted-foreground"
                         )}>
                         {field.value
@@ -518,10 +523,15 @@ export default function SubmitSalaryPage() {
               {/* First FormControl for shiftDiffPay */}
               <FormField
                 control={form.control}
-                name="shiftDiffPay" // This links to shiftDiffPay in the form state
+                name="shiftDiffPay"
                 render={({ field }) => (
                   <FormControl className="w-1/2">
-                    <Input placeholder="$ More" type="number" {...field} />
+                    <Input 
+                      placeholder="$ More" 
+                      type="number" 
+                      {...field}
+                      onChange={(e) => field.onChange(Number(e.target.value))}
+                    />
                   </FormControl>
                 )}
               />
@@ -537,6 +547,7 @@ export default function SubmitSalaryPage() {
                         <Button
                           variant="outline"
                           role="combobox"
+                          tabIndex={0}
                           className={cn(
                             "w-full justify-between",
                             !field.value && "text-muted-foreground"
