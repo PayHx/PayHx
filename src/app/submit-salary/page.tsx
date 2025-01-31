@@ -125,7 +125,7 @@ const specialties = [
   { label: "Psychiatric", value: "psychiatric" },
   { label: "Public Health", value: "public_health" },
   { label: "School Nurse", value: "school_nurse" },
-  { label: "Skilled Nursing", value: "skilled_nursing" },
+  { label: "Skilled Nursing Facility", value: "skilled_nursing_facility" },
   { label: "Subacute", value: "subacute" },
   { label: "Surgical Intensive Care Unit", value: "surgical_intensive_care_unit" },
   { label: "Telemetry/Cardiac", value: "telemetry_cardiac" },
