@@ -9,7 +9,7 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
-                [2/6/25] 5 New Salaries Submitted 
+                [2/6/25] 6 New Salaries Submitted 
                 <br />
                 - Neuro ICU nursing salary. Los Angeles, California (YOE: 1.5, $56.61/hr, $4.00/hr weekend differential) Hospital: NA.  
                 <br />
