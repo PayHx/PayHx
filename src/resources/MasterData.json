@@ -1,5 +1,77 @@
 [
-                    {
+        {
+          "date": "February 2025",
+          "state": "California",
+          "city": "Los Angeles",
+          "experience": 1.5,
+          "specialty": "Neuro Intensive Care Unit",
+          "pay": 56.61,
+          "shiftType": "Weekends",
+          "shiftDiff": 4.0,
+          "hospital": null,
+          "union": null
+        },
+        {
+          "date": "February 2025",
+          "state": "California",
+          "city": "Orange",
+          "experience": 3,
+          "specialty": "Mental Health",
+          "pay": 48.51,
+          "shiftType": "NA",
+          "shiftDiff": null,
+          "hospital": null,
+          "union": null
+        },
+        {
+          "date": "February 2025",
+          "state": "California",
+          "city": "Oakland",
+          "experience": 1,
+          "specialty": "Emergency Department",
+          "pay": 68.38,
+          "shiftType": "Nights",
+          "shiftDiff": 17.0,
+          "hospital": null,
+          "union": null
+        },
+        {
+          "date": "February 2025",
+          "state": "California",
+          "city": "La Jolla",
+          "experience": 0,
+          "specialty": "Medical Surgical",
+          "pay": 57.0,
+          "shiftType": "Nights",
+          "shiftDiff": 7.0,
+          "hospital": null,
+          "union": null
+        },
+        {
+          "date": "February 2025",
+          "state": "California",
+          "city": "Burbank",
+          "experience": 0.5,
+          "specialty": "Intensive Care Unit",
+          "pay": 51.90,
+          "shiftType": "Nights",
+          "shiftDiff": 6.5,
+          "hospital": null,
+          "union": null
+        },
+          {
+          "date": "February 2025",
+          "state": "California",
+          "city": "Beverly Hills",
+          "experience": 5,
+          "specialty": "Medical Surgical",
+          "pay": 72.0,
+          "shiftType": "Nights",
+          "shiftDiff": 6.0,
+          "hospital": null,
+          "union": null
+        },              
+          {
             "date": "January 2025",
             "state": "California",
             "city": "Los Angeles",
