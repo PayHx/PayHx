@@ -9,6 +9,24 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [2/16/25] 6 New Salaries Submitted 
+                <br />
+                ICU nursing salary. Los Angeles, California (YOE: 2, $56.00/hr, $6.00/hr night differential) Hospital: Null
+                <br />
+                ICU nursing salary. Los Angeles, California (YOE: 2, $59.00/hr, $4.50/hr night differential) Hospital: Dignity Health.
+                <br />
+                ER nursing salary. Montclair, California (YOE: 0, $41.00/hr, $4.00/hr night differential) Hospital: Montclair Hospital.
+                <br />
+                Telemetry/Cardiac nursing salary. Los Angeles, California (YOE: 1, $51.60/hr, $3.75/hr night differential) Hospital: NA.
+                <br />
+                CVICU nursing salary. Riverside, California (YOE: 0, $54.89/hr, $7.50/hr night differential) Hospital: NA.
+                <br />
+                Case Management nursing salary. Altadena, California (YOE: 7, $51.48/hr, No differential) Hospital: NA.
+                <br />
+                Float Pool nursing salary. Mission Viejo, California (YOE: 0, $45.00/hr, $6.50/hr night differential) Hospital: NA.
+                <br />
+                PCU nursing salary. Los Angeles, California (YOE: 1, $55.00/hr, Night shift) Hospital: NA.
+                <br /><br />
                 [2/6/25] 6 New Salaries Submitted 
                 <br />
                 - Neuro ICU nursing salary. Los Angeles, California (YOE: 1.5, $56.61/hr, $4.00/hr weekend differential) Hospital: NA.  
