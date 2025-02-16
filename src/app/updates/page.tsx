@@ -9,7 +9,7 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
-                [2/16/25] 6 New Salaries Submitted 
+                [2/16/25] 7 New Salaries Submitted 
                 <br />
                 ICU nursing salary. Los Angeles, California (YOE: 2, $56.00/hr, $6.00/hr night differential) Hospital: Null
                 <br />
