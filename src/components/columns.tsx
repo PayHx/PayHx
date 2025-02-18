@@ -3,55 +3,38 @@
 
 import { ColumnDef } from "@tanstack/react-table"
 import { SortingFn } from "@tanstack/react-table";
-import { parse } from "date-fns"
-import { Button } from "@/components/ui/button"
-import { ArrowUpDown } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { ArrowUpDown } from "lucide-react";
+import { Timestamp } from "firebase/firestore";
 
 export type Payment = {
-    date: string,
+    date: Timestamp,
     state: string,
     city: string,
     specialty: string | null,
     hospital: string | null | undefined,
     union: string | null | undefined,
-    pay: number,
+    pay: number | null | undefined,
     experience: number,
-    shiftType: string | null | undefined,
-    shiftDiff: number | null | undefined,
+    shiftDiffType: string | null | undefined,
+    shiftDiffPay: number | null | undefined,
   }
 
-  const normalizeDate = (dateString: string): string => {
-    // Map of full months to abbreviated months
-    const monthMap: Record<string, string> = {
-      January: "Jan",
-      February: "Feb",
-      March: "Mar",
-      April: "Apr",
-      May: "May",
-      June: "Jun",
-      July: "Jul",
-      August: "Aug",
-      September: "Sep",
-      October: "Oct",
-      November: "Nov",
-      December: "Dec",
-    };
-  
-    // Split the date string into month and year
-    const [month, year] = dateString.split(" ");
-  
-    // Replace the full month name with the abbreviated month
-    const shortMonth = monthMap[month] || month; // Fallback to the original value if not found
-  
-    return `${shortMonth} ${year}`;
-  };
-  
   const dateSortingFn: SortingFn<any> = (rowA, rowB, columnId) => {
-    const format = "MMM yyyy"; // Adjust format for short months
-    const dateA = parse(normalizeDate(rowA.getValue<string>(columnId)), format, new Date());
-    const dateB = parse(normalizeDate(rowB.getValue<string>(columnId)), format, new Date());
-  
-    return dateA.getTime() - dateB.getTime(); // Ascending order
+    const dateA: Timestamp = rowA.getValue<Timestamp>(columnId);
+    const dateB: Timestamp = rowB.getValue<Timestamp>(columnId);
+
+  // ✅ If both dates are null, consider them equal
+  if (!dateA && !dateB) return 0;
+
+  // ✅ If dateA is null, move it to the bottom
+  if (!dateA) return 1;
+
+  // ✅ If dateB is null, move it to the bottom
+  if (!dateB) return -1;
+
+  // ✅ Safe to call .toDate() now
+  return dateA.toDate().getTime() - dateB.toDate().getTime();
   };
   
   export const columns: ColumnDef<Payment>[] = [
@@ -69,9 +52,19 @@ export type Payment = {
         )
       },
       cell: ({ row }) => {
-        const rawDate = row.getValue<string>("date");
-        const normalizedDate = normalizeDate(rawDate); // Normalize for display
-        return <span>{normalizedDate}</span>;
+        const timestamp = row.getValue<Timestamp | null | undefined>("date");
+
+    // ✅ Check if timestamp is null before calling .toDate()
+    if (!timestamp) {
+      return <span>-</span>; // Show "-" for missing dates
+    }
+
+    const formattedDate = timestamp.toDate().toLocaleDateString("en-US", {
+      month: "short",
+      year: "numeric",
+    });
+
+    return <span>{formattedDate}</span>;
       },
       sortingFn: dateSortingFn,
     },
@@ -134,6 +127,15 @@ export type Payment = {
           </Button>
         )
       },
+      cell: ({ row }) => {
+        const hospital = row.getValue<string | number | null | undefined>("hospital");
+
+        if (!hospital) {
+          return "-";
+        }
+
+        return <div>{hospital}</div>
+      }
     },
     {
       accessorKey: "union",
@@ -148,9 +150,18 @@ export type Payment = {
           </Button>
         )
       },
+      cell: ({ row }) => {
+        const union = row.getValue<string | number | null | undefined>("union");
+
+        if (!union) {
+          return "-";
+        }
+
+        return <div>{union}</div>
+      }
     },
     {
-      accessorKey: "shiftType",
+      accessorKey: "shiftDiffType",
       header: ({ column }) => {
         return (
           <Button
@@ -162,9 +173,18 @@ export type Payment = {
           </Button>
         )
       },
+      cell: ({ row }) => {
+        const shiftDiffType = row.getValue<string | number | null | undefined>("shiftDiffType");
+
+        if (!shiftDiffType || shiftDiffType === "NA") {
+          return "-";
+        }
+
+        return <div>{shiftDiffType}</div>
+      }
     },
     {
-      accessorKey: "shiftDiff",
+      accessorKey: "shiftDiffPay",
       header: ({ column }) => {
         return (
           <Button
@@ -175,6 +195,15 @@ export type Payment = {
             <ArrowUpDown className="ml-2 h-4 w-4" />
           </Button>
         )
+      },
+      cell: ({ row }) => {
+        const shiftDiffPay = row.getValue<string | number | null | undefined>("shiftDiffPay");
+
+        if (!shiftDiffPay || shiftDiffPay === "NA") {
+          return "-";
+        }
+
+        return <div>{shiftDiffPay}</div>
       }
     },
     {
@@ -192,7 +221,13 @@ export type Payment = {
         )
       },
       cell: ({ row }) => {
-        const amount = parseFloat(row.getValue("pay"))
+        const amount = row.getValue<number | null | undefined>("pay");
+
+        // Prevents NaN by ensuring its a valid number
+        if (amount === null || amount === undefined || isNaN(amount)) {
+          return <div className="text-right font-medium">-</div>;
+        }
+
         const formatted = new Intl.NumberFormat("en-US", {
           style: "currency",
           currency: "USD",
