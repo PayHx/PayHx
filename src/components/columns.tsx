@@ -224,7 +224,7 @@ export type Payment = {
         const amount = row.getValue<number | null | undefined>("pay");
 
         // Prevents NaN by ensuring its a valid number
-        if (amount === null || amount === undefined || isNaN(amount)) {
+        if (!amount) {
           return <div className="text-right font-medium">-</div>;
         }
 
@@ -233,7 +233,7 @@ export type Payment = {
           currency: "USD",
         }).format(amount)
    
-        return <div className="text-right font-medium">{formatted}/hr</div>
+        return <div className="text-right font-medium">{amount}/hr</div>
       },
     },
   ]
