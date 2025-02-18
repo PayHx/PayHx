@@ -176,7 +176,7 @@ export type Payment = {
       cell: ({ row }) => {
         const shiftDiffType = row.getValue<string | number | null | undefined>("shiftDiffType");
 
-        if (!shiftDiffType || shiftDiffType === "NA") {
+        if (!shiftDiffType || shiftDiffType === "NA" || shiftDiffType === "na") {
           return "-";
         }
 
@@ -199,7 +199,7 @@ export type Payment = {
       cell: ({ row }) => {
         const shiftDiffPay = row.getValue<string | number | null | undefined>("shiftDiffPay");
 
-        if (!shiftDiffPay || shiftDiffPay === "NA") {
+        if (!shiftDiffPay || shiftDiffPay === "NA" || shiftDiffPay === "na") {
           return "-";
         }
 
