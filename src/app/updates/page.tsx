@@ -9,6 +9,18 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [2/25/25] 7 New Salaries Submitted 
+                <br />
+                - ER nursing salary. St. Petersburg, Florida (YOE: 1, $36.18/hr, No differential) Hospital: NA.  
+                <br />
+                - Med Surg nursing salary. Winter Haven, Florida (YOE: 5, $41.00/hr, Day shift PRN) Hospital: NA.  
+                <br />
+                - Med Surg nursing salary. Miami, Florida (YOE: 2, $35.00/hr, No differential) Hospital: NA.  
+                <br />
+                - ER nursing salary. Tampa, Florida (YOE: 5, $40.00/hr, $2.00/hr critical care differential) Hospital: NA.  
+                <br />
+                - L&D nursing salary. Tampa, Florida (YOE: 1, $32.00/hr, $2.50/hr night differential) Hospital: NA.  
+                <br /><br />
                 [2/16/25] 7 New Salaries Submitted 
                 <br />
                 ICU nursing salary. Los Angeles, California (YOE: 2, $56.00/hr, $6.00/hr night differential) Hospital: Null
