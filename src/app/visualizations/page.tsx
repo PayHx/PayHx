@@ -1,12 +1,11 @@
-"use client";
+"use client"; // Ensures this runs only on the client side
 
-import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "@/resources/firebase";
-import Plotly from "plotly.js-dist-min";
-import createPlotlyComponent from "react-plotly.js/factory";
 
+// Dynamically import Plotly to avoid server-side execution errors
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
 interface SalaryData {
@@ -21,12 +20,7 @@ interface SalaryData {
 export default function VisualizationsPage() {
   const [data, setData] = useState<SalaryData[]>([]);
   const [loading, setLoading] = useState(true);
-  const [PlotComponent, setPlotComponent] = useState<any>(null);
-
-  useEffect(() => {
-    const PlotlyComponent = createPlotlyComponent(Plotly);
-    setPlotComponent(() => PlotlyComponent);
-  }, []);
+  const [PlotlyComponent, setPlotlyComponent] = useState<any>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -56,13 +50,22 @@ export default function VisualizationsPage() {
     fetchData();
   }, []);
 
-  if (!PlotComponent) return <p>Loading chart...</p>;
-  if (loading) return <div className="text-center p-5">Loading salary data...</div>;
+  useEffect(() => {
+    import("plotly.js-dist-min").then((Plotly) => {
+      import("react-plotly.js/factory").then((createPlotlyComponent) => {
+        setPlotlyComponent(() => createPlotlyComponent.default(Plotly));
+      });
+    });
+  }, []);
+
+  if (loading) return <div className="text-center p-5">Loading visuals...</div>;
+  if (!PlotlyComponent) return <p className="text-center p-5">Loading chart...</p>;
 
   return (
     <div className="container mx-auto py-10">
+      <h1 className="text-2xl font-bold text-center mb-5">Salary Visualizations</h1>
       <div className="flex justify-center items-center py-10">
-        <PlotComponent
+        <PlotlyComponent
           data={[
             {
               x: data.map((d) => d.experience), // X-axis: Experience
