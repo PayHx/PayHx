@@ -31,6 +31,12 @@ export function MainSeparator() {
                     Submit Salary
                 </Button>
             </Link>
+            <Separator orientation="vertical" />
+            <Link href="/visualizations">
+                <Button variant="link">
+                    Visualizations
+                </Button>
+            </Link>
           </div>
         </div>
       )

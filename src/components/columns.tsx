@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpDown } from "lucide-react";
 import { Timestamp } from "firebase/firestore";
 
-export type Payment = {
+export type SalaryData = {
     date: Timestamp,
     state: string,
     city: string,
@@ -37,7 +37,7 @@ export type Payment = {
   return dateA.toDate().getTime() - dateB.toDate().getTime();
   };
   
-  export const columns: ColumnDef<Payment>[] = [
+  export const columns: ColumnDef<SalaryData>[] = [
     {
       accessorKey: "date",
       header: ({ column }) => {
