@@ -9,6 +9,12 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [3/2/25]
+                <br />
+                Hey Everyone! We are attempting to map out all the entries we have so far and we are playing around with the scatter plot design. 
+                <br />
+                We have a lot of work to be done but we are moving a day at a time! Thank you for al your help and support. Feel free to reach out for any ideas, questions, or comments thanks!
+                <br /><br />
                 [2/25/25] 7 New Salaries Submitted 
                 <br />
                 - ER nursing salary. St. Petersburg, Florida (YOE: 1, $36.18/hr, No differential) Hospital: NA.  
