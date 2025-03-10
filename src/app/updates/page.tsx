@@ -9,6 +9,16 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [3/9/25]
+                <br />
+                - Hospice nursing salary. Tacoma, Washington (YOE: 9, $70.00/hr, No differential). Hospital: NA. 
+                <br />
+                - Med Surg nursing salary. Summit, New Jersey (YOE: 1.5, $45.00/hr, $2.35/hr night differential) Hospital: Overlook Medical Center
+                <br />
+                - Telemetry/Cardiac nursing salary. Marina del Rey, California (YOE: 1, $48.11/hr, $3.50/hr weekend differential) Hospital: Ceders-Sinai MDR
+                <br />
+                - Hospice nursing salary. Denver, Colorado (YOE: 3, $44.23/hr, No differential) Hospital: NA
+                <br /><br />
                 [3/2/25]
                 <br />
                 Hey Everyone! We are attempting to map out all the entries we have so far and we are playing around with the scatter plot design. 
