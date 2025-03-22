@@ -9,6 +9,26 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [3/21/25] 9 Salaries submitted! Late update but we've been working on something exciting to watch out!
+                <br />
+                - Hospice nursing salary. Denver, Colorado (YOE: 3, $44.23/hr, No differential)
+                <br />
+                - Med Surg nursing salary. Ardmore, Oklahoma (YOE: 2, $33.50/hr, No differential)
+                <br />
+                - ER nursing salary. Columbus, Mississippi (YOE: 3.5, $30.24/hr, No differential)
+                <br />
+                - L&D nursing salary. Franklin, Indiana (YOE: 7, $30.80/hr, $3.50/hr weekend differential)
+                <br />
+                - ER nursing salary. St. Augustine, Florida (YOE: 4, $38.53/hr, $3.00/hr night differential)
+                <br />
+                - ICU nursing salary. Louisville, Kentucky (YOE: 17, $48.00/hr, $4.00/hr night differential)
+                <br />
+                - CVICU nursing salary. Seattle, Washington (YOE: 3, $51.49/hr, No differential)
+                <br />
+                - L&D nursing salary. Jefferson City, Missouri (YOE: 2, $32.00/hr, No differential)
+                <br />
+                - Float Pool nursing salary. Nashville, Tennessee (YOE: 16, $49.00/hr, $5.00 Day differential)
+                <br /><br />
                 [3/9/25]
                 <br />
                 - Hospice nursing salary. Tacoma, Washington (YOE: 9, $70.00/hr, No differential). Hospital: NA. 
