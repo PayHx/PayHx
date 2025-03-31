@@ -1,14 +1,13 @@
 "use client"; // Ensures this runs only on the client side
 
-import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "@/resources/firebase";
-
-// Dynamically import Plotly to avoid server-side execution errors
-const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
-
+import SalaryVis from "@/components/salary-vis";
+import { states, specialties } from "../submit-salary/page";
+import Fuse from "fuse.js";
 interface SalaryData {
+  id: string;
   experience: number;
   pay: number;
   hospital: string;
@@ -17,24 +16,56 @@ interface SalaryData {
   specialty: string;
 }
 
+// Because some state and specialty entries don't match the predefined list, fuzzy search is used to match the entry to the predefined list
+const stateList = states.map(({ value }) => value);
+const specialtyList = specialties.map(({ value }) => value);
+const fuseState = new Fuse(stateList);
+const fuseSpecialty = new Fuse(specialtyList);
+function matchState(string: string) {
+  let result = "Unknown";
+  const matches = fuseState.search(string);
+  if (matches.length > 0) {
+    result = matches[0].item;
+  } else if (string === "Arkana, Baxter County, Arkansas") {
+    result = "Arkansas";
+  } else {
+    console.warn("Unmatched state string: " + string);
+  }
+  return result;
+}
+function matchSpecialty(string: string) {
+  let result = "Unknown";
+  const matches = fuseSpecialty.search(string);
+  if (matches.length > 0) {
+    result = matches[0].item;
+  } else {
+    console.warn("Unmatched specialty string: " + string);
+  }
+  return result;
+}
+
 export default function VisualizationsPage() {
   const [data, setData] = useState<SalaryData[]>([]);
   const [loading, setLoading] = useState(true);
-  const [PlotlyComponent, setPlotlyComponent] = useState<any>(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const querySnapshot = await getDocs(collection(db, "salaries"));
-        const salaries = querySnapshot.docs.map(doc => {
+        const salaries = querySnapshot.docs.map((doc) => {
           const salary = doc.data();
           return {
+            id: doc.id,
             city: salary.city ?? "Unknown",
-            state: salary.state ?? "Unknown",
+            state: matchState(salary.state),
             experience: salary.experience ?? 0,
-            specialty: salary.specialty ?? "Unknown",
+            specialty: matchSpecialty(salary.specialty),
             hospital: salary.hospital ?? "Unknown",
-            pay: typeof salary.pay === "string" ? parseFloat(salary.pay.replace(/[$,]/g, "")) || 0 : salary.pay ?? 0,
+            pay: Math.abs(
+              typeof salary.pay === "string"
+                ? parseFloat(salary.pay.replace(/[$,]/g, "")) || 0
+                : salary.pay ?? 0
+            ),
           };
         });
 
@@ -50,43 +81,14 @@ export default function VisualizationsPage() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    import("plotly.js-dist-min").then((Plotly) => {
-      import("react-plotly.js/factory").then((createPlotlyComponent) => {
-        setPlotlyComponent(() => createPlotlyComponent.default(Plotly));
-      });
-    });
-  }, []);
-
   if (loading) return <div className="text-center p-5">Loading visuals...</div>;
-  if (!PlotlyComponent) return <p className="text-center p-5">Loading chart...</p>;
 
   return (
     <div className="container mx-auto py-10">
-      <h1 className="text-2xl font-bold text-center mb-5">Salary Visualizations</h1>
-      <div className="flex justify-center items-center py-10">
-        <PlotlyComponent
-          data={[
-            {
-              x: data.map((d) => d.experience), // X-axis: Experience
-              y: data.map((d) => d.pay), // Y-axis: Pay
-              text: data.map((d) => `${d.hospital}<br>${d.city}, ${d.state}<br>${d.specialty}`),
-              mode: "markers",
-              type: "scatter",
-              marker: { size: 10, color: "blue" },
-              hovertemplate:
-                "%{text}<br>Experience: %{x} years<br>Salary: $%{y}<extra></extra>",
-            },
-          ]}
-          layout={{
-            width: 800,
-            height: 600,
-            title: "Salary vs. Years of Experience",
-            xaxis: { title: "Years of Experience", showgrid: true },
-            yaxis: { title: "Salary ($)", showgrid: true },
-          }}
-        />
-      </div>
+      <h1 className="text-2xl font-bold text-center mb-5">
+        Salary Visualizations
+      </h1>
+      <SalaryVis data={data} />
     </div>
   );
 }

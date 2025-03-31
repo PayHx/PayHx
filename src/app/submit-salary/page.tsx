@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 
 import React from "react";
 import { format } from "date-fns";
@@ -35,7 +34,7 @@ import {
 import { addSalaryData } from "@/resources/firebaseUtil";
 import { useToast } from "@/components/ui/use-toast";
 
-const states = [
+export const states = [
   { label: "AL", value: "Alabama" },
   { label: "AK", value: "Alaska" },
   { label: "AZ", value: "Arizona" },
@@ -90,13 +89,19 @@ const states = [
 ];
 
 // **Specialty options for the combobox**
-const specialties = [
+export const specialties = [
   { label: "Ambulatory/Outpatient", value: "Ambulatory/Outpatient" },
   { label: "Acute Care", value: "Acute Care" },
   { label: "Acute Rehabilitation", value: "Acute Rehabilitation" },
   { label: "Behavioral Health", value: "Behavioral Health" },
-  { label: "Cardiac Catheterization Lab", value: "Cardiac Catheterization Lab" },
-  { label: "Cardiovascular Intensive Care Unit", value: "Cardiovascular Intensive Care Unit" },
+  {
+    label: "Cardiac Catheterization Lab",
+    value: "Cardiac Catheterization Lab",
+  },
+  {
+    label: "Cardiovascular Intensive Care Unit",
+    value: "Cardiovascular Intensive Care Unit",
+  },
   { label: "Case Management", value: "Case Management" },
   { label: "Corrections", value: "Corrections" },
   { label: "Dialysis", value: "Dialysis" },
@@ -112,11 +117,17 @@ const specialties = [
   { label: "Long Term Care", value: "Long Term Care" },
   { label: "Medical Surgical", value: "Medical Surgical" },
   { label: "Mental Health", value: "Mental Health" },
-  { label: "Neonatal Intensive Care Unit", value: "Neonatal Intensive Care Unit" },
+  {
+    label: "Neonatal Intensive Care Unit",
+    value: "Neonatal Intensive Care Unit",
+  },
   { label: "Neuro Intensive Care Unit", value: "Neuro Intensive Care Unit" },
   { label: "Neuroscience/Stroke", value: "Neuroscience/Stroke" },
   { label: "Oncology", value: "Oncology" },
-  { label: "Pediatric Intensive Care Unit", value: "Pediatric Intensive Care Unit" },
+  {
+    label: "Pediatric Intensive Care Unit",
+    value: "Pediatric Intensive Care Unit",
+  },
   { label: "Pediatrics", value: "Pediatrics" },
   { label: "Perioperative", value: "Perioperative" },
   { label: "Postpartum", value: "Postpartum" },
@@ -127,7 +138,10 @@ const specialties = [
   { label: "School Nurse", value: "School Nurse" },
   { label: "Skilled Nursing Facility", value: "Skilled Nursing Facility" },
   { label: "Subacute", value: "Subacute" },
-  { label: "Surgical Intensive Care Unit", value: "Surgical Intensive Care Unit" },
+  {
+    label: "Surgical Intensive Care Unit",
+    value: "Surgical Intensive Care Unit",
+  },
   { label: "Telemetry/Cardiac", value: "Telemetry/Cardiac" },
   { label: "Wound Care", value: "Wound Care" },
 ];
@@ -136,14 +150,14 @@ const unions = [
   { label: "Yes", value: "yes" },
   { label: "No", value: "no" },
   { label: "Unsure", value: "unsure" },
-]
+];
 
 const shiftDiff = [
   { label: "Nights", value: "nights" },
   { label: "Day", value: "day" },
   { label: "Weekend", value: "weekend" },
   { label: "NA", value: "" },
-]
+];
 
 // **Form schema with specialty as a string**
 const formSchema = z.object({
@@ -207,19 +221,28 @@ export default function SubmitSalaryPage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start p-24">
       <article className="w-2/4 mb-2 mx-auto bg-outline">
-        <h1 className="header-title mb-5 font-american-typewriter">Real salaries from real nurses.</h1>
+        <h1 className="header-title mb-5 font-american-typewriter">
+          Real salaries from real nurses.
+        </h1>
         <div className="header-content mb-5 font-american-typewriter">
           <p>Your submission may lead to better wages across the board!</p>
           <p>ALL INFORMATION WILL REMAIN ANONYMOUS!</p>
           <p>Thank you for your help and support as we continue to grow.</p>
-          <p>Please submit your current offer or upcoming offers that you have.</p>
+          <p>
+            Please submit your current offer or upcoming offers that you have.
+          </p>
           <p>Contact us at payhx.live@gmail.com</p>
         </div>
-        <h1 className="header-title font-american-typewriter">Real Salaries, Real People</h1>
+        <h1 className="header-title font-american-typewriter">
+          Real Salaries, Real People
+        </h1>
       </article>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(handleSubmit)} className="max-w-md w-full mt-8">
+        <form
+          onSubmit={form.handleSubmit(handleSubmit)}
+          className="max-w-md w-full mt-8"
+        >
           <FormField
             control={form.control}
             name="emailAddress"
@@ -227,7 +250,11 @@ export default function SubmitSalaryPage() {
               <FormItem className="flex items-baseline">
                 <FormLabel className="w-[20%] text-left">Email</FormLabel>
                 <FormControl className="w-[80%]">
-                  <Input placeholder="i.e Payhx.live@gmail.com" type="email" {...field} />
+                  <Input
+                    placeholder="i.e Payhx.live@gmail.com"
+                    type="email"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -261,10 +288,14 @@ export default function SubmitSalaryPage() {
                             variant="outline"
                             role="combobox"
                             tabIndex={0}
-                            className={cn("w-full justify-between", !field.value && "text-muted-foreground"
-                            )}>
+                            className={cn(
+                              "w-full justify-between",
+                              !field.value && "text-muted-foreground"
+                            )}
+                          >
                             {field.value
-                              ? states.find((s) => s.value === field.value)?.label
+                              ? states.find((s) => s.value === field.value)
+                                  ?.label
                               : "State"}
                             <ChevronsUpDown className="opacity-50" />
                           </Button>
@@ -283,7 +314,14 @@ export default function SubmitSalaryPage() {
                                   onSelect={() => field.onChange(state.value)}
                                 >
                                   {state.label}
-                                  <Check className={cn("ml-auto", state.value === field.value ? "opacity-100" : "opacity-0")} />
+                                  <Check
+                                    className={cn(
+                                      "ml-auto",
+                                      state.value === field.value
+                                        ? "opacity-100"
+                                        : "opacity-0"
+                                    )}
+                                  />
                                 </CommandItem>
                               ))}
                             </CommandGroup>
@@ -316,7 +354,9 @@ export default function SubmitSalaryPage() {
                           !field.value && "text-muted-foreground"
                         )}
                       >
-                        {field.value ? format(field.value, "PPP") : "Pick a date"}
+                        {field.value
+                          ? format(field.value, "PPP")
+                          : "Pick a date"}
                         <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
                       </Button>
                     </FormControl>
@@ -326,7 +366,9 @@ export default function SubmitSalaryPage() {
                       mode="single"
                       selected={field.value}
                       onSelect={field.onChange}
-                      disabled={(date) => date > new Date() || date < new Date("1900-01-01")}
+                      disabled={(date) =>
+                        date > new Date() || date < new Date("1900-01-01")
+                      }
                       initialFocus
                     />
                   </PopoverContent>
@@ -356,7 +398,8 @@ export default function SubmitSalaryPage() {
                         )}
                       >
                         {field.value
-                          ? specialties.find((s) => s.value === field.value)?.label || field.value
+                          ? specialties.find((s) => s.value === field.value)
+                              ?.label || field.value
                           : "Select specialty"}
                         <ChevronsUpDown className="opacity-50" />
                       </Button>
@@ -388,7 +431,9 @@ export default function SubmitSalaryPage() {
                               <Check
                                 className={cn(
                                   "ml-auto",
-                                  specialty.value === field.value ? "opacity-100" : "opacity-0"
+                                  specialty.value === field.value
+                                    ? "opacity-100"
+                                    : "opacity-0"
                                 )}
                               />
                             </CommandItem>
@@ -409,7 +454,10 @@ export default function SubmitSalaryPage() {
               <FormItem className="flex items-baseline">
                 <FormLabel className="w-[20%] text-left">Hospital</FormLabel>
                 <FormControl className="w-[80%]">
-                  <Input placeholder="This one ANONYMOUS! (i.e Kaiser Permanente)" {...field} />
+                  <Input
+                    placeholder="This one ANONYMOUS! (i.e Kaiser Permanente)"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -423,7 +471,10 @@ export default function SubmitSalaryPage() {
               <FormItem className="flex items-baseline">
                 <FormLabel className="w-[20%] text-left">Zipcode</FormLabel>
                 <FormControl className="w-[80%]">
-                  <Input placeholder="Hospital Zip code (i.e 90027)" {...field} />
+                  <Input
+                    placeholder="Hospital Zip code (i.e 90027)"
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -443,8 +494,11 @@ export default function SubmitSalaryPage() {
                         variant="outline"
                         role="combobox"
                         tabIndex={0}
-                        className={cn("w-[80%] justify-between", !field.value && "text-muted-foreground"
-                        )}>
+                        className={cn(
+                          "w-[80%] justify-between",
+                          !field.value && "text-muted-foreground"
+                        )}
+                      >
                         {field.value
                           ? unions.find((u) => u.value === field.value)?.label
                           : "Yes or No or No but I wish it was"}
@@ -465,7 +519,14 @@ export default function SubmitSalaryPage() {
                               onSelect={() => field.onChange(union.value)}
                             >
                               {union.label}
-                              <Check className={cn("ml-auto", union.value === field.value ? "opacity-100" : "opacity-0")} />
+                              <Check
+                                className={cn(
+                                  "ml-auto",
+                                  union.value === field.value
+                                    ? "opacity-100"
+                                    : "opacity-0"
+                                )}
+                              />
                             </CommandItem>
                           ))}
                         </CommandGroup>
@@ -525,9 +586,9 @@ export default function SubmitSalaryPage() {
                 name="shiftDiffPay"
                 render={({ field }) => (
                   <FormControl className="w-1/2">
-                    <Input 
-                      placeholder="$ More" 
-                      type="number" 
+                    <Input
+                      placeholder="$ More"
+                      type="number"
                       {...field}
                       onChange={(e) => field.onChange(Number(e.target.value))}
                     />
@@ -553,7 +614,8 @@ export default function SubmitSalaryPage() {
                           )}
                         >
                           {field.value
-                            ? shiftDiff.find((s) => s.value === field.value)?.label || field.value
+                            ? shiftDiff.find((s) => s.value === field.value)
+                                ?.label || field.value
                             : "Shift Type (i.e Nights)"}
                           <ChevronsUpDown className="opacity-50" />
                         </Button>
@@ -562,7 +624,9 @@ export default function SubmitSalaryPage() {
                         <Command>
                           <CommandInput
                             placeholder="Search or enter shift type..."
-                            onInput={(e) => field.onChange(e.currentTarget.value)}
+                            onInput={(e) =>
+                              field.onChange(e.currentTarget.value)
+                            }
                           />
                           <CommandList>
                             <CommandEmpty>
@@ -588,7 +652,9 @@ export default function SubmitSalaryPage() {
                                   <Check
                                     className={cn(
                                       "ml-auto",
-                                      shift.value === field.value ? "opacity-100" : "opacity-0"
+                                      shift.value === field.value
+                                        ? "opacity-100"
+                                        : "opacity-0"
                                     )}
                                   />
                                 </CommandItem>
@@ -601,7 +667,6 @@ export default function SubmitSalaryPage() {
                   </FormControl>
                 )}
               />
-
             </div>
             <FormMessage />
           </FormItem>
@@ -614,4 +679,3 @@ export default function SubmitSalaryPage() {
     </main>
   );
 }
-
