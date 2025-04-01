@@ -30,5 +30,6 @@ const FiltersControl = memo(({ states, specialties }: FiltersControlProps) => {
     </div>
   );
 });
+FiltersControl.displayName = "FiltersControl";
 
 export default FiltersControl;

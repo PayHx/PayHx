@@ -58,5 +58,6 @@ const FilterControl = memo(
     );
   }
 );
+FilterControl.displayName = "FilterControl";
 
 export default FilterControl;

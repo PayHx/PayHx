@@ -142,5 +142,6 @@ const Chart = memo(({ data }: ChartProps) => {
     </div>
   );
 });
+Chart.displayName = "Chart";
 
 export default Chart;

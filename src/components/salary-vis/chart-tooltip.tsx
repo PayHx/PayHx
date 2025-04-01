@@ -34,5 +34,6 @@ const ChartTooltip = memo(({ data, left, top }: ChartTooltipProps) => {
     </TooltipWithBounds>
   );
 });
+ChartTooltip.displayName = "ChartTooltip";
 
 export default ChartTooltip;

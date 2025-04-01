@@ -21,5 +21,6 @@ const ChartTooltipDot = memo(
     );
   }
 );
+ChartTooltipDot.displayName = "ChartTooltipDot";
 
 export default ChartTooltipDot;

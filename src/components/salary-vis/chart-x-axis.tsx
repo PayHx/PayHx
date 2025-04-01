@@ -44,5 +44,6 @@ const ChartXAxis = memo(({ xScale, height }: ChartXAxisProps) => {
     </g>
   );
 });
+ChartXAxis.displayName = "ChartXAxis";
 
 export default ChartXAxis;

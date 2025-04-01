@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const querySnapshot = await getDocs(collection(db, "testSalaries"));
+        const querySnapshot = await getDocs(collection(db, "salaries"));
         const salaries = querySnapshot.docs.map(doc => {
           const salary = doc.data();
           return {

@@ -26,6 +26,7 @@ const Dot = memo(({ data, xScale, yScale }: DotProps) => {
     ></circle>
   );
 });
+Dot.displayName = "Dot"
 
 const ChartDots = memo(({ data, xScale, yScale }: ChartDotsProps) => {
   return (
@@ -36,5 +37,6 @@ const ChartDots = memo(({ data, xScale, yScale }: ChartDotsProps) => {
     </g>
   );
 });
+ChartDots.displayName = "ChartDots";
 
 export default ChartDots;

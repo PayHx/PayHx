@@ -39,5 +39,6 @@ const ChartYAxis = memo(({ yScale, width }: ChartYAxisProps) => {
     </g>
   );
 });
+ChartYAxis.displayName = "ChartYAxis";
 
 export default ChartYAxis;
