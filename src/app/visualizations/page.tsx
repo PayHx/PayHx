@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "@/resources/firebase";
 import SalaryVis from "@/components/salary-vis";
-import { states, specialties } from "../submit-salary/page";
+import { states, specialties } from "@/constants/submitSalaryFormOptions";
 import Fuse from "fuse.js";
 interface SalaryData {
   id: string;
