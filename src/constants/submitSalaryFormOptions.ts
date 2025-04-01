@@ -50,21 +50,21 @@ export const states = [
     { label: "WV", value: "West Virginia" },
     { label: "WI", value: "Wisconsin" },
     { label: "WY", value: "Wyoming" },
-  ];
+];
 
-  // **Specialty options for the combobox**
+// **Specialty options for the combobox**
 export const specialties = [
     { label: "Ambulatory/Outpatient", value: "Ambulatory/Outpatient" },
     { label: "Acute Care", value: "Acute Care" },
     { label: "Acute Rehabilitation", value: "Acute Rehabilitation" },
     { label: "Behavioral Health", value: "Behavioral Health" },
     {
-      label: "Cardiac Catheterization Lab",
-      value: "Cardiac Catheterization Lab",
+        label: "Cardiac Catheterization Lab",
+        value: "Cardiac Catheterization Lab",
     },
     {
-      label: "Cardiovascular Intensive Care Unit",
-      value: "Cardiovascular Intensive Care Unit",
+        label: "Cardiovascular Intensive Care Unit",
+        value: "Cardiovascular Intensive Care Unit",
     },
     { label: "Case Management", value: "Case Management" },
     { label: "Corrections", value: "Corrections" },
@@ -82,15 +82,15 @@ export const specialties = [
     { label: "Medical Surgical", value: "Medical Surgical" },
     { label: "Mental Health", value: "Mental Health" },
     {
-      label: "Neonatal Intensive Care Unit",
-      value: "Neonatal Intensive Care Unit",
+        label: "Neonatal Intensive Care Unit",
+        value: "Neonatal Intensive Care Unit",
     },
     { label: "Neuro Intensive Care Unit", value: "Neuro Intensive Care Unit" },
     { label: "Neuroscience/Stroke", value: "Neuroscience/Stroke" },
     { label: "Oncology", value: "Oncology" },
     {
-      label: "Pediatric Intensive Care Unit",
-      value: "Pediatric Intensive Care Unit",
+        label: "Pediatric Intensive Care Unit",
+        value: "Pediatric Intensive Care Unit",
     },
     { label: "Pediatrics", value: "Pediatrics" },
     { label: "Perioperative", value: "Perioperative" },
@@ -103,22 +103,22 @@ export const specialties = [
     { label: "Skilled Nursing Facility", value: "Skilled Nursing Facility" },
     { label: "Subacute", value: "Subacute" },
     {
-      label: "Surgical Intensive Care Unit",
-      value: "Surgical Intensive Care Unit",
+        label: "Surgical Intensive Care Unit",
+        value: "Surgical Intensive Care Unit",
     },
     { label: "Telemetry/Cardiac", value: "Telemetry/Cardiac" },
     { label: "Wound Care", value: "Wound Care" },
-  ];
+];
 
-  export const unions = [
+export const unions = [
     { label: "Yes", value: "yes" },
     { label: "No", value: "no" },
     { label: "Unsure", value: "unsure" },
-  ];
-  
-  export const shiftDiff = [
+];
+
+export const shiftDiff = [
     { label: "Nights", value: "nights" },
     { label: "Day", value: "day" },
     { label: "Weekend", value: "weekend" },
     { label: "NA", value: "" },
-  ];
+];
