@@ -8,7 +8,7 @@ export const HIGHLIGHT_OPACITY = 0.8;
 
 export const MUTE_OPACITY = 0.02;
 
-export const CHART_MAX_WIDTH = 960;
+export const CHART_MAX_WIDTH = 1220;
 
 export const CHART_HEIGHT = 640;
 
@@ -26,4 +26,4 @@ export const CHART_TITLE = "Salary vs. Years of Experience";
 
 export const X_TITLE = "Years of Experience";
 
-export const Y_TITLE = "Salary ($)";
+export const Y_TITLE = "Salary ($/hr)";
