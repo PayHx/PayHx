@@ -9,6 +9,8 @@ export default function SubmitSalaryPage() {
                 <br />
                 This will be updated as changes are made to the site.
                 <br /><br />
+                [4/15/25] New Data Visual Added! Now you can compare accross state and specialty for the data points that we have!
+                <br /><br />
                 [3/21/25] 9 Salaries submitted! Late update but we have been working on something exciting to watch out!
                 <br />
                 - Hospice nursing salary. Denver, Colorado (YOE: 3, $44.23/hr, No differential)
