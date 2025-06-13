@@ -6,7 +6,6 @@ import FiltersControl from "./filters-control";
 import { generateFilterOptions } from "./salary-vis.helpers";
 import { SalaryData } from "./types";
 import Chart from "./chart";
-import { CHART_TITLE } from "./salary-vis.constants";
 
 type SalaryVisProps = {
   data: SalaryData;
@@ -22,7 +21,6 @@ const SalaryVis = ({ data }: SalaryVisProps) => {
   return (
     <FiltersProvider>
       <div className="space-y-4">
-        <h2 className="text-xl text-center">{CHART_TITLE}</h2>
         <FiltersControl states={states} specialties={specialties} />
         <Chart data={data} />
       </div>

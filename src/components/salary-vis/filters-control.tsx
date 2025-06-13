@@ -1,6 +1,7 @@
 import { memo } from "react";
 import FilterControl from "./filter-control";
 import { useFilters } from "./filters-context";
+import { HIGHLIGHT_COLORS } from "./salary-vis.constants";
 
 type FiltersControlProps = {
   states: string[];
@@ -12,7 +13,10 @@ const FiltersControl = memo(({ states, specialties }: FiltersControlProps) => {
 
   return (
     <div className="space-y-2">
-      <div>Select up to three pairs of state and specialty to compare</div>
+      <div>
+        Select up to {HIGHLIGHT_COLORS.length} pairs of state and specialty to
+        compare
+      </div>
       <div className="flex flex-wrap justify-between gap-x-8 gap-y-4 [--threshold:1264px]">
         {filters.map((filter) => (
           <div

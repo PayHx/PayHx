@@ -22,8 +22,6 @@ export const MARGIN_LEFT = 48;
 
 export const DOT_RADIUS = 8;
 
-export const CHART_TITLE = "Salary vs. Years of Experience";
-
 export const X_TITLE = "Years of Experience";
 
-export const Y_TITLE = "Salary ($/hr)";
+export const Y_TITLE = "Hourly Salary ($)";
