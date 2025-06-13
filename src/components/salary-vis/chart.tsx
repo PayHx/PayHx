@@ -1,4 +1,4 @@
-import { memo, useCallback, useMemo } from "react";
+import { memo, useCallback, useMemo, useTransition } from "react";
 import { SalaryData } from "./types";
 import { useParentSize } from "@visx/responsive";
 import { useTooltip } from "@visx/tooltip";
@@ -40,6 +40,7 @@ const Chart = memo(({ data }: ChartProps) => {
     tooltipLeft = 0,
     tooltipTop = 0,
   } = useTooltip<number>();
+  const [_, startTransition] = useTransition();
 
   const filters = useFilters();
   const jittered = useMemo(() => jitterData(data), [data]);
@@ -87,10 +88,12 @@ const Chart = memo(({ data }: ChartProps) => {
       if (distance > searchRadius) {
         if (delaunayIndex !== undefined) hideTooltip();
       } else if (i !== delaunayIndex) {
-        showTooltip({
-          tooltipLeft: xScale(d.x),
-          tooltipTop: yScale(d.y),
-          tooltipData: i,
+        startTransition(() => {
+          showTooltip({
+            tooltipLeft: xScale(d.x),
+            tooltipTop: yScale(d.y),
+            tooltipData: i,
+          });
         });
       }
     },
@@ -99,6 +102,7 @@ const Chart = memo(({ data }: ChartProps) => {
       delaunayIndex,
       delaunayPoints,
       hideTooltip,
+      parentRef,
       showTooltip,
       xScale,
       yScale,

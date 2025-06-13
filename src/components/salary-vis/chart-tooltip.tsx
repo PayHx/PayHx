@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { DotDatum } from "./types";
 import { TooltipWithBounds } from "@visx/tooltip";
 import { xValueFormat, yValueFormat } from "./salary-vis.helpers";
@@ -9,17 +8,18 @@ type ChartTooltipProps = {
   top: number;
 };
 
-const ChartTooltip = memo(({ data, left, top }: ChartTooltipProps) => {
+const ChartTooltip = ({ data, left, top }: ChartTooltipProps) => {
   const { hospital, city, state, specialty, experience, pay } = data.data;
   const rows = [
     { title: "Hospital", value: hospital },
     { title: "Location", value: [city, state].join(", ") },
     { title: "Specialty", value: specialty },
     { title: "Years of Experience", value: xValueFormat(experience) },
-    { title: "Salary", value: yValueFormat(pay) },
+    { title: "Hourly Salary", value: yValueFormat(pay) },
   ].filter(({ value }) => !!value);
   return (
     <TooltipWithBounds
+      key={Math.random()}
       left={left}
       top={top}
       unstyled
@@ -33,7 +33,6 @@ const ChartTooltip = memo(({ data, left, top }: ChartTooltipProps) => {
       ))}
     </TooltipWithBounds>
   );
-});
-ChartTooltip.displayName = "ChartTooltip";
+};
 
 export default ChartTooltip;

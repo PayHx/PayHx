@@ -18,7 +18,7 @@ const ChartXAxis = memo(({ xScale, height }: ChartXAxisProps) => {
         x={xRange[1]}
         y={height - 4}
         textAnchor="end"
-        className="fill-current"
+        className="fill-current font-semibold"
       >
         {X_TITLE}
       </text>

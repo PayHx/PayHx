@@ -14,7 +14,7 @@ const ChartYAxis = memo(({ yScale, width }: ChartYAxisProps) => {
 
   return (
     <g>
-      <text y="14" className="fill-current">
+      <text y="14" className="fill-current font-semibold">
         {Y_TITLE}
       </text>
       <g transform={`translate(${MARGIN_LEFT},0)`}>
