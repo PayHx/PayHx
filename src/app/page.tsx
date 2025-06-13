@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "@/resources/firebase";
 import { SalaryData, columns } from "@/components/columns";
 import { DataTable } from "@/components/data-table";
-import SalaryScatterplot from "./visualizations/page";
+import Visualizations from "./visualizations/page";
 
 export default function Home() {
   const [data, setData] = useState<SalaryData[]>([]);
@@ -15,10 +15,12 @@ export default function Home() {
     const fetchData = async () => {
       try {
         const querySnapshot = await getDocs(collection(db, "salaries"));
-        const salaries = querySnapshot.docs.map(doc => {
+        const salaries = querySnapshot.docs.map((doc) => {
           const salary = doc.data();
           return {
-            location: `${salary.city ?? "Unknown"}, ${salary.state ?? "Unknown"}`,
+            location: `${salary.city ?? "Unknown"}, ${
+              salary.state ?? "Unknown"
+            }`,
             date: salary.date ?? new Date(),
             city: salary.city ?? "Unknown",
             state: salary.state ?? "Unknown",
@@ -27,8 +29,11 @@ export default function Home() {
             hospital: salary.hospital ?? "Unknown",
             union: salary.union ?? "Unknown",
             pay: salary.pay ?? 0,
-            shiftDiffType: salary.shiftDiffType === "NA" || salary.shiftDiffType === null ? "" : String(salary.shiftDiffType),
-            shiftDiffPay: salary.shiftDiffPay ?? null
+            shiftDiffType:
+              salary.shiftDiffType === "NA" || salary.shiftDiffType === null
+                ? ""
+                : String(salary.shiftDiffType),
+            shiftDiffPay: salary.shiftDiffPay ?? null,
           };
         });
 
@@ -50,7 +55,7 @@ export default function Home() {
     <div className="container mx-auto py-10 max-w-screen-2xl">
       <DataTable columns={columns} data={data} />
 
-      <SalaryScatterplot/>
+      <Visualizations />
     </div>
   );
 }
