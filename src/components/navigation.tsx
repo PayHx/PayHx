@@ -39,7 +39,7 @@ const ResponsiveNavigation = () => {
     <NavigationMenu className="items-start justify-start max-w-full [&>*]:w-full">
       <NavigationMenuList className="flex-col items-start w-full sm:flex-row">
         {navItems.map((item) => (
-          <NavigationMenuItem className="w-full">
+          <NavigationMenuItem key={item.title} className="w-full">
             <NavigationMenuLink
               className={`${navigationMenuTriggerStyle()} w-full items-start sm:w-max`}
             >

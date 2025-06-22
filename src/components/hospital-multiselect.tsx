@@ -64,7 +64,9 @@ export const HospitalMultiSelect = () => {
     return selectedHospitals.map((hospital) => {
       if (hospital) {
         const { id, label } = hospital;
-        return <Chip value={id} label={label} onClose={onHospitalDelete} />;
+        return (
+          <Chip key={id} value={id} label={label} onClose={onHospitalDelete} />
+        );
       }
     });
   };

@@ -132,7 +132,7 @@ export const MekkoChart = () => {
 
   const selectedHospitalPay = useMemo(
     () => testData.filter((h) => selectedHospitalIds.includes(h.id)),
-    [testData, selectedHospitalIds],
+    [selectedHospitalIds],
   );
 
   return (
