@@ -1,9 +1,11 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { collection, getDocs } from "firebase/firestore";
+import { HospitalMultiSelect } from "@/components/hospital-multiselect";
+import { MekkoChart } from "@/components/mekko-chart";
+import { HospitalMultiselectProvider } from "@/context/hospital-multiselect-context";
 import { db } from "@/resources/firebase";
-import { Navigation } from "@/components/navigation";
+import { collection, getDocs } from "firebase/firestore";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -61,11 +63,18 @@ export default function Home() {
             healthcare environment.
           </p>
         </div>
-        <div className="flex">
-          <h2 className="px-2 sm:p-0 text-3xl font-semibold tracking-tight">
-            Compare facilities:
-          </h2>
-        </div>
+        <HospitalMultiselectProvider>
+          <div className="flex gap-4">
+            <h2 className="px-2 sm:p-0 text-3xl font-semibold tracking-tight">
+              Compare facilities:
+            </h2>
+            <HospitalMultiSelect />
+          </div>
+          <div>
+            <MekkoChart />
+          </div>
+        </HospitalMultiselectProvider>
+        <div className="text-center">This is where Footer should be</div>
       </div>
     </div>
   );

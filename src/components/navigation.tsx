@@ -10,8 +10,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { MenuIcon, MoonIcon, SunIcon, XIcon } from "lucide-react";
-import { useTheme } from "next-themes";
+import { MenuIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { ThemeToggleButton } from "@/components/theme-toggle-button";

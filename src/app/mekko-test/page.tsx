@@ -1,16 +1,18 @@
 "use client";
+import { Hospital } from "@/context/hospital-multiselect-context";
 import { useState } from "react";
 
-interface Hospital {
-  name: string;
+interface HospitalPay extends Hospital {
   levels: {
     step: number;
     payRange: number[];
   }[];
 }
-const testData: Hospital[] = [
+
+const testData: HospitalPay[] = [
   {
-    name: "kaiser",
+    id: "kaiser",
+    label: "Kaiser Permanente",
     levels: [
       {
         step: 1,
@@ -31,7 +33,8 @@ const testData: Hospital[] = [
     ],
   },
   {
-    name: "ucla",
+    id: "ucla",
+    label: "UCLA",
     levels: [
       {
         step: 1,
@@ -52,7 +55,30 @@ const testData: Hospital[] = [
     ],
   },
   {
-    name: "cedar sinai",
+    id: "uci",
+    label: "UC Irvine",
+    levels: [
+      {
+        step: 1,
+        payRange: [10, 30],
+      },
+      {
+        step: 2,
+        payRange: [10, 30],
+      },
+      {
+        step: 3,
+        payRange: [10, 30],
+      },
+      {
+        step: 4,
+        payRange: [10, 30],
+      },
+    ],
+  },
+  {
+    id: "ucsf",
+    label: "UCSF",
     levels: [
       {
         step: 1,
@@ -75,7 +101,7 @@ const testData: Hospital[] = [
 ];
 
 const MekkoTest = () => {
-  const [selectedHospital, setSelectedHospital] = useState<Hospital[]>([
+  const [selectedHospital, setSelectedHospital] = useState<HospitalPay[]>([
     testData[0],
   ]);
   return (
@@ -84,8 +110,8 @@ const MekkoTest = () => {
       <input className="border border-black" type="text"></input>
       <div className="flex gap-2 justify-between">
         {testData.map((hospital) => (
-          <div key={hospital.name} className="w-full">
-            <div>{hospital.name}</div>
+          <div key={hospital.id} className="w-full">
+            <div>{hospital.label}</div>
             <div className="flex flex-col gap-2">
               {hospital.levels.map(({ step, payRange }) => (
                 <div
