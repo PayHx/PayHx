@@ -1,9 +1,9 @@
+import { HeaderLogo } from "@/components/header-logo";
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from 'next/link';
-import { Toaster } from "@/components/ui/toaster";
-import { MainSeparator } from "@/components/separator";
+import { Navigation } from "@/components/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,16 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="container mx-auto py-10">
-          <div className="flex items-center justify-between mb-6">
-              <Link href="/">
-                <img src="/logo.png" alt="Logo" className="logo"/>
-              </Link>
-              <MainSeparator />
-           </div>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <div className="container mx-auto py-5 px-2 sm:px-0">
+            <div className="flex items-center justify-between">
+              <HeaderLogo />
+              <Navigation />
+            </div>
           </div>
-        {children}
-        <Toaster/>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
